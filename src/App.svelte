@@ -74,6 +74,11 @@
 
 <svelte:head>
     <title>{name}</title>
+    <link
+        rel="icon"
+        type="image/png"
+        href={channel?.meta?.albumArt || channel.xlimage}
+    />
 </svelte:head>
 
 <header>
