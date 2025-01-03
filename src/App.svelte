@@ -61,7 +61,10 @@
             song.time = new Date(trackTimeMillis * 1000)
                 .toISOString()
                 .slice(11, -5);
-            song.albumArt = artworkUrl100.replace("100x100bb", "500x500bb");
+            song.albumArt = artworkUrl100.replace(
+                "100x100bb.jpg",
+                "500x500bb.png",
+            );
         }
         console.log(song);
         return song;
@@ -81,32 +84,32 @@
                 {
                     src: song.albumArt.replace("500x500bb", "96x96bb"),
                     sizes: "96x96",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "128x128bb"),
                     sizes: "128x128",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "192x192bb"),
                     sizes: "192x192",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "256x256bb"),
                     sizes: "256x256",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "384x384bb"),
                     sizes: "384x384",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "512x512bb"),
                     sizes: "512x512",
-                    type: "image/jpg",
+                    type: "image/png",
                 },
             ],
         });
