@@ -81,32 +81,32 @@
                 {
                     src: song.albumArt.replace("500x500bb", "96x96bb"),
                     sizes: "96x96",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "128x128bb"),
                     sizes: "128x128",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "192x192bb"),
                     sizes: "192x192",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "256x256bb"),
                     sizes: "256x256",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "384x384bb"),
                     sizes: "384x384",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
                 {
                     src: song.albumArt.replace("500x500bb", "512x512bb"),
                     sizes: "512x512",
-                    type: "image/png",
+                    type: "image/jpg",
                 },
             ],
         });
