@@ -73,7 +73,7 @@
 </script>
 
 <svelte:head>
-    <title>{name}</title>
+    <title>{name} {channel.id} {channel.lastPlaying}</title>
     <link
         rel="icon"
         type="image/png"
@@ -93,7 +93,7 @@
 
 <main>
     {#await getSoma()}
-        loading..
+        loading...
     {:then channels}
         {#each channels as channel (channel.id)}
             <button
