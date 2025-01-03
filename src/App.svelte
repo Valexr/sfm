@@ -8,6 +8,10 @@
 
     let channel = $state("");
     let audio = $state();
+    let played = $state(0);
+    let paused = $state(true);
+
+    let interval = $state(null);
 
     async function getSoma() {
         const res = await fetch("https://somafm.com/channels.json");
@@ -15,7 +19,7 @@
         console.log(channels);
         return await Promise.all(
             channels.map(async (c) => {
-                const src = await getStream(c.playlists[1].url);
+                const src = await getStream(c.playlists[0].url);
                 return Object.assign(c, { src });
             }),
         );
@@ -34,6 +38,12 @@
     }
 
     async function setStream(stream) {
+        await setChannel(stream);
+        clearInterval(interval);
+        interval = setInterval(setChannel, 10000, stream);
+    }
+
+    async function setChannel(stream) {
         const [curentSong] = await getSongs(stream.id);
         stream.meta = await setMeta(curentSong);
         setMediaSession(curentSong);
@@ -140,9 +150,12 @@
         loading...
     {:then channels}
         {#each channels as channel (channel.id)}
+            {@const played = !paused && channel?.meta?.albumArt}
             <button
                 id={channel.id}
-                style="--img: url({channel?.meta?.albumArt || channel.xlimage})"
+                class:played
+                style="--img: url({(!paused && channel?.meta?.albumArt) ||
+                    channel.xlimage})"
                 onclick={() => setStream(channel)}
             >
                 <!-- {title} -->
@@ -153,7 +166,15 @@
 
 {#if channel}
     <footer>
-        <audio autoplay bind:this={audio} controls src={channel.src}></audio>
+        <audio
+            oncanplay={console.log}
+            onloadedmetadata={console.log}
+            autoplay
+            bind:this={audio}
+            bind:paused
+            controls
+            src={channel.src}
+        ></audio>
     </footer>
 {/if}
 
@@ -164,7 +185,7 @@
         gap: 1em;
         margin: 1em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 
         button {
             background: var(--img) center;
@@ -172,10 +193,16 @@
             aspect-ratio: 1/1;
             border: 0;
             cursor: pointer;
+            opacity: 0.35;
 
             &:hover {
                 outline: 2px solid var(--hover);
-                opacity: 0.8;
+                opacity: 1;
+            }
+
+            &.played {
+                outline: 2px solid var(--active);
+                opacity: 1;
             }
         }
     }
