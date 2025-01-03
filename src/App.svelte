@@ -22,15 +22,53 @@
     }
 
     async function getStream(url: string) {
-        const res = await fetch(url);
-        const txt = await res.text();
-        const [stream] = txt.match(/http.+/);
-        // console.log(stream)
-        return stream;
+        try {
+            const res = await fetch(url);
+            const txt = await res.text();
+            const [stream] = txt.match(/http.+/) || [];
+            return stream;
+        } catch (e) {
+            console.error(e);
+            throw e;
+        }
     }
 
-    function setStream(stream) {
+    async function setStream(stream) {
+        const [curentSong] = await getSongs(stream.id);
+        stream.meta = await setMeta(curentSong);
         channel = stream;
+    }
+
+    async function getSongs(streamID: string) {
+        const res = await fetch(` https://somafm.com/songs/${streamID}.json`);
+        const { songs } = await res.json();
+        return songs;
+    }
+
+    async function setMeta(song: {
+        album: string;
+        albumArt: string;
+        artist: string;
+        title: string;
+    }) {
+        const ituned = await fetch(URL(song.artist, song.title));
+        const { results } = await ituned.json();
+        if (results.length) {
+            const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] = results;
+
+            song.url = trackViewUrl;
+            song.time = new Date(trackTimeMillis * 1000)
+                .toISOString()
+                .slice(11, -5);
+            song.albumArt = artworkUrl100.replace("100x100bb", "500x500bb");
+        }
+        console.log(song);
+        return song;
+
+        function URL(artist: string, title: string) {
+            const term = [artist, title].join(" - ");
+            return `https://itunes.apple.com/search?term=${decodeURIComponent(term)}`;
+        }
     }
 </script>
 
@@ -39,22 +77,23 @@
 </svelte:head>
 
 <header>
-    <button>Some</button>
+    <!-- <button>Some</button> -->
     <h1>
         <Gh {repository} />
-        {name}
+        {channel.id || name}
     </h1>
-    <p>{channel.lastPlaying}</p>
-    <button>Else</button>
+    <p>{channel.lastPlaying || ""}</p>
+    <!-- <button>Else</button> -->
 </header>
 
 <main>
     {#await getSoma()}
         loading..
     {:then channels}
-        {#each channels as channel}
+        {#each channels as channel (channel.id)}
             <button
-                style="--img: url({channel.image})"
+                id={channel.id}
+                style="--img: url({channel?.meta?.albumArt || channel.xlimage})"
                 onclick={() => setStream(channel)}
             >
                 <!-- {title} -->
@@ -63,9 +102,11 @@
     {/await}
 </main>
 
-<footer>
-    <audio autoplay bind:this={audio} controls src={channel.src}></audio>
-</footer>
+{#if channel}
+    <footer>
+        <audio autoplay bind:this={audio} controls src={channel.src}></audio>
+    </footer>
+{/if}
 
 <style>
     @import "app.css";
@@ -73,16 +114,20 @@
     main {
         gap: 1em;
         margin: 1em;
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
 
         button {
             background: var(--img) center;
             background-size: cover;
-            height: 100px;
             aspect-ratio: 1/1;
             border: 0;
             cursor: pointer;
+
+            &:hover {
+                outline: 2px solid var(--hover);
+                opacity: 0.8;
+            }
         }
     }
 
