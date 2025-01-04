@@ -1,24 +1,27 @@
 <script lang="ts" module>
     import Gh from "$lib/components/Gh.svelte";
+    import Channel from "$lib/components/Channel.svelte";
     import type { Name, Repository } from "$types";
+    import { setMediaSession } from "$lib/mediaSession";
 </script>
 
 <script lang="ts">
     let { name, repository }: { name: Name; repository: Repository } = $props();
 
-    let channel = $state("");
-    let audio = $state();
-    let played = $state(0);
+    let channel = $state<ChannelType>();
+    let audio = $state<HTMLAudioElement>();
+    let played = $state("");
     let paused = $state(true);
 
-    let interval = $state(null);
+    let interval = $state(0);
+    let quality = $state("");
 
     async function getSoma() {
         const res = await fetch("https://somafm.com/channels.json");
         const { channels } = await res.json();
         console.log(channels);
         return await Promise.all(
-            channels.map(async (c) => {
+            channels.map(async (c: ChannelType) => {
                 const src = await getStream(c.playlists[0].url);
                 return Object.assign(c, { src });
             }),
@@ -37,31 +40,39 @@
         }
     }
 
-    async function setStream(stream) {
-        await setChannel(stream);
+    async function setStream(stream: ChannelType) {
+        audio?.pause();
+        if (played === stream.id) {
+            console.log(audio);
+            if (paused) {
+                audio?.play();
+            } else audio?.pause();
+        } else {
+            played = stream.id;
+            await setChannel(stream);
+            audio?.play();
+        }
+        console.log(stream);
         clearInterval(interval);
-        interval = setInterval(setChannel, 10000, stream);
+        if (!paused) {
+            interval = setInterval(setChannel, 10000, stream);
+        }
     }
 
-    async function setChannel(stream) {
+    async function setChannel(stream: ChannelType) {
         const [curentSong] = await getSongs(stream.id);
         stream.meta = await setMeta(curentSong);
         setMediaSession(curentSong);
         channel = stream;
     }
 
-    async function getSongs(streamID: string) {
+    async function getSongs(streamID: string): Promise<Array<SongType>> {
         const res = await fetch(` https://somafm.com/songs/${streamID}.json`);
         const { songs } = await res.json();
         return songs;
     }
 
-    async function setMeta(song: {
-        album: string;
-        albumArt: string;
-        artist: string;
-        title: string;
-    }) {
+    async function setMeta(song: SongType) {
         const ituned = await fetch(URL(song.artist, song.title));
         const { results } = await ituned.json();
         if (results.length) {
@@ -81,68 +92,32 @@
 
         function URL(artist: string, title: string) {
             const term = [artist, title].join(" - ");
-            return `https://itunes.apple.com/search?term=${decodeURIComponent(term)}`;
+            return `https://itunes.apple.com/search?term=${decodeURIComponent(term)}&entity=song`;
         }
     }
 
-    function setMediaSession(song) {
-        navigator.mediaSession.metadata = new MediaMetadata({
-            title: song.title,
-            artist: song.artist,
-            album: song.album,
-            artwork: [
-                {
-                    src: song.albumArt.replace("500x500bb", "96x96bb"),
-                    sizes: "96x96",
-                    type: "image/png",
-                },
-                {
-                    src: song.albumArt.replace("500x500bb", "128x128bb"),
-                    sizes: "128x128",
-                    type: "image/png",
-                },
-                {
-                    src: song.albumArt.replace("500x500bb", "192x192bb"),
-                    sizes: "192x192",
-                    type: "image/png",
-                },
-                {
-                    src: song.albumArt.replace("500x500bb", "256x256bb"),
-                    sizes: "256x256",
-                    type: "image/png",
-                },
-                {
-                    src: song.albumArt.replace("500x500bb", "384x384bb"),
-                    sizes: "384x384",
-                    type: "image/png",
-                },
-                {
-                    src: song.albumArt.replace("500x500bb", "512x512bb"),
-                    sizes: "512x512",
-                    type: "image/png",
-                },
-            ],
-        });
+    async function setQuality(e: { currentTarget: { value: any } }) {
+        const { value } = e.currentTarget;
+        if (channel) {
+            channel.src = await getStream(value);
+        }
     }
 </script>
 
 <svelte:head>
-    <title>{name} {channel.id} {channel.lastPlaying}</title>
+    <title>{name} {channel?.id} {channel?.lastPlaying}</title>
     <link
         rel="icon"
         type="image/png"
-        href={channel?.meta?.albumArt || channel.xlimage}
+        href={channel?.meta?.albumArt || channel?.xlimage}
     />
 </svelte:head>
 
 <header>
-    <!-- <button>Some</button> -->
     <h1>
         <Gh {repository} />
-        {channel.id || name}
+        {channel?.id || name}
     </h1>
-    <p>{channel.lastPlaying || ""}</p>
-    <!-- <button>Else</button> -->
 </header>
 
 <main>
@@ -150,31 +125,34 @@
         loading...
     {:then channels}
         {#each channels as channel (channel.id)}
-            {@const played = !paused && channel?.meta?.albumArt}
-            <button
-                id={channel.id}
-                class:played
-                style="--img: url({(!paused && channel?.meta?.albumArt) ||
-                    channel.xlimage})"
+            <Channel
+                {channel}
+                {played}
+                {paused}
                 onclick={() => setStream(channel)}
-            >
-                <!-- {title} -->
-            </button>
+            />
         {/each}
     {/await}
 </main>
 
 {#if channel}
     <footer>
-        <audio
-            oncanplay={console.log}
-            onloadedmetadata={console.log}
-            autoplay
-            bind:this={audio}
-            bind:paused
-            controls
-            src={channel.src}
-        ></audio>
+        {#if channel}
+            <audio autoplay bind:this={audio} bind:paused src={channel.src}>
+                <!-- <source src={channel.src} type="audio/mpeg" /> -->
+            </audio>
+            <button onclick={() => (paused ? audio?.play() : audio?.pause())}>
+                {paused ? "Play" : "Pause"}
+            </button>
+            <select onchange={setQuality}>
+                {#each channel.playlists as playlist}
+                    <option value={playlist.url}>
+                        {playlist.url.match(/\d+/) || 256} Kbps
+                    </option>
+                {/each}
+            </select>
+            <p>{channel?.lastPlaying || ""}</p>
+        {/if}
     </footer>
 {/if}
 
@@ -186,25 +164,6 @@
         margin: 1em;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-
-        button {
-            background: var(--img) center;
-            background-size: cover;
-            aspect-ratio: 1/1;
-            border: 0;
-            cursor: pointer;
-            opacity: 0.35;
-
-            &:hover {
-                outline: 2px solid var(--hover);
-                opacity: 1;
-            }
-
-            &.played {
-                outline: 2px solid var(--active);
-                opacity: 1;
-            }
-        }
     }
 
     footer {
