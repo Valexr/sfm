@@ -1,5 +1,6 @@
 <script lang="ts" module>
     import Equaliser from "$lib/components/Equaliser.svelte";
+    import Loader from "$lib/components/Loader.svelte";
 </script>
 
 <script lang="ts">
@@ -7,11 +8,13 @@
         channel,
         played,
         paused,
+        loaded,
         onclick,
     }: {
         channel: ChannelType;
         played: string;
         paused: boolean;
+        loaded: boolean;
         onclick: () => void;
     } = $props();
 </script>
@@ -23,8 +26,12 @@
     {onclick}
 >
     <!-- {channel.title} -->
-    {#if played === channel.id && !paused}
-        <Equaliser />
+    {#if played === channel.id}
+        {#if loaded}
+            <Loader />
+        {:else if !paused}
+            <Equaliser />
+        {/if}
     {/if}
 </button>
 

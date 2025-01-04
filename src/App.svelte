@@ -12,6 +12,7 @@
     let audio = $state<HTMLAudioElement>();
     let played = $state("");
     let paused = $state(true);
+    let loaded = $state(true);
 
     let interval = $state(0);
     let quality = $state("");
@@ -129,6 +130,7 @@
                 {channel}
                 {played}
                 {paused}
+                {loaded}
                 onclick={() => setStream(channel)}
             />
         {/each}
@@ -138,7 +140,14 @@
 {#if channel}
     <footer>
         {#if channel}
-            <audio autoplay bind:this={audio} bind:paused src={channel.src}>
+            <audio
+                autoplay
+                bind:this={audio}
+                bind:paused
+                onloadstart={() => (loaded = true)}
+                onloadeddata={() => (loaded = false)}
+                src={channel.src}
+            >
                 <!-- <source src={channel.src} type="audio/mpeg" /> -->
             </audio>
             <button onclick={() => (paused ? audio?.play() : audio?.pause())}>
