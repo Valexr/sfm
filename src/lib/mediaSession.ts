@@ -28,9 +28,9 @@ export function setMediaSession(song: SongType) {
         "seekto",
         "skipad",
     ];
-    mediaSessionActions.forEach((action: MediaSessionAction) => {
-        navigator.mediaSession.setActionHandler(action, () => {
-            /* Code excerpted. */
-        });
-    });
+    // mediaSessionActions.forEach((action: MediaSessionAction) => {
+    //     navigator.mediaSession.setActionHandler(action, () => {
+    //         /* Code excerpted. */
+    //     });
+    // });
 }

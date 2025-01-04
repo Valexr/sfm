@@ -12,7 +12,7 @@
         onclick,
     }: {
         channel: ChannelType;
-        played: string;
+        played?: ChannelType;
         paused: boolean;
         loaded: boolean;
         onclick: () => void;
@@ -21,12 +21,13 @@
 
 <button
     id={channel.id}
-    class:played={played === channel.id}
-    style="--img: url({channel?.meta?.albumArt || channel?.xlimage})"
+    class:played={played?.id === channel.id}
+    style="--img: url({(played?.id === channel.id && played?.meta?.albumArt) ||
+        channel?.xlimage})"
     {onclick}
 >
     <!-- {channel.title} -->
-    {#if played === channel.id}
+    {#if played?.id === channel.id}
         {#if loaded}
             <Loader />
         {:else if !paused}

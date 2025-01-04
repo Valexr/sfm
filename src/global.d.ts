@@ -16,32 +16,28 @@ interface ChannelType {
     xlimage: "https://api.somafm.com/logos/512/7soul512.png",
     twitter: "",
     updated: "1396144686",
-    playlists: [
-        {
-            url: "https://api.somafm.com/7soul.pls",
-            format: "mp3",
-            quality: "highest"
-        },
-        {
-            url: "https://api.somafm.com/7soul130.pls",
-            format: "aac",
-            quality: "highest"
-        },
-        {
-            url: "https://api.somafm.com/7soul64.pls",
-            format: "aacp",
-            quality: "high"
-        },
-        {
-            url: "https://api.somafm.com/7soul32.pls",
-            format: "aacp",
-            quality: "low"
-        }
-    ],
+    streams: Array<{
+        url: "https://api.somafm.com/7soul.pls",
+        format: "mp3",
+        quality: "highest"
+    }>,
+    playlists: Array<{
+        url: string,
+        src: string
+        format: "mp3" | "aac" | "aacp",
+        quality: "highest" | "high" | "low",
+    }>,
     preroll: [],
     listeners: "60",
     lastPlaying: "Yvonne Fair And The James Brown Band - Tell Me Why",
-    src: "https://ice4.somafm.com/7soul-128-mp3",
+    src: string,
+    song: {
+        album: string,
+        albumArt: string,
+        artist: string,
+        title: string,
+        url: string
+    },
     meta: {
         album: string,
         albumArt: string,
