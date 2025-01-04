@@ -1,6 +1,6 @@
 <script lang="ts" module>
-    import Equaliser from "$lib/components/Equaliser.svelte";
-    import Loader from "$lib/components/Loader.svelte";
+    import equaliser from "$svg/equaliser.svg";
+    import loader from "$svg/loader.svg";
 </script>
 
 <script lang="ts">
@@ -17,33 +17,44 @@
         loaded: boolean;
         onclick: () => void;
     } = $props();
+
+    const cover = $derived(
+        (played?.id === channel.id && played?.meta?.albumArt) ||
+            channel?.xlimage,
+    );
+    const state = $derived((!loaded && loader) || (!paused && equaliser));
 </script>
 
-<button
-    id={channel.id}
-    class:played={played?.id === channel.id}
-    style="--img: url({(played?.id === channel.id && played?.meta?.albumArt) ||
-        channel?.xlimage})"
-    {onclick}
->
-    <!-- {channel.title} -->
-    {#if played?.id === channel.id}
-        {#if !loaded}
-            <Loader />
-        {:else if !paused}
-            <Equaliser />
-        {/if}
-    {/if}
+<button id={channel.id} class:played={played?.id === channel.id} {onclick}>
+    {#if played?.id === channel.id}{@html state}{/if}
+    <img class="cover" src={cover} alt={channel.title} />
 </button>
 
 <style>
     button {
-        background: var(--img) center;
-        background-size: cover;
         aspect-ratio: 1/1;
         border: 0;
         cursor: pointer;
         opacity: 0.3;
+        padding: 0;
+        position: relative;
+
+        :global(svg) {
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+
+            &.cover {
+                z-index: 0;
+            }
+        }
 
         &:hover {
             outline: 2px solid var(--hover);
