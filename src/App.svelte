@@ -13,7 +13,7 @@
     let audio = $state<HTMLAudioElement>();
     let played = $state<ChannelType>();
     let paused = $state(true);
-    let loaded = $state(true);
+    let loaded = $state(false);
 
     let interval = $state(0);
     let quality = $state("");
@@ -147,8 +147,8 @@
             autoplay
             bind:this={audio}
             bind:paused
-            onloadstart={() => (loaded = true)}
-            onloadeddata={() => (loaded = false)}
+            onloadstart={() => (loaded = false)}
+            onloadeddata={() => (loaded = true)}
             src={played.src}
         >
             <!-- <source src={channel.src} type="audio/mpeg" /> -->

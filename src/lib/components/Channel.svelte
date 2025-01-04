@@ -28,7 +28,7 @@
 >
     <!-- {channel.title} -->
     {#if played?.id === channel.id}
-        {#if loaded}
+        {#if !loaded}
             <Loader />
         {:else if !paused}
             <Equaliser />
