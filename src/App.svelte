@@ -99,7 +99,7 @@
 
         function URL(artist: string, title: string) {
             const term = [artist, title].join(" - ");
-            return `https://itunes.apple.com/search?term=${decodeURIComponent(term)}&entity=song`;
+            return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song`;
         }
     }
 </script>
@@ -161,7 +161,7 @@
         gap: 1em;
         margin: 1em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
     }
 
     footer {
