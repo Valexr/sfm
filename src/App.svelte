@@ -98,7 +98,7 @@
 
 <svelte:head>
     <title>{name} / {played?.id} / {term}</title>
-    <link rel="icon" type="image/png" href={cover} />
+    <!-- <link rel="icon" type="image/png" href={cover} /> -->
 </svelte:head>
 
 <header>
