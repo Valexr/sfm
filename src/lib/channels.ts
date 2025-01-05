@@ -5,7 +5,7 @@ import { cacheable } from "./cacheable";
 export const channels = createChannels();
 
 function createChannels() {
-    const { subscribe, set, update, get } = cacheable<ChannelType[]>('somafmChannels', []);
+    const { subscribe, set, update, get } = cacheable<ChannelType[]>('somafmChannels', [], true);
 
     async function load() {
         console.log('channels', get());
