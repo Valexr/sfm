@@ -158,16 +158,16 @@
     }
 
     main {
-        gap: 1em;
-        margin: 1em;
+        gap: 1rem;
+        margin: 0 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
     }
 
     footer {
-        inset: 1em;
+        inset: 1rem;
         top: auto;
-        margin: 1em;
+        margin: 1rem;
         position: sticky;
 
         audio {
