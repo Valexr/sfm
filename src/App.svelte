@@ -161,7 +161,7 @@
         gap: 1em;
         margin: 1em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(14dvh, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
     }
 
     footer {
