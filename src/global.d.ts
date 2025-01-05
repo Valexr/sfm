@@ -5,7 +5,6 @@ declare module '*.svg' {
 
 interface ChannelType {
     id: "7soul",
-    img: string,
     title: "Seven Inch Soul",
     description: "Vintage soul tracks from the original 45 RPM vinyl.",
     dj: "Dion Watts Garcia",
@@ -16,35 +15,20 @@ interface ChannelType {
     xlimage: "https://api.somafm.com/logos/512/7soul512.png",
     twitter: "",
     updated: "1396144686",
-    streams: Array<{
-        url: "https://api.somafm.com/7soul.pls",
-        format: "mp3",
-        quality: "highest"
-    }>,
-    playlists: Array<{
-        url: string,
-        src: string
-        format: "mp3" | "aac" | "aacp",
-        quality: "highest" | "high" | "low",
-    }>,
+    playlists: Array<Playlist>,
     preroll: [],
     listeners: "60",
     lastPlaying: "Yvonne Fair And The James Brown Band - Tell Me Why",
     src: string,
-    song: {
-        album: string,
-        albumArt: string,
-        artist: string,
-        title: string,
-        url: string
-    },
-    meta: {
-        album: string,
-        albumArt: string,
-        artist: string,
-        title: string,
-        url: string
-    }
+    song: SongType
+}
+
+interface Playlist {
+    url: string,
+    src: string
+    format: "mp3" | "aac" | "aacp",
+    quality: "highest" | "high" | "low",
+    title: string
 }
 
 interface SongType {

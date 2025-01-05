@@ -1,9 +1,11 @@
 <script lang="ts" module>
+    import Gh from "$lib/components/Gh.svelte";
     import Channel from "$lib/components/Channel.svelte";
     import { setMediaSession } from "$lib/mediaSession";
     import { channels } from "$lib/channels";
 
     import type { Name, Repository } from "$types";
+    import type { MouseEventHandler } from "svelte/elements";
 </script>
 
 <script lang="ts">
@@ -14,55 +16,34 @@
     let paused = $state(true);
     let loaded = $state(false);
     let interval = $state(0);
+    let quality = $state(3);
 
-    async function getSoma() {
-        const res = await fetch("https://somafm.com/channels.json");
-        const { channels } = await res.json();
-        console.log("channels", channels);
-        // return channels;
-        return await Promise.all(
-            channels.map(async (c: ChannelType) => {
-                c.src = await getStream(c.playlists[0].url);
-                return c;
-                // return Object.assign(c, { src });
-            }),
-        );
-    }
-
-    async function getStream(url: string) {
-        try {
-            const res = await fetch(url);
-            const txt = await res.text();
-            const [stream] = txt.match(/http.+/) || [];
-            return stream || "";
-        } catch (e) {
-            console.error(e);
-            throw e;
-        }
-    }
+    const term = $derived(
+        [played?.song.artist, played?.song.title].join(" / "),
+    );
+    const cover = $derived(played?.song?.albumArt || played?.xlimage);
 
     async function setStream(stream: ChannelType) {
+        console.log("channel", stream);
         clearInterval(interval);
         if (played?.id === stream.id) {
             if (paused) {
                 audio?.play();
-                interval = setInterval(setChannel, 1000, stream);
+                interval = setInterval(setPlayed, 1000, stream);
             } else {
                 audio?.pause();
             }
         } else {
-            await setChannel(stream);
-            audio?.play();
-            interval = setInterval(setChannel, 10000, stream);
+            await setPlayed(stream);
+            interval = setInterval(setPlayed, 10000, stream);
         }
-        console.log("channel", stream);
     }
 
-    async function setChannel(stream: ChannelType) {
-        // stream.src ??= (await getStream(stream.playlists[0].url)) || "";
+    async function setPlayed(stream: ChannelType) {
         const [curentSong] = await getSongs(stream.id);
-        stream.meta = await setMeta(curentSong);
-        setMediaSession(curentSong);
+        stream.song = await setSong(curentSong);
+        stream.song.albumArt ??= stream.xlimage;
+        setMediaSession(stream.song);
         played = stream;
     }
 
@@ -73,9 +54,9 @@
         return songs;
     }
 
-    async function setMeta(song: SongType) {
+    async function setSong(song: SongType) {
         try {
-            const ituned = await fetch(URL(song.artist, song.title));
+            const ituned = await fetch(itunesURL(song.artist, song.title));
             const { results } = await ituned.json();
             if (results.length) {
                 const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
@@ -97,32 +78,40 @@
         }
         return song;
 
-        function URL(artist: string, title: string) {
+        function itunesURL(artist: string, title: string) {
             const term = [artist, title].join(" - ");
             return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song`;
         }
     }
+
+    function skipChannel(e: { currentTarget: { id: any } }) {
+        const { id } = e.currentTarget;
+        const playedINDEX = $channels.findIndex((c) => c.id === played?.id);
+        const INDEX = playedINDEX + Number(id);
+        const { length } = $channels;
+        const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
+        const channel = $channels[channelINDEX];
+
+        setStream(channel);
+    }
 </script>
 
 <svelte:head>
-    <title>{name} {played?.id} {played?.lastPlaying}</title>
-    <link
-        rel="icon"
-        type="image/png"
-        href={played?.meta?.albumArt || played?.xlimage}
-    />
+    <title>{name} / {played?.id} / {term}</title>
+    <link rel="icon" type="image/png" href={cover} />
 </svelte:head>
 
 <header>
+    <Gh {repository} />
     <h2>{played?.id || name}</h2>
-    <p>{played?.lastPlaying || ""}</p>
+    <p>{term}</p>
 </header>
 
 <main>
-    {#await getSoma()}
+    {#await channels.load()}
         loading...
-    {:then channels}
-        {#each channels as channel (channel.id)}
+    {:then}
+        {#each $channels as channel (channel.id)}
             <Channel
                 {channel}
                 {played}
@@ -142,9 +131,19 @@
             bind:paused
             onloadstart={() => (loaded = false)}
             onloadeddata={() => (loaded = true)}
-            src={played.src}
+            src={played.playlists[quality].src}
         >
         </audio>
+        <select bind:value={quality}>
+            {#each played.playlists as playlist, i}
+                <option value={i}>{playlist.title}</option>
+            {/each}
+        </select>
+        <button id="-1" onclick={skipChannel}>←</button>
+        <button onclick={() => (paused ? audio?.play() : audio?.pause())}>
+            {paused ? "Play" : "Pause"}
+        </button>
+        <button id="1" onclick={skipChannel}>→</button>
     </footer>
 {/if}
 
@@ -154,6 +153,7 @@
     header {
         position: sticky;
         z-index: 1;
+        gap: 1rem;
         top: 0;
     }
 
@@ -161,17 +161,21 @@
         gap: 1rem;
         margin: 0 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
     }
 
     footer {
-        inset: 1rem;
         top: auto;
-        margin: 1rem;
+        inset: 1rem;
+        margin: auto;
         position: sticky;
 
         audio {
             width: 100%;
         }
+    }
+
+    select {
+        font-size: 1rem;
     }
 </style>

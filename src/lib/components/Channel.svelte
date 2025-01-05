@@ -18,15 +18,16 @@
         onclick: () => void;
     } = $props();
 
+    const selected = $derived(played?.id === channel.id);
+
     const cover = $derived(
-        (played?.id === channel.id && played?.meta?.albumArt) ||
-            channel?.xlimage,
+        (selected && played?.song?.albumArt) || channel?.xlimage,
     );
-    const state = $derived((!loaded && loader) || (!paused && equaliser));
+    const stateICO = $derived((!loaded && loader) || (!paused && equaliser));
 </script>
 
-<button id={channel.id} class:played={played?.id === channel.id} {onclick}>
-    {#if played?.id === channel.id}{@html state}{/if}
+<button id={channel.id} class:selected {onclick} title={channel.description}>
+    {#if selected}{@html stateICO}{/if}
     <img class="cover" src={cover} alt={channel.title} />
 </button>
 
@@ -38,6 +39,17 @@
         opacity: 0.3;
         padding: 0;
         position: relative;
+        transition: opacity 250ms ease;
+
+        &::before {
+            inset: 0;
+            content: attr(id);
+            overflow: hidden;
+            position: absolute;
+            place-content: center;
+            border-radius: inherit;
+            background-color: var(--light);
+        }
 
         :global(svg) {
             position: relative;
@@ -56,14 +68,16 @@
             }
         }
 
-        &:hover {
-            outline: 2px solid var(--hover);
+        &:hover,
+        &.selected {
+            outline-width: 2px;
+            outline-style: solid;
+            outline-color: var(--hover);
             opacity: 1;
         }
 
-        &.played {
-            outline: 2px solid var(--dark);
-            opacity: 1;
+        &.selected {
+            outline-color: var(--dark);
         }
     }
 </style>
