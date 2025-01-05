@@ -53,3 +53,7 @@ a {
 * {
     box-sizing: border-box;
 }
+
+svg {
+    max-height: 100%;
+}
