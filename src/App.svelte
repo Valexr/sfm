@@ -1,4 +1,5 @@
 <script lang="ts" module>
+    import sfm from "$svg/sfm.svg";
     import Gh from "$lib/components/Gh.svelte";
     import Channel from "$lib/components/Channel.svelte";
     import { setMediaSession } from "$lib/mediaSession";
@@ -104,7 +105,7 @@
 <header>
     <Gh {repository} />
     <h2>{played?.id || name}</h2>
-    <p>{term}</p>
+    <p>{played?.song.artist}</p>
 </header>
 
 <main>
@@ -134,6 +135,7 @@
             src={played.playlists[quality].src}
         >
         </audio>
+        <p>{term}</p>
         <select bind:value={quality}>
             {#each played.playlists as playlist, i}
                 <option value={i}>{playlist.title}</option>

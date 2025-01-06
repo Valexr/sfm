@@ -81,7 +81,7 @@
             grid-row: auto / span 2;
             grid-column: auto / span 2;
             position: sticky;
-            bottom: 70px;
+            bottom: 100px;
             z-index: 1;
             top: 70px;
         }
