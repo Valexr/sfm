@@ -12,38 +12,27 @@
 
     <style>
         #qualiser {
-            width: 50%;
-            height: 50%;
+            width: 25%;
+            height: 25%;
         }
         .eq-bar {
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
             transform: scale(1, -1) translate(0, -24px);
         }
     
         .eq-bar--1 {
             animation-name: short-eq;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
-            animation-delay: 0s;
-        }
-    
-        .eq-bar--1 {
-            animation-name: short-eq;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
             animation-delay: 0s;
         }
     
         .eq-bar--2 {
             animation-name: tall-eq;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
             animation-delay: 0.17s;
         }
     
         .eq-bar--3 {
             animation-name: short-eq;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
             animation-delay: 0.34s;
         }
     

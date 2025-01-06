@@ -1,12 +1,10 @@
 <script lang="ts" module>
-    import sfm from "$svg/sfm.svg";
     import Gh from "$lib/components/Gh.svelte";
     import Channel from "$lib/components/Channel.svelte";
     import { setMediaSession } from "$lib/mediaSession";
     import { channels } from "$lib/channels";
 
     import type { Name, Repository } from "$types";
-    import type { MouseEventHandler } from "svelte/elements";
 </script>
 
 <script lang="ts">
