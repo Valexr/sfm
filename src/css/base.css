@@ -10,6 +10,7 @@ body {
     grid-template-columns: 1fr;
     font-family: system-ui;
     text-align: center;
+    overflow-x: hidden;
     background-color: var(--light);
 }
 
