@@ -78,6 +78,12 @@
 
         &.selected {
             outline-color: var(--dark);
+            grid-row: auto / span 2;
+            grid-column: auto / span 2;
+            position: sticky;
+            bottom: 70px;
+            z-index: 1;
+            top: 70px;
         }
     }
 </style>

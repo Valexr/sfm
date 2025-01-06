@@ -159,8 +159,9 @@
 
     main {
         gap: 1rem;
-        margin: 0 1rem;
+        margin: 1rem;
         display: grid;
+        grid-auto-flow: row dense;
         grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
     }
 
