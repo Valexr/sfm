@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { writable, derived } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
 
@@ -17,7 +17,7 @@ function createChannels() {
                 channels.map(async (c: ChannelType) => {
                     for await (const playlist of c.playlists) {
                         playlist.src = await getStream(playlist.url);
-                        playlist.title = playlist.src.match(/-(\d.*)/)?.[1] || '256-mp3'
+                        playlist.title = playlist.src.match(/-(\d.*)/)?.[1] || ''
                     }
                     return c
                 }),
@@ -34,8 +34,22 @@ function createChannels() {
         }
     }
 
+    function search(query: Record<keyof ChannelType, any>) {
+        return get().filter((channel) => match(channel, query));
+
+        function match(channel: Record<string, any>, query: Record<string, any>) {
+            return Object.entries(query).every(([key, val]) => channel[key] === val)
+        }
+    }
+
+
     return {
-        subscribe, set, update, get, load
+        subscribe, set, update, get, load, search,
+        genres: () => {
+            const genres = new Set();
+            get().forEach((c) => genres.add(c.genre));
+            return Array.from(genres);
+        }
     }
 }
 

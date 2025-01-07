@@ -16,6 +16,7 @@
     let loaded = $state(false);
     let interval = $state(0);
     let quality = $state(3);
+    let genre = $state("");
 
     const term = $derived(
         [$played?.song.artist, $played?.song.title].join(" / "),
@@ -60,6 +61,12 @@
     <Gh {repository} />
     <h2>{$played?.id || name}</h2>
     <p>{$played?.song.artist}</p>
+
+    <!-- <select bind:value={genre}>
+        {#each $genres as genre}
+            <option value={genre}>{genre}</option>
+        {/each}
+    </select> -->
 </header>
 
 <main>
@@ -67,12 +74,7 @@
         loading...
     {:then}
         {#each $channels as channel (channel.id)}
-            <Channel
-                {channel}
-                {paused}
-                {loaded}
-                onclick={() => play(channel)}
-            />
+            <Channel {channel} {paused} {loaded} {play} />
         {/each}
     {/await}
 </main>

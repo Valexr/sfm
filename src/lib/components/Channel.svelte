@@ -10,12 +10,12 @@
         channel,
         paused,
         loaded,
-        onclick,
+        play,
     }: {
         channel: ChannelType;
         paused: boolean;
         loaded: boolean;
-        onclick: MouseEventHandler<HTMLButtonElement> | null | undefined;
+        play: (channel: ChannelType) => void;
     } = $props();
 
     const selected = $derived($played?.id === channel.id);
@@ -26,7 +26,12 @@
     const stateICO = $derived((!loaded && loader) || (!paused && equaliser));
 </script>
 
-<button id={channel.id} class:selected {onclick} title={channel.description}>
+<button
+    id={channel.id}
+    class:selected
+    title={channel.description}
+    onclick={() => play(channel)}
+>
     {#if selected}{@html stateICO}{/if}
     <img class="cover" src={cover} alt={channel.title} />
 </button>

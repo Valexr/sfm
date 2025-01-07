@@ -24,6 +24,7 @@
 </script>
 
 <audio
+    hidden
     autoplay
     bind:paused
     bind:this={audio}
