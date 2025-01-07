@@ -23,20 +23,18 @@
     );
     const cover = $derived($played?.song?.albumArt || $played?.xlimage);
 
-    async function play(channel: ChannelType) {
+    async function play(channel: ChannelType, ms = 10000) {
         console.log("channel", channel);
-        const MS = 10000;
+
         if (interval) clearInterval(interval);
-        if ($played?.id === channel.id) {
-            if (paused) {
-                audio?.play();
-                interval = setInterval(played.set, MS, channel);
-            } else {
-                audio?.pause();
-            }
-        } else {
+        if ($played?.id !== channel.id) {
             await played.set(channel);
-            interval = setInterval(played.set, MS, channel);
+            interval = setInterval(played.set, ms, channel);
+        } else if (paused) {
+            audio?.play();
+            interval = setInterval(played.set, ms, channel);
+        } else {
+            audio?.pause();
         }
     }
 
