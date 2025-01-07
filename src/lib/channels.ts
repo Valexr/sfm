@@ -89,7 +89,7 @@ async function setSong(song: SongType) {
     return song;
 
     function itunesURL(artist: string, title: string) {
-        const term = [artist, title].join("-");
-        return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song&media=music`;
+        const term = [artist, title].join(" - ");
+        return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}`;
     }
 }
