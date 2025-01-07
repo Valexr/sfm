@@ -1,27 +1,27 @@
 <script lang="ts" module>
+    import { played } from "$lib/channels";
     import equaliser from "$svg/equaliser.svg";
     import loader from "$svg/loader.svg";
+    import type { MouseEventHandler } from "svelte/elements";
 </script>
 
 <script lang="ts">
     let {
         channel,
-        played,
         paused,
         loaded,
         onclick,
     }: {
         channel: ChannelType;
-        played?: ChannelType;
         paused: boolean;
         loaded: boolean;
-        onclick: () => void;
+        onclick: MouseEventHandler<HTMLButtonElement> | null | undefined;
     } = $props();
 
-    const selected = $derived(played?.id === channel.id);
+    const selected = $derived($played?.id === channel.id);
 
     const cover = $derived(
-        (selected && played?.song?.albumArt) || channel?.xlimage,
+        (selected && $played?.song?.albumArt) || channel?.xlimage,
     );
     const stateICO = $derived((!loaded && loader) || (!paused && equaliser));
 </script>
