@@ -12,7 +12,7 @@
 
     let audio = $state<HTMLAudioElement>();
     let played = $state<ChannelType>();
-    let paused = $state(true);
+    let paused = $state(false);
     let loaded = $state(false);
     let interval = $state(0);
     let quality = $state(3);
@@ -24,17 +24,18 @@
 
     async function setStream(stream: ChannelType) {
         console.log("channel", stream);
-        clearInterval(interval);
+        const MS = 10000;
+        if (interval) clearInterval(interval);
         if (played?.id === stream.id) {
             if (paused) {
                 audio?.play();
-                interval = setInterval(setPlayed, 1000, stream);
+                interval = setInterval(setPlayed, MS, stream);
             } else {
                 audio?.pause();
             }
         } else {
             await setPlayed(stream);
-            interval = setInterval(setPlayed, 10000, stream);
+            interval = setInterval(setPlayed, MS, stream);
         }
     }
 
