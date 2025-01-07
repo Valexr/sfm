@@ -1,10 +1,10 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
     import gh from "$svg/gh.svg";
     import type { Repository } from "$types";
 </script>
 
 <script lang="ts">
-    export let repository: Repository;
+    let { repository }: { repository: Repository } = $props();
 </script>
 
 <a href={repository.url} target="_blank" rel="noreferrer" id="gh">

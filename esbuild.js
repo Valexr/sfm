@@ -5,15 +5,20 @@ import rm from './env/rm.js';
 import log from './env/log.js';
 import meta from './env/meta.js';
 import proxy from './env/proxy.js';
+import pkg from './package.json' with {type: 'json'};
 
 const DEV = process.argv.includes('--dev');
 const SPA = process.argv.includes('--spa');
 
 const svelteOptions = {
     compilerOptions: {
-        dev: DEV,
         css: 'external',
-        immutable: true
+        cssHash: ({ css, filename, name, hash }) => {
+            return `${pkg.name}-${hash(css)}`;
+        },
+        runes: true,
+        immutable: true,
+        modernAst: true
     },
     preprocess: [
         sveltePreprocess({
@@ -37,6 +42,7 @@ const buildOptions = {
     logLevel: 'info',
     metafile: !DEV,
     mainFields: ['svelte', 'module', 'main'],
+    define: { 'globalThis.process.env.NODE_ENV': JSON.stringify(DEV ? 'development' : 'production') },
 };
 
 await rm(['public/build']);
