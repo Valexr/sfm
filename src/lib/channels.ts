@@ -1,6 +1,7 @@
-import { writable, derived } from "svelte/store";
+import { writable } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
+import { match } from "./utils";
 
 
 export const channels = createChannels();
@@ -9,77 +10,28 @@ export const played = createPlayed()
 function createChannels() {
     const { subscribe, set, update, get } = cacheable<ChannelType[]>('somafmChannels', [], true);
 
-    async function load() {
-        console.log('channels', get());
-        if (!get().length) {
-            const res = await fetch("https://somafm.com/channels.json");
-            const { channels } = await res.json();
-            const allChannels = await Promise.all(
-                channels.map(async (c: ChannelType) => {
-                    // await downloadImage(c.xlimage, c.id + ".png");
-                    c.xlimage = c.xlimage.replace(/-/, '').replace(/^https.+\.com/, 'assets')
-                    console.log(c.id, c.xlimage.replace(/^https.+\.com/, 'assets'));
-                    for await (const playlist of c.playlists) {
-                        playlist.src = await getStream(playlist.url);
-                        playlist.title = playlist.src.match(/-(\d.*)/)?.[1] || ''
-                    }
-                    return c
-                }),
-            );
-            set(allChannels)
-            return allChannels
-        }
-
-        async function getStream(url: string) {
-            const res = await fetch(url);
-            const txt = await res.text();
-            const [stream] = txt.match(/http.+/) || [];
-            return stream || ''
-        }
-    }
-
-    function search(query: Record<keyof ChannelType, any>) {
-        return get().filter((channel) => match(channel, query));
-
-        function match(channel: Record<string, any>, query: Record<string, any>) {
-            return Object.entries(query).every(([key, val]) => channel[key] === val)
-        }
-    }
-
-
     return {
-        subscribe, set, update, get, load, search,
-        genres: () => {
+        subscribe, set, update, get,
+        async load() {
+            console.log('channels', get());
+
+            if (!get().length) {
+                const res = await fetch("assets/channels.json");
+                const channels = await res.json();
+                console.log(channels)
+                set(channels)
+            }
+        },
+        search(query: Record<keyof ChannelType, any>) {
+            return get().filter((channel) => match(channel, query));
+        },
+        genres() {
             const genres = new Set();
             get().forEach((c) => genres.add(c.genre));
             return Array.from(genres);
         }
     }
 }
-
-async function downloadImage(
-    imageSrc: string,
-    nameOfDownload = 'my-image.png',
-) {
-    const response = await fetch(imageSrc);
-
-    const blobImage = await response.blob();
-
-    const href = URL.createObjectURL(blobImage);
-
-    const anchorElement = document.createElement('a');
-    anchorElement.href = href;
-    anchorElement.download = nameOfDownload;
-
-    document.body.appendChild(anchorElement);
-    anchorElement.click();
-
-    document.body.removeChild(anchorElement);
-    window.URL.revokeObjectURL(href);
-}
-
-
-
 
 function createPlayed() {
     const { subscribe, set, update } = writable<ChannelType>()
@@ -91,7 +43,7 @@ function createPlayed() {
     async function getPlayed(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
         channel.song = await setSong(curentSong);
-        channel.song.albumArt ??= channel.xlimage;
+        channel.song.albumArt ??= channel.image;
         setMediaSession(channel.song);
 
         return channel;

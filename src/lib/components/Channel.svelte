@@ -21,7 +21,7 @@
     const selected = $derived($played?.id === channel.id);
 
     const cover = $derived(
-        (selected && $played?.song?.albumArt) || channel?.xlimage,
+        (selected && $played?.song?.albumArt) || channel?.image,
     );
     const stateICO = $derived((!loaded && loader) || (!paused && equaliser));
 </script>
@@ -62,10 +62,11 @@
         }
 
         img {
-            object-fit: cover;
-            width: 100%;
-            position: absolute;
             inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
             border-radius: inherit;
 
             &.cover {

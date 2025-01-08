@@ -21,7 +21,7 @@
     const term = $derived(
         [$played?.song.artist, $played?.song.title].join(" / "),
     );
-    const cover = $derived($played?.song?.albumArt || $played?.xlimage);
+    const cover = $derived($played?.song?.albumArt || $played?.image);
 
     async function play(channel: ChannelType, ms = 10000) {
         console.log("channel", channel);
