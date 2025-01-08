@@ -1,5 +1,6 @@
 {
     "name": "sfm",
+    "description": "SomaFM svelteJS player",
     "version": "0.1.0",
     "private": true,
     "type": "module",
