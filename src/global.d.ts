@@ -12,7 +12,7 @@ interface ChannelType {
     genre: "oldies",
     image: "https://api.somafm.com/img/7soul120.png",
     largeimage: "https://api.somafm.com/logos/256/7soul256.png",
-    xlimage: "https://api.somafm.com/logos/512/7soul512.png",
+    xlimage: string,
     twitter: "",
     updated: "1396144686",
     playlists: Array<Playlist>,

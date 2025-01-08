@@ -16,6 +16,9 @@ function createChannels() {
             const { channels } = await res.json();
             const allChannels = await Promise.all(
                 channels.map(async (c: ChannelType) => {
+                    // await downloadImage(c.xlimage, c.id + ".png");
+                    c.xlimage = c.xlimage.replace(/-/, '').replace(/^https.+\.com/, 'assets')
+                    console.log(c.id, c.xlimage.replace(/^https.+\.com/, 'assets'));
                     for await (const playlist of c.playlists) {
                         playlist.src = await getStream(playlist.url);
                         playlist.title = playlist.src.match(/-(\d.*)/)?.[1] || ''
@@ -53,6 +56,28 @@ function createChannels() {
         }
     }
 }
+
+async function downloadImage(
+    imageSrc: string,
+    nameOfDownload = 'my-image.png',
+) {
+    const response = await fetch(imageSrc);
+
+    const blobImage = await response.blob();
+
+    const href = URL.createObjectURL(blobImage);
+
+    const anchorElement = document.createElement('a');
+    anchorElement.href = href;
+    anchorElement.download = nameOfDownload;
+
+    document.body.appendChild(anchorElement);
+    anchorElement.click();
+
+    document.body.removeChild(anchorElement);
+    window.URL.revokeObjectURL(href);
+}
+
 
 
 
