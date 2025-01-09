@@ -2,7 +2,6 @@
     import { played } from "$lib/channels";
     import equaliser from "$svg/equaliser.svg";
     import loader from "$svg/loader.svg";
-    import type { MouseEventHandler } from "svelte/elements";
 </script>
 
 <script lang="ts">
