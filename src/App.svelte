@@ -17,7 +17,9 @@
     let interval = $state(0);
     let quality = $state(3);
 
-    const term = $derived(`${$played?.song?.artist} / ${$played?.song?.title}`);
+    const term = $derived(
+        `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
+    );
     const cover = $derived($played?.song?.albumArt || $played?.image);
 
     async function play(channel: ChannelType, ms = 10000) {
@@ -56,7 +58,7 @@
 <header>
     <Gh {repository} />
     <h2>{$played?.id || name}</h2>
-    <p>{$played?.song?.artist}</p>
+    <p>{$played?.song?.artist || ""}</p>
 </header>
 
 <main>

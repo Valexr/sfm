@@ -18,7 +18,9 @@
         onclick: MouseEventHandler<HTMLButtonElement> | null | undefined;
     } = $props();
 
-    const term = $derived(`${$played?.song?.artist} / ${$played?.song?.title}`);
+    const term = $derived(
+        `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
+    );
 </script>
 
 <audio
