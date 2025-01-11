@@ -16,11 +16,8 @@
     let loaded = $state(false);
     let interval = $state(0);
     let quality = $state(3);
-    let genre = $state("");
 
-    const term = $derived(
-        [$played?.song.artist, $played?.song.title].join(" / "),
-    );
+    const term = $derived(`${$played?.song?.artist} / ${$played?.song?.title}`);
     const cover = $derived($played?.song?.albumArt || $played?.image);
 
     async function play(channel: ChannelType, ms = 10000) {
@@ -28,11 +25,12 @@
 
         if (interval) clearInterval(interval);
         if ($played?.id !== channel.id) {
-            await played.set(channel);
-            interval = setInterval(played.set, ms, channel);
+            played.set(channel);
+            await played.song(channel);
+            interval = setInterval(played.song, ms, channel);
         } else if (paused) {
             audio?.play();
-            interval = setInterval(played.set, ms, channel);
+            interval = setInterval(played.song, ms, channel);
         } else {
             audio?.pause();
         }
@@ -58,13 +56,7 @@
 <header>
     <Gh {repository} />
     <h2>{$played?.id || name}</h2>
-    <p>{$played?.song.artist}</p>
-
-    <!-- <select bind:value={genre}>
-        {#each $genres as genre}
-            <option value={genre}>{genre}</option>
-        {/each}
-    </select> -->
+    <p>{$played?.song?.artist}</p>
 </header>
 
 <main>
@@ -100,11 +92,16 @@
     }
 
     main {
+        --cell-size: 100px;
         gap: 1rem;
         margin: 1rem;
         display: grid;
         grid-auto-flow: row dense;
-        grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 1fr));
+
+        @media (min-width: 600px) {
+            --cell-size: 145px;
+        }
     }
 
     footer {

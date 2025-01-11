@@ -31,8 +31,9 @@
     title={channel.description}
     onclick={() => play(channel)}
 >
+    <span>{channel.title}</span>
     {#if selected}{@html stateICO}{/if}
-    <img class="cover" src={cover} alt={channel.title} />
+    <img loading="lazy" class="cover" src={cover} alt={channel.title} />
 </button>
 
 <style>
@@ -53,6 +54,14 @@
             place-content: center;
             border-radius: inherit;
             background-color: var(--light);
+        }
+
+        span {
+            place-content: center;
+            visibility: hidden;
+            position: absolute;
+            inset: 1rem;
+            z-index: 1;
         }
 
         :global(svg) {
@@ -89,6 +98,10 @@
             bottom: 100px;
             z-index: 1;
             top: 70px;
+
+            span {
+                top: auto;
+            }
         }
     }
 </style>

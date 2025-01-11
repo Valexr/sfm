@@ -18,9 +18,7 @@
         onclick: MouseEventHandler<HTMLButtonElement> | null | undefined;
     } = $props();
 
-    const term = $derived(
-        [$played?.song.artist, $played?.song.title].join(" / "),
-    );
+    const term = $derived(`${$played?.song?.artist} / ${$played?.song?.title}`);
 </script>
 
 <audio
@@ -35,8 +33,8 @@
 </audio>
 <p>{term}</p>
 <select bind:value={quality}>
-    {#each $played.playlists as playlist, i}
-        <option value={i}>{playlist.title}</option>
+    {#each $played.playlists as { title }, i}
+        <option value={i}>{title}</option>
     {/each}
 </select>
 <button id="-1" {onclick}>←</button>

@@ -24,11 +24,6 @@ function createChannels() {
         },
         search(query: Record<keyof ChannelType, any>) {
             return get().filter((channel) => match(channel, query));
-        },
-        genres() {
-            const genres = new Set();
-            get().forEach((c) => genres.add(c.genre));
-            return Array.from(genres);
         }
     }
 }
@@ -37,13 +32,17 @@ function createPlayed() {
     const { subscribe, set, update } = writable<ChannelType>()
 
     return {
-        subscribe, set: async (channel: ChannelType) => set(await getPlayed(channel)),
+        subscribe, set, update,
+        async song(channel: ChannelType) {
+            set(await getSong(channel))
+        },
     }
 
-    async function getPlayed(channel: ChannelType) {
+    async function getSong(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
-        channel.song = await setSong(curentSong);
+        channel.song = await setMeta(curentSong);
         channel.song.albumArt ??= channel.image;
+
         setMediaSession(channel.song);
 
         return channel;
@@ -55,10 +54,11 @@ function createPlayed() {
             return songs;
         }
 
-        async function setSong(song: SongType) {
+        async function setMeta(song: SongType) {
             try {
                 const ituned = await fetch(itunesURL(song.artist, song.title));
                 const { results } = await ituned.json();
+
                 if (results.length) {
                     const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
                         results;
@@ -80,7 +80,7 @@ function createPlayed() {
             return song;
 
             function itunesURL(artist: string, title: string) {
-                const term = [artist, title].join(" - ");
+                const term = `${artist} - ${title}`;
                 return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}`;
             }
         }
