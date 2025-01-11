@@ -34,18 +34,19 @@ function createPlayed() {
     return {
         subscribe, set, update,
         async song(channel: ChannelType) {
-            set(await getSong(channel))
+            const song = await getSong(channel);
+            update(played => Object.assign(played, { song }))
         },
     }
 
     async function getSong(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
-        channel.song = await setMeta(curentSong);
-        channel.song.albumArt ??= channel.image;
+        const song = await setMeta(curentSong);
+        song.albumArt ??= channel.image;
 
-        setMediaSession(channel.song);
+        setMediaSession(song);
 
-        return channel;
+        return song;
 
         async function getSongs(channelID: string): Promise<Array<SongType>> {
             const res = await fetch(` https://somafm.com/songs/${channelID}.json`);

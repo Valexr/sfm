@@ -17,17 +17,17 @@ export function setMediaSession(song: SongType) {
             type: "image/png",
         })),
     });
-    const mediaSessionActions = [
-        "play",
-        "pause",
-        "stop",
-        "previoustrack",
-        "nexttrack",
-        "seekbackward",
-        "seekforward",
-        "seekto",
-        "skipad",
-    ];
+    // const mediaSessionActions = [
+    //     "play",
+    //     "pause",
+    //     "stop",
+    //     "previoustrack",
+    //     "nexttrack",
+    //     "seekbackward",
+    //     "seekforward",
+    //     "seekto",
+    //     "skipad",
+    // ];
     // mediaSessionActions.forEach((action: MediaSessionAction) => {
     //     navigator.mediaSession.setActionHandler(action, () => {
     //         /* Code excerpted. */
