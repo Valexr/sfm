@@ -15,7 +15,7 @@
     let paused = $state(false);
     let loaded = $state(false);
     let interval = $state(0);
-    let quality = $state(0);
+    let quality = $state(3);
     let data = $state("soma");
 
     const term = $derived(
