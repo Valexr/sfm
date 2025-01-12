@@ -15,12 +15,11 @@ function createChannels() {
         async load(data = 'soma') {
             console.log('channels', get());
 
-            // if (!get().length) {
-            const URL = `assets/data/${data}.json`
-            const channels = await getJSON<ChannelType[]>(URL);
-            // console.log(channels.map(c => Object.assign(c, {bg: `assets/imgs/record/${c.id}.jpg`})))
-            set(channels)
-            // }
+            if (!get().length) {
+                const URL = `assets/data/${data}.json`
+                const channels = await getJSON<ChannelType[]>(URL);
+                set(channels)
+            }
         },
         search(query: Record<keyof ChannelType, any>) {
             return get().filter((channel) => match(channel, query));
