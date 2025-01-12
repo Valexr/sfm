@@ -1,4 +1,4 @@
-async function downloadImage(
+export async function downloadImage(
     imageSrc: string,
     nameOfDownload = 'my-image.png',
 ) {
@@ -28,4 +28,9 @@ async function getStream(url: string) {
 
 export function match(channel: Record<string, any>, query: Record<string, any>) {
     return Object.entries(query).every(([key, val]) => channel[key] === val)
+}
+
+export async function getJSON<T>(url: string): Promise<T> {
+    const res = await fetch(url);
+    return await res.json();
 }

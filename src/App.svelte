@@ -15,7 +15,8 @@
     let paused = $state(false);
     let loaded = $state(false);
     let interval = $state(0);
-    let quality = $state(3);
+    let quality = $state(0);
+    let data = $state("soma");
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -28,11 +29,19 @@
         if (interval) clearInterval(interval);
         if ($played?.id !== channel.id) {
             played.set(channel);
-            await played.song(channel);
-            interval = setInterval(played.song, ms, channel);
+            try {
+                await played.song(channel);
+                interval = setInterval(played.song, ms, channel);
+            } catch (error) {
+                console.error(error);
+            }
         } else if (paused) {
             audio?.play();
-            interval = setInterval(played.song, ms, channel);
+            try {
+                interval = setInterval(played.song, ms, channel);
+            } catch (error) {
+                console.error(error);
+            }
         } else {
             audio?.pause();
         }
@@ -56,13 +65,18 @@
 </svelte:head>
 
 <header>
-    <Gh {repository} />
+    <!-- <Gh {repository} /> -->
+    <select bind:value={data}>
+        {#each ["soma", "record"] as value, i}
+            <option>{value}</option>
+        {/each}
+    </select>
     <h2>{$played?.id || name}</h2>
     <p>{$played?.song?.artist || ""}</p>
 </header>
 
 <main>
-    {#await channels.load()}
+    {#await channels.load(data)}
         loading...
     {:then}
         {#each $channels as channel (channel.id)}
@@ -91,6 +105,10 @@
         z-index: 1;
         gap: 1rem;
         top: 0;
+
+        select {
+            font-size: inherit;
+        }
     }
 
     main {

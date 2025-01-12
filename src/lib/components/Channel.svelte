@@ -30,6 +30,7 @@
     class:selected
     title={channel.description}
     onclick={() => play(channel)}
+    style="--bg: url({channel.bg})"
 >
     <span>{channel.title}</span>
     {#if selected}{@html stateICO}{/if}
@@ -45,6 +46,7 @@
         padding: 0;
         position: relative;
         transition: opacity 250ms ease;
+        background: var(--bg) center/cover no-repeat;
 
         &::before {
             inset: 0;
@@ -54,6 +56,7 @@
             place-content: center;
             border-radius: inherit;
             background-color: var(--light);
+            opacity: 0;
         }
 
         span {
