@@ -38,7 +38,7 @@ const buildOptions = {
     loader: { '.svg': 'text' },
     plugins: [svelte(svelteOptions), log],
     inject: DEV ? ['./env/lr.js'] : [],
-    legalComments: "none",
+    legalComments: 'none',
     logLevel: 'info',
     metafile: !DEV,
     mainFields: ['svelte', 'module', 'main'],
@@ -56,7 +56,7 @@ if (DEV) {
     SPA && proxy().listen(8080);
 
     process.on('SIGTERM', ctx.dispose);
-    process.on("exit", ctx.dispose);
+    process.on('exit', ctx.dispose);
 } else {
     await meta(await build(buildOptions));
 }

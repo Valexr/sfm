@@ -22,19 +22,18 @@
     const cover = $derived(
         (selected && $played?.song?.albumArt) || channel?.image,
     );
-    const stateICO = $derived((!loaded && loader) || (!paused && equaliser));
+    const stateICO = $derived(!loaded ? loader : !paused ? equaliser : "");
 </script>
 
 <button
     id={channel.id}
     class:selected
     title={channel.description}
+    aria-roledescription={channel.title}
     onclick={() => play(channel)}
-    style="--bg: url({channel.bg})"
+    style="background-image: url({cover})"
 >
-    <span>{channel.title}</span>
     {#if selected}{@html stateICO}{/if}
-    <img loading="lazy" class="cover" src={cover} alt={channel.title} />
 </button>
 
 <style>
@@ -46,44 +45,7 @@
         padding: 0;
         position: relative;
         transition: opacity 250ms ease;
-        background: var(--bg) center/cover no-repeat;
-
-        &::before {
-            inset: 0;
-            content: attr(id);
-            overflow: hidden;
-            position: absolute;
-            place-content: center;
-            border-radius: inherit;
-            background-color: var(--light);
-            opacity: 0;
-        }
-
-        span {
-            place-content: center;
-            visibility: hidden;
-            position: absolute;
-            inset: 1rem;
-            z-index: 1;
-        }
-
-        :global(svg) {
-            position: relative;
-            z-index: 1;
-        }
-
-        img {
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            border-radius: inherit;
-
-            &.cover {
-                z-index: 0;
-            }
-        }
+        background: center/cover no-repeat;
 
         &:hover,
         &.selected {
@@ -101,10 +63,6 @@
             bottom: 100px;
             z-index: 1;
             top: 70px;
-
-            span {
-                top: auto;
-            }
         }
     }
 </style>

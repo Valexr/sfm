@@ -1,8 +1,8 @@
 <svg
     id="qualiser"
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="25%"
+    height="25%"
     viewBox="0 0 24 24"
     fill="var(--dark)"
 >
@@ -11,10 +11,6 @@
     <rect class="eq-bar eq-bar--3" x="16.3" y="4" width="3.7" height="11" />
 
     <style>
-        #qualiser {
-            width: 25%;
-            height: 25%;
-        }
         .eq-bar {
             animation-duration: 0.5s;
             animation-iteration-count: infinite;
