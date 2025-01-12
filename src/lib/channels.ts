@@ -17,11 +17,6 @@ function createChannels() {
 
             // if (!get().length) {
             const channels = await getJSON<ChannelType[]>(`assets/data/${data}.json`);
-            for (const channel of channels) {
-                channel.image = channel.image.replace(/\?.*/, '')
-                // await downloadImage(channel.bg);
-            }
-            console.log(channels)
             set(channels)
             // }
         },
