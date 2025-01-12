@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
-import { downloadImage, getJSON, match } from "./utils";
+import { getJSON, match } from "./utils";
 
 
 export const channels = createChannels();
@@ -15,10 +15,11 @@ function createChannels() {
         async load(data = 'soma') {
             console.log('channels', get());
 
-            // if (!get().length) {
-            const channels = await getJSON<ChannelType[]>(`assets/data/${data}.json`);
-            set(channels)
-            // }
+            if (!get().length) {
+                const URL = `assets/data/${data}.json`
+                const channels = await getJSON<ChannelType[]>(URL);
+                set(channels)
+            }
         },
         search(query: Record<keyof ChannelType, any>) {
             return get().filter((channel) => match(channel, query));

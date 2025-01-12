@@ -65,12 +65,12 @@
 </svelte:head>
 
 <header>
-    <!-- <Gh {repository} /> -->
-    <select bind:value={data}>
+    <Gh {repository} />
+    <!-- <select bind:value={data}>
         {#each ["soma", "record"] as value, i}
             <option>{value}</option>
         {/each}
-    </select>
+    </select> -->
     <h2>{$played?.id || name}</h2>
     <p>{$played?.song?.artist || ""}</p>
 </header>
