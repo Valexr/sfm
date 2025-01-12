@@ -106,9 +106,9 @@
         gap: 1rem;
         top: 0;
 
-        select {
+        /* select {
             font-size: inherit;
-        }
+        } */
     }
 
     main {
