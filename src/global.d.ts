@@ -10,7 +10,8 @@ interface ChannelType {
     dj: "Dion Watts Garcia",
     djmail: "dion@somafm.com",
     genre: "oldies",
-    image: string,
+    img: string,
+    bg: string
     // largeimage: "https://api.somafm.com/logos/256/7soul256.png",
     // xlimage: string,
     twitter: "",
@@ -21,7 +22,6 @@ interface ChannelType {
     lastPlaying: "Yvonne Fair And The James Brown Band - Tell Me Why",
     src: string,
     song: SongType,
-    bg: string
 }
 
 interface Playlist {

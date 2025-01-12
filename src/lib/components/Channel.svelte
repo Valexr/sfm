@@ -20,7 +20,7 @@
     const selected = $derived($played?.id === channel.id);
 
     const cover = $derived(
-        (selected && $played?.song?.albumArt) || channel?.image,
+        (selected && $played?.song?.albumArt) || channel?.bg,
     );
     const stateICO = $derived(!loaded ? loader : !paused ? equaliser : "");
 </script>
@@ -34,6 +34,9 @@
     style="background-image: url({cover})"
 >
     {#if selected}{@html stateICO}{/if}
+    {#if channel.img}
+        <img src={channel.img} alt={channel.title} loading="lazy" />
+    {/if}
 </button>
 
 <style>
@@ -46,6 +49,12 @@
         position: relative;
         transition: opacity 250ms ease;
         background: center/cover no-repeat;
+
+        img {
+            position: absolute;
+            width: 45%;
+            inset: 0;
+        }
 
         &:hover,
         &.selected {

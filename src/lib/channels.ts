@@ -15,11 +15,12 @@ function createChannels() {
         async load(data = 'soma') {
             console.log('channels', get());
 
-            if (!get().length) {
-                const URL = `assets/data/${data}.json`
-                const channels = await getJSON<ChannelType[]>(URL);
-                set(channels)
-            }
+            // if (!get().length) {
+            const URL = `assets/data/${data}.json`
+            const channels = await getJSON<ChannelType[]>(URL);
+            // console.log(channels.map(c => Object.assign(c, {bg: `assets/imgs/record/${c.id}.jpg`})))
+            set(channels)
+            // }
         },
         search(query: Record<keyof ChannelType, any>) {
             return get().filter((channel) => match(channel, query));
@@ -41,7 +42,6 @@ function createPlayed() {
     async function getSong(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
         const song = await setMeta(curentSong);
-        song.albumArt ??= channel.image;
 
         setMediaSession(song);
 

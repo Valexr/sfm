@@ -15,13 +15,13 @@
     let paused = $state(false);
     let loaded = $state(false);
     let interval = $state(0);
-    let quality = $state(3);
+    let quality = $state(2);
     let data = $state("soma");
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
-    const cover = $derived($played?.song?.albumArt || $played?.image);
+    const cover = $derived($played?.song?.albumArt || $played?.bg);
 
     async function play(channel: ChannelType, ms = 10000) {
         console.log("channel", channel);
