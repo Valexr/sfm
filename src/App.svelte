@@ -11,39 +11,28 @@
 <script lang="ts">
     let { name, repository }: { name: Name; repository: Repository } = $props();
 
-    let audio = $state<HTMLAudioElement>();
+    let audio = $state<HTMLAudioElement>({} as HTMLAudioElement);
     let paused = $state(false);
     let loaded = $state(false);
-    let interval = $state(0);
-    let quality = $state(2);
+
+    let quality = $state(3);
     let data = $state("soma");
+
+    const MS = 10000;
+    let interval = 0;
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
     const cover = $derived($played?.song?.albumArt || $played?.bg);
 
-    async function play(channel: ChannelType, ms = 10000) {
+    async function play(channel: ChannelType) {
         console.log("channel", channel);
 
-        if (interval) clearInterval(interval);
         if ($played?.id !== channel.id) {
             played.set(channel);
-            try {
-                await played.song(channel);
-                interval = setInterval(played.song, ms, channel);
-            } catch (error) {
-                console.error(error);
-            }
-        } else if (paused) {
-            audio?.play();
-            try {
-                interval = setInterval(played.song, ms, channel);
-            } catch (error) {
-                console.error(error);
-            }
         } else {
-            audio?.pause();
+            paused ? audio?.play() : audio?.pause();
         }
     }
 
@@ -57,6 +46,15 @@
 
         await play(channel);
     }
+
+    $effect(() => {
+        if (paused) clearInterval(interval);
+        else if (loaded) {
+            played.song().then(() => {
+                interval = setInterval(played.song, MS);
+            });
+        }
+    });
 </script>
 
 <svelte:head>

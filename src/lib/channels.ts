@@ -1,7 +1,8 @@
-import { writable } from "svelte/store";
+import { get, writable } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
 import { getJSON, match } from "./utils";
+import { getable } from "./utils/getable";
 
 
 export const channels = createChannels();
@@ -32,9 +33,13 @@ function createPlayed() {
 
     return {
         subscribe, set, update,
-        async song(channel: ChannelType) {
-            const song = await getSong(channel);
-            update(played => Object.assign(played, { song }))
+        async song() {
+            try {
+                const song = await getSong(get(played));
+                update(played => Object.assign(played, { song }))
+            } catch (e) {
+                console.error(e);
+            }
         },
     }
 
