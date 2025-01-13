@@ -2,6 +2,7 @@
     import { played } from "$lib/channels";
     import equaliser from "$svg/equaliser.svg";
     import loader from "$svg/loader.svg";
+    import player from "$svg/player.svg";
 </script>
 
 <script lang="ts">
@@ -22,7 +23,7 @@
     const cover = $derived(
         (selected && $played?.song?.albumArt) || channel?.bg,
     );
-    const stateICO = $derived(!loaded ? loader : !paused ? equaliser : "");
+    const stateICO = $derived(!loaded ? loader : !paused ? equaliser : player);
 </script>
 
 <button
