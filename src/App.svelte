@@ -29,6 +29,7 @@
     async function play(channel: ChannelType) {
         console.log("channel", channel);
 
+        clearInterval(interval);
         if ($played?.id !== channel.id) {
             played.set(channel);
         } else {
