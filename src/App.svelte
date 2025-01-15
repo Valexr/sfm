@@ -27,13 +27,14 @@
     const cover = $derived($played?.song?.albumArt || $played?.bg);
 
     async function play(channel: ChannelType) {
-        console.log("channel", channel);
+        clearInterval(interval);
 
         if ($played?.id !== channel.id) {
             played.set(channel);
         } else {
             paused ? audio?.play() : audio?.pause();
         }
+        console.log("played", $played);
     }
 
     async function skipChannel(e: { currentTarget: { id: string } }) {
@@ -52,10 +53,8 @@
     }
 
     async function onplay() {
-        if (loaded) {
-            await played.song();
-            interval = setInterval(played.song, MS);
-        }
+        await played.song();
+        interval = setInterval(played.song, MS);
     }
 </script>
 
