@@ -50,10 +50,12 @@
 
     $effect(() => {
         if (paused) clearInterval(interval);
-        else if (loaded) {
-            played.song().then(() => {
-                interval = setInterval(played.song, MS);
-            });
+        else {
+            if (loaded) {
+                played.song().then(() => {
+                    interval = setInterval(played.song, MS);
+                });
+            }
         }
     });
 </script>
