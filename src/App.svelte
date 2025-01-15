@@ -29,7 +29,6 @@
     async function play(channel: ChannelType) {
         console.log("channel", channel);
 
-        clearInterval(interval);
         if ($played?.id !== channel.id) {
             played.set(channel);
         } else {
@@ -48,16 +47,16 @@
         await play(channel);
     }
 
-    $effect(() => {
-        if (paused) clearInterval(interval);
-        else {
-            if (loaded) {
-                played.song().then(() => {
-                    interval = setInterval(played.song, MS);
-                });
-            }
+    function onpause() {
+        clearInterval(interval);
+    }
+
+    async function onplay() {
+        if (loaded) {
+            await played.song();
+            interval = setInterval(played.song, MS);
         }
-    });
+    }
 </script>
 
 <svelte:head>
@@ -93,6 +92,8 @@
             bind:paused
             bind:loaded
             bind:quality
+            {onpause}
+            {onplay}
             onclick={skipChannel}
         />
     {/if}

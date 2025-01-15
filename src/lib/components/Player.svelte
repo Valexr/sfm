@@ -1,6 +1,6 @@
 <script lang="ts" module>
     import { played } from "$lib/channels";
-    import type { MouseEventHandler } from "svelte/elements";
+    import type { EventHandler, MouseEventHandler } from "svelte/elements";
 </script>
 
 <script lang="ts">
@@ -10,12 +10,16 @@
         loaded = $bindable(false),
         quality = $bindable(3),
         onclick,
+        onpause,
+        onplay,
     }: {
         audio: HTMLAudioElement;
         quality: number;
         paused: boolean;
         loaded: boolean;
         onclick: MouseEventHandler<HTMLButtonElement> | null | undefined;
+        onpause: EventHandler<Event, HTMLAudioElement> | null | undefined;
+        onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
     const term = $derived(
@@ -31,6 +35,8 @@
     src={$played.playlists[quality].src}
     onloadstart={() => (loaded = false)}
     onloadeddata={() => (loaded = true)}
+    {onpause}
+    {onplay}
 >
 </audio>
 <p>{term}</p>
