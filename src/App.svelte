@@ -18,26 +18,25 @@
     let quality = $state(3);
     let data = $state("soma");
 
-    const MS = 10000;
-    let interval = 0;
+    let interval = $state(0);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
     const cover = $derived($played?.song?.albumArt || $played?.bg);
 
-    async function play(channel: ChannelType) {
-        clearInterval(interval);
-
-        if ($played?.id !== channel.id) {
-            played.set(channel);
-        } else {
+    function play(channel: ChannelType) {
+        if (channel.id === $played?.id) {
             paused ? audio?.play() : audio?.pause();
+        } else {
+            played.set(channel);
+            played.song();
         }
+
         console.log("played", $played);
     }
 
-    async function skipChannel(e: { currentTarget: { id: string } }) {
+    function skip(e: { currentTarget: { id: string } }) {
         const { id } = e.currentTarget;
         const playedINDEX = $channels.findIndex((c) => c.id === $played?.id);
         const INDEX = playedINDEX + Number(id);
@@ -45,16 +44,16 @@
         const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
         const channel = $channels[channelINDEX];
 
-        await play(channel);
+        play(channel);
     }
 
     function onpause() {
         clearInterval(interval);
     }
 
-    async function onplay() {
-        await played.song();
-        interval = setInterval(played.song, MS);
+    function onplay() {
+        clearInterval(interval);
+        interval = setInterval(played.song, 10000);
     }
 </script>
 
@@ -93,7 +92,7 @@
             bind:quality
             {onpause}
             {onplay}
-            onclick={skipChannel}
+            onclick={skip}
         />
     {/if}
 </footer>

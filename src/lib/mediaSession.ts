@@ -12,7 +12,7 @@ export function setMediaSession(song: SongType) {
         artist: song.artist,
         album: song.album,
         artwork: sizes.map((size) => ({
-            src: song.albumArt?.replace("500x500bb", size + "bb") || song.albumArt,
+            src: song.albumArt?.replace("500x500bb", size + "bb") || '',
             sizes: size,
             type: "image/png",
         })),
