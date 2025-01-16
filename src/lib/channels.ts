@@ -1,4 +1,4 @@
-import { get, writable } from "svelte/store";
+import { get, writable, readable } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
 import { getJSON, match } from "./utils";
@@ -7,13 +7,18 @@ import { getJSON, match } from "./utils";
 export const channels = createChannels();
 export const played = createPlayed()
 
+export const hash = readable('', (set) => {
+    onhashchange = () => set(location.hash.slice(1))
+    set(location.hash.slice(1))
+})
+
 function createChannels() {
     const { subscribe, set, update, get } = cacheable<ChannelType[]>('somafmChannels', [], true);
 
     return {
         subscribe, set, update, get,
-        async load(data = 'soma') {
-            const URL = `assets/data/${data}.json`
+        async load(hash = 'soma') {
+            const URL = `assets/data/${hash || 'soma'}.json`
             const channels = await getJSON<ChannelType[]>(URL);
             console.log('channels', get());
             set(channels)

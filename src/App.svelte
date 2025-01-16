@@ -3,7 +3,7 @@
     import Channel from "$lib/components/Channel.svelte";
     import Player from "$lib/components/Player.svelte";
 
-    import { channels, played } from "$lib/channels";
+    import { channels, played, hash } from "$lib/channels";
 
     import type { Name, Repository } from "$types";
 </script>
@@ -14,7 +14,7 @@
     let audio = $state<HTMLAudioElement>({} as HTMLAudioElement);
     let paused = $state(false);
     let loaded = $state(false);
-    let quality = $state(3);
+    let quality = $state(2);
 
     let interval = 0;
 
@@ -53,6 +53,8 @@
         clearInterval(interval);
         interval = setInterval(played.song, 10000);
     }
+
+    $effect(() => console.log($hash));
 </script>
 
 <svelte:head>
@@ -67,7 +69,7 @@
 </header>
 
 <main>
-    {#await channels.load()}
+    {#await channels.load($hash)}
         loading...
     {:then}
         {#each $channels as channel (channel.id)}
