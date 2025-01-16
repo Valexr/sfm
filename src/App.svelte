@@ -14,11 +14,9 @@
     let audio = $state<HTMLAudioElement>({} as HTMLAudioElement);
     let paused = $state(false);
     let loaded = $state(false);
-
     let quality = $state(3);
-    let data = $state("soma");
 
-    let interval = $state(0);
+    let interval = 0;
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -36,7 +34,7 @@
         console.log("played", $played);
     }
 
-    function skip(e: { currentTarget: { id: string } }) {
+    function onclick(e: { currentTarget: { id: string } }) {
         const { id } = e.currentTarget;
         const playedINDEX = $channels.findIndex((c) => c.id === $played?.id);
         const INDEX = playedINDEX + Number(id);
@@ -64,17 +62,12 @@
 
 <header>
     <Gh {repository} />
-    <!-- <select bind:value={data}>
-        {#each ["soma", "record"] as value, i}
-            <option>{value}</option>
-        {/each}
-    </select> -->
     <h2>{$played?.id || name}</h2>
     <p>{$played?.song?.artist || ""}</p>
 </header>
 
 <main>
-    {#await channels.load(data)}
+    {#await channels.load()}
         loading...
     {:then}
         {#each $channels as channel (channel.id)}
@@ -90,9 +83,9 @@
             bind:paused
             bind:loaded
             bind:quality
+            {onclick}
             {onpause}
             {onplay}
-            onclick={skip}
         />
     {/if}
 </footer>
@@ -105,10 +98,6 @@
         z-index: 1;
         gap: 1rem;
         top: 0;
-
-        /* select {
-            font-size: inherit;
-        } */
     }
 
     main {
