@@ -53,8 +53,6 @@
         clearInterval(interval);
         interval = setInterval(played.song, 10000);
     }
-
-    $effect(() => console.log($hash));
 </script>
 
 <svelte:head>

@@ -41,7 +41,7 @@ const buildOptions = {
     legalComments: 'none',
     logLevel: 'info',
     metafile: !DEV,
-    mainFields: ['svelte', 'module', 'main'],
+    // mainFields: ['svelte', 'module', 'main'],
     define: { 'globalThis.process.env.NODE_ENV': JSON.stringify(DEV ? 'development' : 'production') },
 };
 

@@ -20,7 +20,7 @@ function createChannels() {
         async load(hash = 'soma') {
             const URL = `assets/data/${hash || 'soma'}.json`
             const channels = await getJSON<ChannelType[]>(URL);
-            console.log('channels', get());
+            console.log('channels', channels);
             set(channels)
         },
         search(query: Record<keyof ChannelType, any>) {
