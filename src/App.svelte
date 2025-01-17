@@ -14,7 +14,7 @@
     let audio = $state<HTMLAudioElement>({} as HTMLAudioElement);
     let paused = $state(false);
     let loaded = $state(false);
-    let quality = $state(2);
+    let quality = $state(1);
 
     let interval = 0;
 
