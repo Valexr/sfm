@@ -9,11 +9,11 @@ interface ChannelType {
     description: "Vintage soul tracks from the original 45 RPM vinyl.",
     img: string,
     bg: string
-    playlists: Array<Playlist>,
+    playlists: Array<PlaylistType>,
     song: SongType,
 }
 
-interface Playlist {
+interface PlaylisType {
     url: string,
     src: string
     title: string
