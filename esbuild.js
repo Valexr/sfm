@@ -41,12 +41,7 @@ const buildOptions = {
     legalComments: 'none',
     logLevel: 'info',
     metafile: !DEV,
-    mainFields: ['svelte', 'module', 'main'],
-    define: { 'globalThis.process.env.NODE_ENV': JSON.stringify(DEV ? 'development' : 'production') },
-    // external: [
-    //     'node_modules/.pnpm/svelte@5.18.0/node_modules/svelte/src/internal/client/errors.js',
-    //     'node_modules/.pnpm/svelte@5.18.0/node_modules/svelte/src/internal/client/warnings.js'
-    // ]
+    conditions: ['development', 'production']
 };
 
 await rm(['public/build']);
