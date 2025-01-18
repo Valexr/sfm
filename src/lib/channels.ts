@@ -42,6 +42,15 @@ function createPlayed() {
                 console.error(e);
             }
         },
+        skip(direction: number) {
+            const playedINDEX = channels.get().findIndex((c) => c.id === get(played).id);
+            const INDEX = playedINDEX + direction;
+            const { length } = channels.get();
+            const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
+            const channel = channels.get()[channelINDEX];
+            this.set(channel);
+            this.song()
+        },
     }
 
     async function getSong(channel: ChannelType) {

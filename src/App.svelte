@@ -36,13 +36,7 @@
 
     function onclick(e: { currentTarget: { id: string } }) {
         const { id } = e.currentTarget;
-        const playedINDEX = $channels.findIndex((c) => c.id === $played?.id);
-        const INDEX = playedINDEX + Number(id);
-        const { length } = $channels;
-        const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
-        const channel = $channels[channelINDEX];
-
-        play(channel);
+        played.skip(Number(id));
     }
 
     function onpause() {

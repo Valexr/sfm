@@ -1,3 +1,5 @@
+import { played } from "./channels";
+
 export function setMediaSession(song: SongType) {
     const sizes = [
         "96x96",
@@ -17,20 +19,7 @@ export function setMediaSession(song: SongType) {
             type: "image/png",
         })),
     });
-    // const mediaSessionActions = [
-    //     "play",
-    //     "pause",
-    //     "stop",
-    //     "previoustrack",
-    //     "nexttrack",
-    //     "seekbackward",
-    //     "seekforward",
-    //     "seekto",
-    //     "skipad",
-    // ];
-    // mediaSessionActions.forEach((action: MediaSessionAction) => {
-    //     navigator.mediaSession.setActionHandler(action, () => {
-    //         /* Code excerpted. */
-    //     });
-    // });
+
+    navigator.mediaSession.setActionHandler("previoustrack", () => played.skip(-1))
+    navigator.mediaSession.setActionHandler("nexttrack", () => played.skip(1))
 }
