@@ -30,8 +30,6 @@
             played.set(channel);
             played.song();
         }
-
-        console.log("played", $played);
     }
 
     function onclick(e: { currentTarget: { id: string } }) {

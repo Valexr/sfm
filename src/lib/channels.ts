@@ -20,7 +20,6 @@ function createChannels() {
         async load(hash = 'soma') {
             const URL = `assets/data/${hash || 'soma'}.json`
             const channels = await getJSON<ChannelType[]>(URL);
-            console.log('channels', channels);
             set(channels)
         },
         search(query: Record<keyof ChannelType, any>) {
@@ -64,7 +63,6 @@ function createPlayed() {
         async function getSongs(channelID: string): Promise<Array<SongType>> {
             const res = await fetch(` https://somafm.com/songs/${channelID}.json`);
             const { songs } = await res.json();
-            console.log("songs", songs);
             return songs;
         }
 
