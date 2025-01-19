@@ -84,7 +84,6 @@ function createPlayed() {
                         "500x500bb.png",
                     );
                 }
-                console.log("song", song);
             } catch (e) {
                 console.error(e);
                 // throw e;
