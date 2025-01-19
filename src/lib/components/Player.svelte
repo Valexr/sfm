@@ -32,6 +32,8 @@
     autoplay
     bind:paused
     bind:this={audio}
+    preload="metadata"
+    crossorigin="anonymous"
     src={$played.playlists[quality].src}
     onloadstart={() => (loaded = false)}
     onloadeddata={() => (loaded = true)}
