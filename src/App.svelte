@@ -71,7 +71,7 @@
 
 <footer>
     {#if $played}
-        <!-- <Visualiser bind:audio bind:quality /> -->
+        <!-- <Visualiser {audio} {quality} /> -->
         <Player
             bind:audio
             bind:paused

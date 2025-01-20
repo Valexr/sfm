@@ -3,73 +3,64 @@
 </script>
 
 <script lang="ts">
-    let { audio = $bindable<HTMLAudioElement>(), quality } = $props();
+    let { audio, quality } = $props();
 
-    function visualiser(canvas: HTMLCanvasElement) {
-        const audio = new Audio($played.playlists[quality].src);
+    function visualiser(
+        canvas: HTMLCanvasElement,
+        audio: HTMLAudioElement,
+        drawer = 0,
+    ) {
         const canvasCtx = canvas.getContext("2d");
-        const audioContext = new AudioContext();
-        const audioGain = audioContext.createGain();
-        // audio.play();
 
-        const source = audioContext.createMediaElementSource(audio);
-        const analyser = audioContext.createAnalyser();
+        function update(audio: HTMLAudioElement) {
+            const audioContext = new AudioContext();
+            const analyser = audioContext.createAnalyser();
+            analyser.connect(audioContext.destination);
+            // analyser.smoothingTimeConstant = 0.75;
+            analyser.fftSize = 128; //circleSegments * 32;
+            const bufferLength = analyser.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+            const audioSource = audioContext.createMediaElementSource(audio);
+            audioSource.connect(analyser);
 
-        // Connect the source node and analyser to the audio destination
-        source.connect(analyser);
-        source.connect(audioGain);
-        analyser.connect(audioContext.destination);
-        analyser.fftSize = 128;
-        const bufferLength = analyser.frequencyBinCount;
+            // analyser.getByteTimeDomainData(dataArray);
+            console.log(audio, bufferLength, canvas.width / bufferLength);
 
-        let freq;
+            audio.onplay = () => draw();
+            audio.onpause = () => cancelAnimationFrame(drawer);
 
-        audio.addEventListener("canplay", function (e) {
-            console.log("SomaFM", "got canplay");
-            freq = new Uint8Array(analyser.frequencyBinCount);
-            analyser.getByteTimeDomainData(freq);
-            // analyser.getByteFrequencyData(freq);
-            console.log(freq);
-            audio.play();
-            draw();
-        });
+            function draw() {
+                drawer = requestAnimationFrame(draw);
+                analyser.getByteFrequencyData(dataArray);
 
-        // const dataArray = new Uint8Array(bufferLength);
-        // // analyser.getByteTimeDomainData(dataArray);
-        // console.log(audio, dataArray);
-        // Start playing the audio
+                canvasCtx?.clearRect(0, 0, canvas.width, canvas.height);
 
-        function draw() {
-            const drawVisual = requestAnimationFrame(draw);
-            analyser.getByteFrequencyData(freq);
+                const barWidth = Math.trunc(canvas.width / bufferLength);
+                let barHeight;
+                let x = 0;
 
-            canvasCtx?.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < bufferLength; i++) {
+                    barHeight = dataArray[i];
 
-            const barWidth = (canvas.width / bufferLength) * 2.5;
-            let barHeight;
-            let x = 0;
+                    canvasCtx.fillStyle = "white";
+                    // "rgb(" + (barHeight + 100) + ",50,50)";
+                    canvasCtx?.fillRect(
+                        x,
+                        canvas.height - barHeight / 2,
+                        barWidth,
+                        barHeight / 2,
+                    );
 
-            for (let i = 0; i < bufferLength; i++) {
-                barHeight = freq[i];
-                console.log(barHeight);
-
-                canvasCtx.fillStyle = "rgb(" + (barHeight + 100) + ",50,50)";
-                canvasCtx?.fillRect(
-                    x,
-                    canvas.height - barHeight / 2,
-                    barWidth,
-                    barHeight / 2,
-                );
-
-                x += barWidth + 1;
+                    x += barWidth;
+                }
             }
         }
 
-        // Kick-off the drawing
+        return { update, destroy: () => cancelAnimationFrame(drawer) };
     }
 </script>
 
-<canvas id="visualizer" use:visualiser></canvas>
+<canvas use:visualiser={audio}></canvas>
 
 <style>
     canvas {
