@@ -1,9 +1,5 @@
-<script lang="ts" module>
-    import { played } from "$lib/channels";
-</script>
-
 <script lang="ts">
-    let { audio, quality } = $props();
+    let { audio } = $props();
 
     function visualiser(
         canvas: HTMLCanvasElement,

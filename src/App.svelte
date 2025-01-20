@@ -2,7 +2,6 @@
     import Gh from "$lib/components/Gh.svelte";
     import Channel from "$lib/components/Channel.svelte";
     import Player from "$lib/components/Player.svelte";
-    // import Visualiser from "$lib/components/Visualiser.svelte";
 
     import { channels, played, hash } from "$lib/channels";
 
@@ -71,7 +70,6 @@
 
 <footer>
     {#if $played}
-        <!-- <Visualiser {audio} {quality} /> -->
         <Player
             bind:audio
             bind:paused
