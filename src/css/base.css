@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
-    font-family: system-ui;
+    font-family: monospace;
     text-align: center;
     overflow-x: hidden;
     background-color: var(--light);
@@ -34,6 +34,7 @@ button {
     border: 0;
     border-radius: 0.25rem;
     font-size: inherit;
+    font-family: inherit;
     user-select: none;
     -webkit-user-select: none;
     cursor: pointer;
@@ -57,4 +58,9 @@ a {
 
 svg {
     max-height: 100%;
+}
+
+select {
+    font-size: inherit;
+    font-family: inherit;
 }
