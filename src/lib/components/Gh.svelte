@@ -1,6 +1,5 @@
 <script lang="ts" module>
     import gh from "$svg/gh.svg";
-    import type { Repository } from "$types";
 </script>
 
 <script lang="ts">

@@ -3,10 +3,16 @@ declare module '*.svg' {
     export default content;
 }
 
+type Name = string
+type Repository = {
+    type: string
+    url: string
+}
+
 interface ChannelType {
-    id: "7soul",
-    title: "Seven Inch Soul",
-    description: "Vintage soul tracks from the original 45 RPM vinyl.",
+    id: string,
+    title: string,
+    description: string,
     img: string,
     bg: string
     playlists: Array<PlaylistType>,

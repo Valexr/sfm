@@ -9,9 +9,6 @@
             "$svg/*": [
                 "src/svg/*"
             ],
-            "$types": [
-                "src/types.ts"
-            ],
         },
         "strict": true,
         "sourceMap": true,

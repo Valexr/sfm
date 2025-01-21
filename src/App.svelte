@@ -4,19 +4,15 @@
     import Player from "$lib/components/Player.svelte";
 
     import { channels, played, hash } from "$lib/channels";
-
-    import type { Name, Repository } from "$types";
 </script>
 
 <script lang="ts">
     let { name, repository }: { name: Name; repository: Repository } = $props();
 
-    let audio = $state<HTMLAudioElement>({} as HTMLAudioElement);
     let paused = $state(false);
     let loaded = $state(false);
     let quality = $state(1);
-
-    let interval = 0;
+    let interval = $state(0);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -25,16 +21,11 @@
 
     function play(channel: ChannelType) {
         if (channel.id === $played?.id) {
-            paused ? audio?.play() : audio?.pause();
+            paused = !paused;
         } else {
             played.set(channel);
             played.song();
         }
-    }
-
-    function onclick(e: { currentTarget: { id: string } }) {
-        const { id } = e.currentTarget;
-        played.skip(Number(id));
     }
 
     function onpause() {
@@ -70,15 +61,7 @@
 
 <footer>
     {#if $played}
-        <Player
-            bind:audio
-            bind:paused
-            bind:loaded
-            bind:quality
-            {onclick}
-            {onpause}
-            {onplay}
-        />
+        <Player bind:paused bind:loaded bind:quality {onpause} {onplay} />
     {/if}
 </footer>
 
