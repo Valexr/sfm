@@ -7,7 +7,7 @@ import { getJSON, match } from "./utils";
 export const channels = createChannels();
 export const played = createPlayed()
 
-export const hash = readable('', (set) => {
+export const station = readable('', (set) => {
     onhashchange = () => set(location.hash.slice(1))
     set(location.hash.slice(1))
 })

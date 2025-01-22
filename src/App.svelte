@@ -1,9 +1,9 @@
 <script lang="ts" module>
     import Gh from "$lib/components/Gh.svelte";
-    import Channel from "$lib/components/Channel.svelte";
     import Player from "$lib/components/Player.svelte";
+    import Channel from "$lib/components/Channel.svelte";
 
-    import { channels, played, hash } from "$lib/channels";
+    import { station, channels, played } from "$lib/channels";
 </script>
 
 <script lang="ts">
@@ -50,7 +50,7 @@
 </header>
 
 <main>
-    {#await channels.load($hash)}
+    {#await channels.load($station)}
         loading...
     {:then}
         {#each $channels as channel (channel.id)}
