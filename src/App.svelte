@@ -11,7 +11,7 @@
 
     let paused = $state(false);
     let loaded = $state(false);
-    let quality = $state(1);
+    let quality = $state(3);
     let interval = $state(0);
 
     const term = $derived(

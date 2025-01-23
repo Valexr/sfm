@@ -34,3 +34,28 @@ export async function getJSON<T>(url: string): Promise<T> {
     const res = await fetch(url);
     return await res.json();
 }
+
+export function imgColor(src: string) {
+    const context = document.createElement("canvas").getContext("2d");
+    const img = new Image();
+    Object.assign(img, { src, crossOrigin: '' });
+
+    console.log(img)
+
+    if (context && img.complete) {
+        context.imageSmoothingEnabled = true;
+        context.drawImage(img, 0, 0, 1, 1);
+        const i = context.getImageData(0, 0, 1, 1).data;
+
+        const rgba = `rgba(${i[0]},${i[1]},${i[2]},${i[3]})`;
+        // OR
+        const HEX =
+            "#" +
+            ((1 << 24) + (i[0] << 16) + (i[1] << 8) + i[2])
+                .toString(16)
+                .slice(1);
+        console.log(rgba, HEX);
+
+        document.body.style.backgroundColor = HEX;
+    }
+}
