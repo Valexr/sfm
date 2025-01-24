@@ -1,7 +1,7 @@
 import { get, writable, readable } from "svelte/store";
 import { cacheable } from "./utils/cacheable";
 import { setMediaSession } from "./mediaSession";
-import { getJSON, imgColor, match } from "./utils";
+import { getJSON, match } from "./utils";
 
 
 export const channels = createChannels();
@@ -55,7 +55,6 @@ function createPlayed() {
     async function getSong(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
         const song = await setMeta(curentSong);
-        // imgColor(song.albumArt || channel.bg)
         setMediaSession(song);
 
         return song;

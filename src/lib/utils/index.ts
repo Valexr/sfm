@@ -56,6 +56,6 @@ export function imgColor(src: string) {
                 .slice(1);
         console.log(rgba, HEX);
 
-        document.body.style.backgroundColor = HEX;
+        // document.body.style.backgroundColor = HEX;
     }
 }
