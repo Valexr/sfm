@@ -55,6 +55,7 @@ function createPlayed() {
     async function getSong(channel: ChannelType) {
         const [curentSong] = await getSongs(channel.id);
         const song = await setMeta(curentSong);
+
         setMediaSession(song);
 
         return song;

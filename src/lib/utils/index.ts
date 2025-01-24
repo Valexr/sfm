@@ -59,3 +59,41 @@ export function imgColor(src: string) {
         // document.body.style.backgroundColor = HEX;
     }
 }
+
+
+export function imageBrightness(src: string, callback: (brightness: number) => void) {
+    const img = document.createElement("img");
+    img.src = src;
+    img.style.display = "none";
+    img.crossOrigin = "anonymous"
+
+    let colorSum = 0;
+
+    img.onload = function () {
+        const canvas = document.createElement("canvas");
+
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+            ctx.drawImage(img, 0, 0);
+
+            const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+            let r, g, b, avg;
+
+            for (let x = 0; x < data.length; x += 4) {
+                r = data[x];
+                g = data[x + 1];
+                b = data[x + 2];
+
+                avg = Math.floor((r + g + b) / 3);
+                colorSum += avg;
+            }
+
+            const brightness = Math.floor(colorSum / (width * height));
+            callback(brightness);
+        }
+    }
+}
