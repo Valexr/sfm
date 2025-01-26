@@ -5,9 +5,9 @@
 
 <script lang="ts">
     let {
-        quality = $bindable(3),
         paused = $bindable(false),
         loaded = $bindable(false),
+        quality = $bindable(3),
         onpause,
         onplay,
     }: {
