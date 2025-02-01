@@ -18,8 +18,13 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
+    let streamID = $state(1);
+
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
+    );
+    const stream = $derived(
+        $played?.playlists[quality].src.replace(/ice\d/, `ice${streamID}`),
     );
 
     function onclick(e: { currentTarget: HTMLButtonElement }) {
@@ -34,17 +39,34 @@
     function onloadeddata() {
         loaded = true;
     }
+
+    function onerror(e: Event) {
+        console.error(e);
+        const [_, id] = stream.match(/ice(\d)/);
+        const random = () => Math.floor(Math.random() * 5) + 1;
+
+        streamID = random();
+        // const i = +id + 1;
+        // const indx = ((i % n) + n) % n;
+        if (Number(id) === streamID) {
+            streamID = random();
+        }
+
+        console.log(id, streamID, stream);
+    }
 </script>
 
 <audio
     hidden
     autoplay
+    controls
     bind:paused
-    preload="metadata"
+    preload="auto"
     crossorigin="anonymous"
-    src={$played?.playlists[quality].src}
+    src={stream}
     {onloadstart}
     {onloadeddata}
+    {onerror}
     {onpause}
     {onplay}
 >

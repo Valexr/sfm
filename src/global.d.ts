@@ -20,7 +20,7 @@ interface ChannelType {
 }
 
 interface PlaylisType {
-    url: string,
+    pls: string,
     src: string
     title: string
 }
@@ -30,8 +30,8 @@ interface SongType {
     albumArt: string;
     artist: string;
     title: string;
-    date: string
-    url: string;
+    date: string;
     time: string
+    url: string;
 }
 
