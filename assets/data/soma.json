@@ -6,22 +6,22 @@
         "bg": "assets/imgs/soma/7soul.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/7soul.pls",
+                "pls": "https://api.somafm.com/7soul.pls",
                 "src": "https://ice1.somafm.com/7soul-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/7soul130.pls",
+                "pls": "https://api.somafm.com/7soul130.pls",
                 "src": "https://ice1.somafm.com/7soul-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/7soul64.pls",
+                "pls": "https://api.somafm.com/7soul64.pls",
                 "src": "https://ice1.somafm.com/7soul-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/7soul32.pls",
+                "pls": "https://api.somafm.com/7soul32.pls",
                 "src": "https://ice1.somafm.com/7soul-32-aac",
                 "title": "32-aac"
             }
@@ -34,22 +34,22 @@
         "bg": "assets/imgs/soma/beatblender.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/beatblender.pls",
+                "pls": "https://api.somafm.com/beatblender.pls",
                 "src": "https://ice1.somafm.com/beatblender-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/beatblender130.pls",
+                "pls": "https://api.somafm.com/beatblender130.pls",
                 "src": "https://ice1.somafm.com/beatblender-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/beatblender64.pls",
+                "pls": "https://api.somafm.com/beatblender64.pls",
                 "src": "https://ice1.somafm.com/beatblender-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/beatblender32.pls",
+                "pls": "https://api.somafm.com/beatblender32.pls",
                 "src": "https://ice1.somafm.com/beatblender-32-aac",
                 "title": "32-aac"
             }
@@ -62,22 +62,22 @@
         "bg": "assets/imgs/soma/bootliquor.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/bootliquor320.pls",
+                "pls": "https://api.somafm.com/bootliquor320.pls",
                 "src": "https://ice1.somafm.com/bootliquor-320-mp3",
                 "title": "320-mp3"
             },
             {
-                "url": "https://api.somafm.com/bootliquor130.pls",
+                "pls": "https://api.somafm.com/bootliquor130.pls",
                 "src": "https://ice1.somafm.com/bootliquor-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/bootliquor64.pls",
+                "pls": "https://api.somafm.com/bootliquor64.pls",
                 "src": "https://ice1.somafm.com/bootliquor-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/bootliquor32.pls",
+                "pls": "https://api.somafm.com/bootliquor32.pls",
                 "src": "https://ice1.somafm.com/bootliquor-32-aac",
                 "title": "32-aac"
             }
@@ -90,22 +90,22 @@
         "bg": "assets/imgs/soma/brfm.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/brfm.pls",
+                "pls": "https://api.somafm.com/brfm.pls",
                 "src": "https://ice1.somafm.com/brfm-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/brfm130.pls",
+                "pls": "https://api.somafm.com/brfm130.pls",
                 "src": "https://ice1.somafm.com/brfm-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/brfm64.pls",
+                "pls": "https://api.somafm.com/brfm64.pls",
                 "src": "https://ice1.somafm.com/brfm-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/brfm32.pls",
+                "pls": "https://api.somafm.com/brfm32.pls",
                 "src": "https://ice1.somafm.com/brfm-32-aac",
                 "title": "32-aac"
             }
@@ -118,22 +118,22 @@
         "bg": "assets/imgs/soma/christmas.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/christmas256.pls",
+                "pls": "https://api.somafm.com/christmas256.pls",
                 "src": "https://ice1.somafm.com/christmas-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/christmas130.pls",
+                "pls": "https://api.somafm.com/christmas130.pls",
                 "src": "https://ice1.somafm.com/christmas-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/christmas64.pls",
+                "pls": "https://api.somafm.com/christmas64.pls",
                 "src": "https://ice1.somafm.com/christmas-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/christmas32.pls",
+                "pls": "https://api.somafm.com/christmas32.pls",
                 "src": "https://ice1.somafm.com/christmas-32-aac",
                 "title": "32-aac"
             }
@@ -146,22 +146,22 @@
         "bg": "assets/imgs/soma/cliqhop.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/cliqhop256.pls",
+                "pls": "https://api.somafm.com/cliqhop256.pls",
                 "src": "https://ice1.somafm.com/cliqhop-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/cliqhop130.pls",
+                "pls": "https://api.somafm.com/cliqhop130.pls",
                 "src": "https://ice1.somafm.com/cliqhop-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/cliqhop64.pls",
+                "pls": "https://api.somafm.com/cliqhop64.pls",
                 "src": "https://ice1.somafm.com/cliqhop-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/cliqhop32.pls",
+                "pls": "https://api.somafm.com/cliqhop32.pls",
                 "src": "https://ice1.somafm.com/cliqhop-32-aac",
                 "title": "32-aac"
             }
@@ -174,22 +174,22 @@
         "bg": "assets/imgs/soma/covers.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/covers.pls",
+                "pls": "https://api.somafm.com/covers.pls",
                 "src": "https://ice1.somafm.com/covers-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/covers130.pls",
+                "pls": "https://api.somafm.com/covers130.pls",
                 "src": "https://ice1.somafm.com/covers-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/covers64.pls",
+                "pls": "https://api.somafm.com/covers64.pls",
                 "src": "https://ice1.somafm.com/covers-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/covers32.pls",
+                "pls": "https://api.somafm.com/covers32.pls",
                 "src": "https://ice1.somafm.com/covers-32-aac",
                 "title": "32-aac"
             }
@@ -202,22 +202,22 @@
         "bg": "assets/imgs/soma/deepspaceone.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/deepspaceone.pls",
+                "pls": "https://api.somafm.com/deepspaceone.pls",
                 "src": "https://ice1.somafm.com/deepspaceone-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/deepspaceone130.pls",
+                "pls": "https://api.somafm.com/deepspaceone130.pls",
                 "src": "https://ice1.somafm.com/deepspaceone-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/deepspaceone64.pls",
+                "pls": "https://api.somafm.com/deepspaceone64.pls",
                 "src": "https://ice1.somafm.com/deepspaceone-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/deepspaceone32.pls",
+                "pls": "https://api.somafm.com/deepspaceone32.pls",
                 "src": "https://ice1.somafm.com/deepspaceone-32-aac",
                 "title": "32-aac"
             }
@@ -230,22 +230,22 @@
         "bg": "assets/imgs/soma/defcon.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/defcon256.pls",
+                "pls": "https://api.somafm.com/defcon256.pls",
                 "src": "https://ice1.somafm.com/defcon-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/defcon130.pls",
+                "pls": "https://api.somafm.com/defcon130.pls",
                 "src": "https://ice1.somafm.com/defcon-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/defcon64.pls",
+                "pls": "https://api.somafm.com/defcon64.pls",
                 "src": "https://ice1.somafm.com/defcon-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/defcon32.pls",
+                "pls": "https://api.somafm.com/defcon32.pls",
                 "src": "https://ice1.somafm.com/defcon-32-aac",
                 "title": "32-aac"
             }
@@ -258,22 +258,22 @@
         "bg": "assets/imgs/soma/digitalis.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/digitalis256.pls",
+                "pls": "https://api.somafm.com/digitalis256.pls",
                 "src": "https://ice1.somafm.com/digitalis-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/digitalis130.pls",
+                "pls": "https://api.somafm.com/digitalis130.pls",
                 "src": "https://ice1.somafm.com/digitalis-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/digitalis64.pls",
+                "pls": "https://api.somafm.com/digitalis64.pls",
                 "src": "https://ice1.somafm.com/digitalis-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/digitalis32.pls",
+                "pls": "https://api.somafm.com/digitalis32.pls",
                 "src": "https://ice1.somafm.com/digitalis-32-aac",
                 "title": "32-aac"
             }
@@ -286,22 +286,22 @@
         "bg": "assets/imgs/soma/doomed.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/doomed256.pls",
+                "pls": "https://api.somafm.com/doomed256.pls",
                 "src": "https://ice1.somafm.com/doomed-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/doomed130.pls",
+                "pls": "https://api.somafm.com/doomed130.pls",
                 "src": "https://ice1.somafm.com/doomed-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/doomed64.pls",
+                "pls": "https://api.somafm.com/doomed64.pls",
                 "src": "https://ice1.somafm.com/doomed-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/doomed32.pls",
+                "pls": "https://api.somafm.com/doomed32.pls",
                 "src": "https://ice1.somafm.com/doomed-32-aac",
                 "title": "32-aac"
             }
@@ -314,22 +314,22 @@
         "bg": "assets/imgs/soma/dronezone.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/dronezone256.pls",
+                "pls": "https://api.somafm.com/dronezone256.pls",
                 "src": "https://ice1.somafm.com/dronezone-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/dronezone130.pls",
+                "pls": "https://api.somafm.com/dronezone130.pls",
                 "src": "https://ice1.somafm.com/dronezone-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/dronezone64.pls",
+                "pls": "https://api.somafm.com/dronezone64.pls",
                 "src": "https://ice1.somafm.com/dronezone-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/dronezone32.pls",
+                "pls": "https://api.somafm.com/dronezone32.pls",
                 "src": "https://ice1.somafm.com/dronezone-32-aac",
                 "title": "32-aac"
             }
@@ -342,22 +342,22 @@
         "bg": "assets/imgs/soma/dubstep.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/dubstep256.pls",
+                "pls": "https://api.somafm.com/dubstep256.pls",
                 "src": "https://ice1.somafm.com/dubstep-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/dubstep130.pls",
+                "pls": "https://api.somafm.com/dubstep130.pls",
                 "src": "https://ice1.somafm.com/dubstep-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/dubstep64.pls",
+                "pls": "https://api.somafm.com/dubstep64.pls",
                 "src": "https://ice1.somafm.com/dubstep-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/dubstep32.pls",
+                "pls": "https://api.somafm.com/dubstep32.pls",
                 "src": "https://ice1.somafm.com/dubstep-32-aac",
                 "title": "32-aac"
             }
@@ -370,22 +370,22 @@
         "bg": "assets/imgs/soma/fluid.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/fluid.pls",
+                "pls": "https://api.somafm.com/fluid.pls",
                 "src": "https://ice1.somafm.com/fluid-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/fluid130.pls",
+                "pls": "https://api.somafm.com/fluid130.pls",
                 "src": "https://ice1.somafm.com/fluid-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/fluid64.pls",
+                "pls": "https://api.somafm.com/fluid64.pls",
                 "src": "https://ice1.somafm.com/fluid-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/fluid32.pls",
+                "pls": "https://api.somafm.com/fluid32.pls",
                 "src": "https://ice1.somafm.com/fluid-32-aac",
                 "title": "32-aac"
             }
@@ -398,22 +398,22 @@
         "bg": "assets/imgs/soma/folkfwd.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/folkfwd.pls",
+                "pls": "https://api.somafm.com/folkfwd.pls",
                 "src": "https://ice1.somafm.com/folkfwd-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/folkfwd130.pls",
+                "pls": "https://api.somafm.com/folkfwd130.pls",
                 "src": "https://ice1.somafm.com/folkfwd-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/folkfwd64.pls",
+                "pls": "https://api.somafm.com/folkfwd64.pls",
                 "src": "https://ice1.somafm.com/folkfwd-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/folkfwd32.pls",
+                "pls": "https://api.somafm.com/folkfwd32.pls",
                 "src": "https://ice1.somafm.com/folkfwd-32-aac",
                 "title": "32-aac"
             }
@@ -426,22 +426,22 @@
         "bg": "assets/imgs/soma/groovesalad.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/groovesalad256.pls",
+                "pls": "https://api.somafm.com/groovesalad256.pls",
                 "src": "https://ice1.somafm.com/groovesalad-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/groovesalad130.pls",
+                "pls": "https://api.somafm.com/groovesalad130.pls",
                 "src": "https://ice1.somafm.com/groovesalad-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/groovesalad64.pls",
+                "pls": "https://api.somafm.com/groovesalad64.pls",
                 "src": "https://ice1.somafm.com/groovesalad-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/groovesalad32.pls",
+                "pls": "https://api.somafm.com/groovesalad32.pls",
                 "src": "https://ice1.somafm.com/groovesalad-32-aac",
                 "title": "32-aac"
             }
@@ -454,22 +454,22 @@
         "bg": "assets/imgs/soma/gsclassic.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/gsclassic.pls",
+                "pls": "https://api.somafm.com/gsclassic.pls",
                 "src": "https://ice1.somafm.com/gsclassic-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/gsclassic130.pls",
+                "pls": "https://api.somafm.com/gsclassic130.pls",
                 "src": "https://ice1.somafm.com/gsclassic-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/gsclassic64.pls",
+                "pls": "https://api.somafm.com/gsclassic64.pls",
                 "src": "https://ice1.somafm.com/gsclassic-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/gsclassic32.pls",
+                "pls": "https://api.somafm.com/gsclassic32.pls",
                 "src": "https://ice1.somafm.com/gsclassic-32-aac",
                 "title": "32-aac"
             }
@@ -482,22 +482,22 @@
         "bg": "assets/imgs/soma/illstreet.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/illstreet.pls",
+                "pls": "https://api.somafm.com/illstreet.pls",
                 "src": "https://ice1.somafm.com/illstreet-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/illstreet130.pls",
+                "pls": "https://api.somafm.com/illstreet130.pls",
                 "src": "https://ice1.somafm.com/illstreet-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/illstreet64.pls",
+                "pls": "https://api.somafm.com/illstreet64.pls",
                 "src": "https://ice1.somafm.com/illstreet-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/illstreet32.pls",
+                "pls": "https://api.somafm.com/illstreet32.pls",
                 "src": "https://ice1.somafm.com/illstreet-32-aac",
                 "title": "32-aac"
             }
@@ -510,22 +510,22 @@
         "bg": "assets/imgs/soma/indiepop.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/indiepop.pls",
+                "pls": "https://api.somafm.com/indiepop.pls",
                 "src": "https://ice1.somafm.com/indiepop-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/indiepop130.pls",
+                "pls": "https://api.somafm.com/indiepop130.pls",
                 "src": "https://ice1.somafm.com/indiepop-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/indiepop64.pls",
+                "pls": "https://api.somafm.com/indiepop64.pls",
                 "src": "https://ice1.somafm.com/indiepop-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/indiepop32.pls",
+                "pls": "https://api.somafm.com/indiepop32.pls",
                 "src": "https://ice1.somafm.com/indiepop-32-aac",
                 "title": "32-aac"
             }
@@ -538,22 +538,22 @@
         "bg": "assets/imgs/soma/jollysoul.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/jollysoul.pls",
+                "pls": "https://api.somafm.com/jollysoul.pls",
                 "src": "https://ice1.somafm.com/jollysoul-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/jollysoul130.pls",
+                "pls": "https://api.somafm.com/jollysoul130.pls",
                 "src": "https://ice1.somafm.com/jollysoul-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/jollysoul64.pls",
+                "pls": "https://api.somafm.com/jollysoul64.pls",
                 "src": "https://ice1.somafm.com/jollysoul-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/jollysoul32.pls",
+                "pls": "https://api.somafm.com/jollysoul32.pls",
                 "src": "https://ice1.somafm.com/jollysoul-32-aac",
                 "title": "32-aac"
             }
@@ -566,22 +566,22 @@
         "bg": "assets/imgs/soma/live.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/live.pls",
+                "pls": "https://api.somafm.com/live.pls",
                 "src": "https://ice1.somafm.com/live-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/live130.pls",
+                "pls": "https://api.somafm.com/live130.pls",
                 "src": "https://ice1.somafm.com/live-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/live64.pls",
+                "pls": "https://api.somafm.com/live64.pls",
                 "src": "https://ice1.somafm.com/live-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/live32.pls",
+                "pls": "https://api.somafm.com/live32.pls",
                 "src": "https://ice1.somafm.com/live-32-aac",
                 "title": "32-aac"
             }
@@ -594,22 +594,22 @@
         "bg": "assets/imgs/soma/lush.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/lush.pls",
+                "pls": "https://api.somafm.com/lush.pls",
                 "src": "https://ice1.somafm.com/lush-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/lush130.pls",
+                "pls": "https://api.somafm.com/lush130.pls",
                 "src": "https://ice1.somafm.com/lush-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/lush64.pls",
+                "pls": "https://api.somafm.com/lush64.pls",
                 "src": "https://ice1.somafm.com/lush-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/lush32.pls",
+                "pls": "https://api.somafm.com/lush32.pls",
                 "src": "https://ice1.somafm.com/lush-32-aac",
                 "title": "32-aac"
             }
@@ -622,22 +622,22 @@
         "bg": "assets/imgs/soma/missioncontrol.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/missioncontrol.pls",
+                "pls": "https://api.somafm.com/missioncontrol.pls",
                 "src": "https://ice1.somafm.com/missioncontrol-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/missioncontrol130.pls",
+                "pls": "https://api.somafm.com/missioncontrol130.pls",
                 "src": "https://ice1.somafm.com/missioncontrol-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/missioncontrol64.pls",
+                "pls": "https://api.somafm.com/missioncontrol64.pls",
                 "src": "https://ice1.somafm.com/missioncontrol-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/missioncontrol32.pls",
+                "pls": "https://api.somafm.com/missioncontrol32.pls",
                 "src": "https://ice1.somafm.com/missioncontrol-32-aac",
                 "title": "32-aac"
             }
@@ -650,22 +650,22 @@
         "bg": "assets/imgs/soma/poptron.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/poptron.pls",
+                "pls": "https://api.somafm.com/poptron.pls",
                 "src": "https://ice1.somafm.com/poptron-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/poptron130.pls",
+                "pls": "https://api.somafm.com/poptron130.pls",
                 "src": "https://ice1.somafm.com/poptron-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/poptron64.pls",
+                "pls": "https://api.somafm.com/poptron64.pls",
                 "src": "https://ice1.somafm.com/poptron-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/poptron32.pls",
+                "pls": "https://api.somafm.com/poptron32.pls",
                 "src": "https://ice1.somafm.com/poptron-32-aac",
                 "title": "32-aac"
             }
@@ -678,22 +678,22 @@
         "bg": "assets/imgs/soma/secretagent.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/secretagent.pls",
+                "pls": "https://api.somafm.com/secretagent.pls",
                 "src": "https://ice1.somafm.com/secretagent-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/secretagent130.pls",
+                "pls": "https://api.somafm.com/secretagent130.pls",
                 "src": "https://ice1.somafm.com/secretagent-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/secretagent64.pls",
+                "pls": "https://api.somafm.com/secretagent64.pls",
                 "src": "https://ice1.somafm.com/secretagent-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/secretagent32.pls",
+                "pls": "https://api.somafm.com/secretagent32.pls",
                 "src": "https://ice1.somafm.com/secretagent-32-aac",
                 "title": "32-aac"
             }
@@ -706,22 +706,22 @@
         "bg": "assets/imgs/soma/seventies.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/seventies320.pls",
+                "pls": "https://api.somafm.com/seventies320.pls",
                 "src": "https://ice1.somafm.com/seventies-320-mp3",
                 "title": "320-mp3"
             },
             {
-                "url": "https://api.somafm.com/seventies130.pls",
+                "pls": "https://api.somafm.com/seventies130.pls",
                 "src": "https://ice1.somafm.com/seventies-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/seventies64.pls",
+                "pls": "https://api.somafm.com/seventies64.pls",
                 "src": "https://ice1.somafm.com/seventies-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/seventies32.pls",
+                "pls": "https://api.somafm.com/seventies32.pls",
                 "src": "https://ice1.somafm.com/seventies-32-aac",
                 "title": "32-aac"
             }
@@ -734,22 +734,22 @@
         "bg": "assets/imgs/soma/sf1033.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/sf1033.pls",
+                "pls": "https://api.somafm.com/sf1033.pls",
                 "src": "https://ice1.somafm.com/sf1033-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/sf1033130.pls",
+                "pls": "https://api.somafm.com/sf1033130.pls",
                 "src": "https://ice1.somafm.com/sf1033-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/sf103364.pls",
+                "pls": "https://api.somafm.com/sf103364.pls",
                 "src": "https://ice1.somafm.com/sf1033-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/sf103332.pls",
+                "pls": "https://api.somafm.com/sf103332.pls",
                 "src": "https://ice1.somafm.com/sf1033-32-aac",
                 "title": "32-aac"
             }
@@ -762,22 +762,22 @@
         "bg": "assets/imgs/soma/sonicuniverse.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/sonicuniverse256.pls",
+                "pls": "https://api.somafm.com/sonicuniverse256.pls",
                 "src": "https://ice1.somafm.com/sonicuniverse-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/sonicuniverse130.pls",
+                "pls": "https://api.somafm.com/sonicuniverse130.pls",
                 "src": "https://ice1.somafm.com/sonicuniverse-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/sonicuniverse64.pls",
+                "pls": "https://api.somafm.com/sonicuniverse64.pls",
                 "src": "https://ice1.somafm.com/sonicuniverse-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/sonicuniverse32.pls",
+                "pls": "https://api.somafm.com/sonicuniverse32.pls",
                 "src": "https://ice1.somafm.com/sonicuniverse-32-aac",
                 "title": "32-aac"
             }
@@ -790,22 +790,22 @@
         "bg": "assets/imgs/soma/spacestation.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/spacestation.pls",
+                "pls": "https://api.somafm.com/spacestation.pls",
                 "src": "https://ice1.somafm.com/spacestation-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/spacestation130.pls",
+                "pls": "https://api.somafm.com/spacestation130.pls",
                 "src": "https://ice1.somafm.com/spacestation-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/spacestation64.pls",
+                "pls": "https://api.somafm.com/spacestation64.pls",
                 "src": "https://ice1.somafm.com/spacestation-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/spacestation32.pls",
+                "pls": "https://api.somafm.com/spacestation32.pls",
                 "src": "https://ice1.somafm.com/spacestation-32-aac",
                 "title": "32-aac"
             }
@@ -818,22 +818,22 @@
         "bg": "assets/imgs/soma/suburbsofgoa.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/suburbsofgoa.pls",
+                "pls": "https://api.somafm.com/suburbsofgoa.pls",
                 "src": "https://ice1.somafm.com/suburbsofgoa-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/suburbsofgoa130.pls",
+                "pls": "https://api.somafm.com/suburbsofgoa130.pls",
                 "src": "https://ice1.somafm.com/suburbsofgoa-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/suburbsofgoa64.pls",
+                "pls": "https://api.somafm.com/suburbsofgoa64.pls",
                 "src": "https://ice1.somafm.com/suburbsofgoa-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/suburbsofgoa32.pls",
+                "pls": "https://api.somafm.com/suburbsofgoa32.pls",
                 "src": "https://ice1.somafm.com/suburbsofgoa-32-aac",
                 "title": "32-aac"
             }
@@ -846,22 +846,22 @@
         "bg": "assets/imgs/soma/thetrip.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/thetrip.pls",
+                "pls": "https://api.somafm.com/thetrip.pls",
                 "src": "https://ice1.somafm.com/thetrip-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/thetrip130.pls",
+                "pls": "https://api.somafm.com/thetrip130.pls",
                 "src": "https://ice1.somafm.com/thetrip-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/thetrip64.pls",
+                "pls": "https://api.somafm.com/thetrip64.pls",
                 "src": "https://ice1.somafm.com/thetrip-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/thetrip32.pls",
+                "pls": "https://api.somafm.com/thetrip32.pls",
                 "src": "https://ice1.somafm.com/thetrip-32-aac",
                 "title": "32-aac"
             }
@@ -874,22 +874,22 @@
         "bg": "assets/imgs/soma/thistle.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/thistle.pls",
+                "pls": "https://api.somafm.com/thistle.pls",
                 "src": "https://ice1.somafm.com/thistle-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/thistle130.pls",
+                "pls": "https://api.somafm.com/thistle130.pls",
                 "src": "https://ice1.somafm.com/thistle-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/thistle64.pls",
+                "pls": "https://api.somafm.com/thistle64.pls",
                 "src": "https://ice1.somafm.com/thistle-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/thistle32.pls",
+                "pls": "https://api.somafm.com/thistle32.pls",
                 "src": "https://ice1.somafm.com/thistle-32-aac",
                 "title": "32-aac"
             }
@@ -902,22 +902,22 @@
         "bg": "assets/imgs/soma/u80s.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/u80s256.pls",
+                "pls": "https://api.somafm.com/u80s256.pls",
                 "src": "https://ice1.somafm.com/u80s-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/u80s130.pls",
+                "pls": "https://api.somafm.com/u80s130.pls",
                 "src": "https://ice1.somafm.com/u80s-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/u80s64.pls",
+                "pls": "https://api.somafm.com/u80s64.pls",
                 "src": "https://ice1.somafm.com/u80s-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/u80s32.pls",
+                "pls": "https://api.somafm.com/u80s32.pls",
                 "src": "https://ice1.somafm.com/u80s-32-aac",
                 "title": "32-aac"
             }
@@ -930,22 +930,22 @@
         "bg": "assets/imgs/soma/xmasinfrisko.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/xmasinfrisko.pls",
+                "pls": "https://api.somafm.com/xmasinfrisko.pls",
                 "src": "https://ice1.somafm.com/xmasinfrisko-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/xmasinfrisko130.pls",
+                "pls": "https://api.somafm.com/xmasinfrisko130.pls",
                 "src": "https://ice1.somafm.com/xmasinfrisko-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/xmasinfrisko64.pls",
+                "pls": "https://api.somafm.com/xmasinfrisko64.pls",
                 "src": "https://ice1.somafm.com/xmasinfrisko-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/xmasinfrisko32.pls",
+                "pls": "https://api.somafm.com/xmasinfrisko32.pls",
                 "src": "https://ice1.somafm.com/xmasinfrisko-32-aac",
                 "title": "32-aac"
             }
@@ -958,22 +958,22 @@
         "bg": "assets/imgs/soma/xmasrocks.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/xmasrocks.pls",
+                "pls": "https://api.somafm.com/xmasrocks.pls",
                 "src": "https://ice1.somafm.com/xmasrocks-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/xmasrocks130.pls",
+                "pls": "https://api.somafm.com/xmasrocks130.pls",
                 "src": "https://ice1.somafm.com/xmasrocks-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/xmasrocks64.pls",
+                "pls": "https://api.somafm.com/xmasrocks64.pls",
                 "src": "https://ice1.somafm.com/xmasrocks-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/xmasrocks32.pls",
+                "pls": "https://api.somafm.com/xmasrocks32.pls",
                 "src": "https://ice1.somafm.com/xmasrocks-32-aac",
                 "title": "32-aac"
             }
@@ -986,22 +986,22 @@
         "bg": "assets/imgs/soma/metal.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/metal.pls",
+                "pls": "https://api.somafm.com/metal.pls",
                 "src": "https://ice1.somafm.com/metal-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/metal130.pls",
+                "pls": "https://api.somafm.com/metal130.pls",
                 "src": "https://ice1.somafm.com/metal-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/metal64.pls",
+                "pls": "https://api.somafm.com/metal64.pls",
                 "src": "https://ice1.somafm.com/metal-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/metal32.pls",
+                "pls": "https://api.somafm.com/metal32.pls",
                 "src": "https://ice1.somafm.com/metal-32-aac",
                 "title": "32-aac"
             }
@@ -1014,22 +1014,22 @@
         "bg": "assets/imgs/soma/reggae.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/reggae256.pls",
+                "pls": "https://api.somafm.com/reggae256.pls",
                 "src": "https://ice1.somafm.com/reggae-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/reggae130.pls",
+                "pls": "https://api.somafm.com/reggae130.pls",
                 "src": "https://ice1.somafm.com/reggae-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/reggae80.pls",
+                "pls": "https://api.somafm.com/reggae80.pls",
                 "src": "https://ice1.somafm.com/reggae-80-aac",
                 "title": "80-aac"
             },
             {
-                "url": "https://api.somafm.com/reggae32.pls",
+                "pls": "https://api.somafm.com/reggae32.pls",
                 "src": "https://ice1.somafm.com/reggae-32-aac",
                 "title": "32-aac"
             }
@@ -1042,22 +1042,22 @@
         "bg": "assets/imgs/soma/scanner.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/scanner.pls",
+                "pls": "https://api.somafm.com/scanner.pls",
                 "src": "https://ice1.somafm.com/scanner-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/scanner130.pls",
+                "pls": "https://api.somafm.com/scanner130.pls",
                 "src": "https://ice1.somafm.com/scanner-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/scanner64.pls",
+                "pls": "https://api.somafm.com/scanner64.pls",
                 "src": "https://ice1.somafm.com/scanner-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/scanner32.pls",
+                "pls": "https://api.somafm.com/scanner32.pls",
                 "src": "https://ice1.somafm.com/scanner-32-aac",
                 "title": "32-aac"
             }
@@ -1070,22 +1070,22 @@
         "bg": "assets/imgs/soma/vaporwaves.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/vaporwaves.pls",
+                "pls": "https://api.somafm.com/vaporwaves.pls",
                 "src": "https://ice1.somafm.com/vaporwaves-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/vaporwaves130.pls",
+                "pls": "https://api.somafm.com/vaporwaves130.pls",
                 "src": "https://ice1.somafm.com/vaporwaves-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/vaporwaves64.pls",
+                "pls": "https://api.somafm.com/vaporwaves64.pls",
                 "src": "https://ice1.somafm.com/vaporwaves-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/vaporwaves32.pls",
+                "pls": "https://api.somafm.com/vaporwaves32.pls",
                 "src": "https://ice1.somafm.com/vaporwaves-32-aac",
                 "title": "32-aac"
             }
@@ -1098,22 +1098,22 @@
         "bg": "assets/imgs/soma/specials.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/specials.pls",
+                "pls": "https://api.somafm.com/specials.pls",
                 "src": "https://ice1.somafm.com/specials-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/specials130.pls",
+                "pls": "https://api.somafm.com/specials130.pls",
                 "src": "https://ice1.somafm.com/specials-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/specials64.pls",
+                "pls": "https://api.somafm.com/specials64.pls",
                 "src": "https://ice1.somafm.com/specials-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/specials32.pls",
+                "pls": "https://api.somafm.com/specials32.pls",
                 "src": "https://ice1.somafm.com/specials-32-aac",
                 "title": "32-aac"
             }
@@ -1126,22 +1126,22 @@
         "bg": "assets/imgs/soma/n5md.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/n5md.pls",
+                "pls": "https://api.somafm.com/n5md.pls",
                 "src": "https://ice1.somafm.com/n5md-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/n5md130.pls",
+                "pls": "https://api.somafm.com/n5md130.pls",
                 "src": "https://ice1.somafm.com/n5md-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/n5md64.pls",
+                "pls": "https://api.somafm.com/n5md64.pls",
                 "src": "https://ice1.somafm.com/n5md-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/n5md32.pls",
+                "pls": "https://api.somafm.com/n5md32.pls",
                 "src": "https://ice1.somafm.com/n5md-32-aac",
                 "title": "32-aac"
             }
@@ -1154,22 +1154,22 @@
         "bg": "assets/imgs/soma/synphaera.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/synphaera256.pls",
+                "pls": "https://api.somafm.com/synphaera256.pls",
                 "src": "https://ice1.somafm.com/synphaera-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/synphaera130.pls",
+                "pls": "https://api.somafm.com/synphaera130.pls",
                 "src": "https://ice1.somafm.com/synphaera-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/synphaera64.pls",
+                "pls": "https://api.somafm.com/synphaera64.pls",
                 "src": "https://ice1.somafm.com/synphaera-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/synphaera32.pls",
+                "pls": "https://api.somafm.com/synphaera32.pls",
                 "src": "https://ice1.somafm.com/synphaera-32-aac",
                 "title": "32-aac"
             }
@@ -1182,22 +1182,22 @@
         "bg": "assets/imgs/soma/darkzone.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/darkzone256.pls",
+                "pls": "https://api.somafm.com/darkzone256.pls",
                 "src": "https://ice1.somafm.com/darkzone-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/darkzone130.pls",
+                "pls": "https://api.somafm.com/darkzone130.pls",
                 "src": "https://ice1.somafm.com/darkzone-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/darkzone64.pls",
+                "pls": "https://api.somafm.com/darkzone64.pls",
                 "src": "https://ice1.somafm.com/darkzone-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/darkzone32.pls",
+                "pls": "https://api.somafm.com/darkzone32.pls",
                 "src": "https://ice1.somafm.com/darkzone-32-aac",
                 "title": "32-aac"
             }
@@ -1210,22 +1210,22 @@
         "bg": "assets/imgs/soma/sfinsf.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/sfinsf.pls",
+                "pls": "https://api.somafm.com/sfinsf.pls",
                 "src": "https://ice1.somafm.com/sfinsf-128-mp3",
                 "title": "128-mp3"
             },
             {
-                "url": "https://api.somafm.com/sfinsf130.pls",
+                "pls": "https://api.somafm.com/sfinsf130.pls",
                 "src": "https://ice1.somafm.com/sfinsf-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/sfinsf64.pls",
+                "pls": "https://api.somafm.com/sfinsf64.pls",
                 "src": "https://ice1.somafm.com/sfinsf-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/sfinsf32.pls",
+                "pls": "https://api.somafm.com/sfinsf32.pls",
                 "src": "https://ice1.somafm.com/sfinsf-32-aac",
                 "title": "32-aac"
             }
@@ -1238,22 +1238,22 @@
         "bg": "assets/imgs/soma/tikitime.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/tikitime256.pls",
+                "pls": "https://api.somafm.com/tikitime256.pls",
                 "src": "https://ice1.somafm.com/tikitime-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/tikitime130.pls",
+                "pls": "https://api.somafm.com/tikitime130.pls",
                 "src": "https://ice1.somafm.com/tikitime-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/tikitime64.pls",
+                "pls": "https://api.somafm.com/tikitime64.pls",
                 "src": "https://ice1.somafm.com/tikitime-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/tikitime32.pls",
+                "pls": "https://api.somafm.com/tikitime32.pls",
                 "src": "https://ice1.somafm.com/tikitime-32-aac",
                 "title": "32-aac"
             }
@@ -1266,22 +1266,22 @@
         "bg": "assets/imgs/soma/bossa.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/bossa256.pls",
+                "pls": "https://api.somafm.com/bossa256.pls",
                 "src": "https://ice1.somafm.com/bossa-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/bossa130.pls",
+                "pls": "https://api.somafm.com/bossa130.pls",
                 "src": "https://ice1.somafm.com/bossa-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/bossa64.pls",
+                "pls": "https://api.somafm.com/bossa64.pls",
                 "src": "https://ice1.somafm.com/bossa-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/bossa32.pls",
+                "pls": "https://api.somafm.com/bossa32.pls",
                 "src": "https://ice1.somafm.com/bossa-32-aac",
                 "title": "32-aac"
             }
@@ -1294,22 +1294,22 @@
         "bg": "assets/imgs/soma/insound.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/insound256.pls",
+                "pls": "https://api.somafm.com/insound256.pls",
                 "src": "https://ice1.somafm.com/insound-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/insound130.pls",
+                "pls": "https://api.somafm.com/insound130.pls",
                 "src": "https://ice1.somafm.com/insound-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/insound64.pls",
+                "pls": "https://api.somafm.com/insound64.pls",
                 "src": "https://ice1.somafm.com/insound-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/insound32.pls",
+                "pls": "https://api.somafm.com/insound32.pls",
                 "src": "https://ice1.somafm.com/insound-32-aac",
                 "title": "32-aac"
             }
@@ -1322,22 +1322,22 @@
         "bg": "assets/imgs/soma/deptstore.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/deptstore256.pls",
+                "pls": "https://api.somafm.com/deptstore256.pls",
                 "src": "https://ice1.somafm.com/deptstore-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/deptstore130.pls",
+                "pls": "https://api.somafm.com/deptstore130.pls",
                 "src": "https://ice1.somafm.com/deptstore-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/deptstore64.pls",
+                "pls": "https://api.somafm.com/deptstore64.pls",
                 "src": "https://ice1.somafm.com/deptstore-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/deptstore32.pls",
+                "pls": "https://api.somafm.com/deptstore32.pls",
                 "src": "https://ice1.somafm.com/deptstore-32-aac",
                 "title": "32-aac"
             }
@@ -1350,22 +1350,22 @@
         "bg": "assets/imgs/soma/chillits.jpg",
         "playlists": [
             {
-                "url": "https://api.somafm.com/chillits256.pls",
+                "pls": "https://api.somafm.com/chillits256.pls",
                 "src": "https://ice1.somafm.com/chillits-256-mp3",
                 "title": "256-mp3"
             },
             {
-                "url": "https://api.somafm.com/chillits130.pls",
+                "pls": "https://api.somafm.com/chillits130.pls",
                 "src": "https://ice1.somafm.com/chillits-128-aac",
                 "title": "128-aac"
             },
             {
-                "url": "https://api.somafm.com/chillits64.pls",
+                "pls": "https://api.somafm.com/chillits64.pls",
                 "src": "https://ice1.somafm.com/chillits-64-aac",
                 "title": "64-aac"
             },
             {
-                "url": "https://api.somafm.com/chillits32.pls",
+                "pls": "https://api.somafm.com/chillits32.pls",
                 "src": "https://ice1.somafm.com/chillits-32-aac",
                 "title": "32-aac"
             }
