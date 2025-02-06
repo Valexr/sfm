@@ -41,7 +41,6 @@
     }
 
     function onerror(e: Event) {
-        console.error(e);
         const [_, id] = stream.match(/ice(\d)/);
         const random = () => Math.floor(Math.random() * 5) + 1;
 
@@ -51,8 +50,6 @@
         if (Number(id) === streamID) {
             streamID = random();
         }
-
-        console.log(id, streamID, stream);
     }
 </script>
 
