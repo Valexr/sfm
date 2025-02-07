@@ -40,17 +40,17 @@
         loaded = true;
     }
 
-    function onerror(e: Event) {
-        const [_, id] = stream.match(/ice(\d)/);
-        const random = () => Math.floor(Math.random() * 5) + 1;
+    // function onerror(e: Event) {
+    //     const [_, id] = stream.match(/ice(\d)/);
+    //     const random = () => Math.floor(Math.random() * 5) + 1;
 
-        streamID = random();
-        // const i = +id + 1;
-        // const indx = ((i % n) + n) % n;
-        if (Number(id) === streamID) {
-            streamID = random();
-        }
-    }
+    //     streamID = random();
+    //     // const i = +id + 1;
+    //     // const indx = ((i % n) + n) % n;
+    //     if (Number(id) === streamID) {
+    //         streamID = random();
+    //     }
+    // }
 </script>
 
 <audio
@@ -63,7 +63,6 @@
     src={stream}
     {onloadstart}
     {onloadeddata}
-    {onerror}
     {onpause}
     {onplay}
 >
