@@ -18,14 +18,12 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    let streamID = $state(1);
+    let streamID = $state(3);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
-    const stream = $derived(
-        $played?.playlists[quality].src.replace(/ice\d/, `ice${streamID}`),
-    );
+    const stream = $derived($played?.playlists[quality].src);
 
     function onclick(e: { currentTarget: HTMLButtonElement }) {
         const id = Number(e.currentTarget.id);
