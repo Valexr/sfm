@@ -18,7 +18,7 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    let streamID = $state(3);
+    // let streamID = $state(3);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -33,9 +33,13 @@
 
     function onloadstart() {
         loaded = false;
+        paused = true;
     }
     function onloadeddata() {
         loaded = true;
+    }
+    function oncanplay() {
+        paused = !paused;
     }
 
     // function onerror(e: Event) {
@@ -53,7 +57,6 @@
 
 <audio
     hidden
-    autoplay
     controls
     bind:paused
     preload="auto"
@@ -61,6 +64,7 @@
     src={stream}
     {onloadstart}
     {onloadeddata}
+    {oncanplay}
     {onpause}
     {onplay}
 >
