@@ -39,7 +39,7 @@
         loaded = true;
     }
     // function oncanplay() {
-    //     paused = !paused;
+    //     paused = false;
     // }
 
     // function onerror(e: Event) {
@@ -58,6 +58,7 @@
 <audio
     hidden
     autoplay
+    controls
     bind:paused
     preload="auto"
     crossorigin="anonymous"
