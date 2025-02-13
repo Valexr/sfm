@@ -38,9 +38,9 @@
     function onloadeddata() {
         loaded = true;
     }
-    function oncanplay() {
-        paused = !paused;
-    }
+    // function oncanplay() {
+    //     paused = !paused;
+    // }
 
     // function onerror(e: Event) {
     //     const [_, id] = stream.match(/ice(\d)/);
@@ -57,14 +57,13 @@
 
 <audio
     hidden
-    controls
+    autoplay
     bind:paused
     preload="auto"
     crossorigin="anonymous"
     src={stream}
     {onloadstart}
     {onloadeddata}
-    {oncanplay}
     {onpause}
     {onplay}
 >
