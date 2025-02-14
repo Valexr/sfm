@@ -33,7 +33,7 @@
 
     function onloadstart() {
         loaded = false;
-        paused = true;
+        // paused = true;
     }
     function onloadeddata() {
         loaded = true;
@@ -58,7 +58,6 @@
 <audio
     hidden
     autoplay
-    controls
     bind:paused
     preload="auto"
     crossorigin="anonymous"
