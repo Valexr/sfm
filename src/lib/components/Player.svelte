@@ -33,7 +33,7 @@
 
     function onloadstart() {
         loaded = false;
-        paused = true;
+        // paused = true;
     }
     function onloadeddata() {
         loaded = true;
