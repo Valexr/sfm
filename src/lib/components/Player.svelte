@@ -38,9 +38,9 @@
     function onloadeddata() {
         loaded = true;
     }
-    function oncanplay() {
-        paused = false;
-    }
+    // function oncanplay() {
+    //     paused = false;
+    // }
 
     // function onerror(e: Event) {
     //     const [_, id] = stream.match(/ice(\d)/);
@@ -64,7 +64,6 @@
     src={stream}
     {onloadstart}
     {onloadeddata}
-    {oncanplay}
     {onpause}
     {onplay}
 >
