@@ -59,8 +59,6 @@
     hidden
     autoplay
     bind:paused
-    preload="auto"
-    crossorigin="anonymous"
     src={stream}
     {onloadstart}
     {onloadeddata}
@@ -75,7 +73,7 @@
             <option value={i}>{title}</option>
         {/each}
     </select>
-    <button id="-1" {onclick}>←</button>
+    <!-- <button id="-1" {onclick}>←</button>
     <button id="0" {onclick}>{paused ? "Play" : "Pause"}</button>
-    <button id="1" {onclick}>→</button>
+    <button id="1" {onclick}>→</button> -->
 </section>
