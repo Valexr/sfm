@@ -61,6 +61,6 @@ svg {
 }
 
 select {
-    font-size: 2rem;
+    font-size: inherit;
     font-family: inherit;
 }
