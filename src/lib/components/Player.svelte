@@ -25,11 +25,11 @@
     );
     const stream = $derived($played?.playlists[quality].src);
 
-    function onclick(e: { currentTarget: HTMLButtonElement }) {
-        const id = Number(e.currentTarget.id);
-        if (id) played.skip(id);
-        else paused = !paused;
-    }
+    // function onclick(e: { currentTarget: HTMLButtonElement }) {
+    //     const id = Number(e.currentTarget.id);
+    //     if (id) played.skip(id);
+    //     else paused = !paused;
+    // }
 
     function onloadstart() {
         loaded = false;
