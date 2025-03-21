@@ -63,6 +63,8 @@
     {onloadstart}
     {onloadeddata}
     {oncanplay}
+    {onpause}
+    {onplay}
     {src}
 >
 </audio>
