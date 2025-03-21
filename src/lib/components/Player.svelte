@@ -23,7 +23,7 @@
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
-    const stream = $derived($played?.playlists[quality].src);
+    const src = $derived($played?.playlists[quality].src);
 
     // function onclick(e: { currentTarget: HTMLButtonElement }) {
     //     const id = Number(e.currentTarget.id);
@@ -33,14 +33,14 @@
 
     function onloadstart() {
         loaded = false;
-        // paused = true;
+        paused = true;
     }
     function onloadeddata() {
         loaded = true;
     }
-    // function oncanplay() {
-    //     paused = false;
-    // }
+    function oncanplay() {
+        paused = false;
+    }
 
     // function onerror(e: Event) {
     //     const [_, id] = stream.match(/ice(\d)/);
@@ -59,11 +59,11 @@
     hidden
     autoplay
     bind:paused
-    src={stream}
+    preload="auto"
     {onloadstart}
     {onloadeddata}
-    {onpause}
-    {onplay}
+    {oncanplay}
+    {src}
 >
 </audio>
 <section>
