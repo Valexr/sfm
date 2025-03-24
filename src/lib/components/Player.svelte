@@ -33,13 +33,13 @@
 
     function onloadstart() {
         loaded = false;
-        paused = true;
+        // paused = true;
     }
     function onloadeddata() {
         loaded = true;
     }
     function oncanplay() {
-        paused = false;
+        // paused = false;
     }
 
     // function onerror(e: Event) {
@@ -62,7 +62,6 @@
     preload="auto"
     {onloadstart}
     {onloadeddata}
-    {oncanplay}
     {onpause}
     {onplay}
     {src}
