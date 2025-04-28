@@ -18,7 +18,7 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    let streamID = $state(2);
+    let streamID = $state(1);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -47,12 +47,12 @@
 
     function onerror(e: Event) {
         console.error(src);
-        const id = src.match(/ice(\d)/)?.[1];
+        const [_, id] = src.match(/ice(\d)/)!;
         const random = () => Math.floor(Math.random() * 5) + 1;
         streamID = random();
         while (Number(id) === streamID) {
-            streamID = random();
             console.error(src);
+            streamID = random();
         }
         console.log(src);
     }
