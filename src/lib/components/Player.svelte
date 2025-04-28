@@ -18,12 +18,15 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    // let streamID = $state(3);
+    let streamID = $state(2);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
     );
-    const src = $derived($played?.playlists[quality].src);
+
+    const src = $derived(
+        `https://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`,
+    );
 
     // function onclick(e: { currentTarget: HTMLButtonElement }) {
     //     const id = Number(e.currentTarget.id);
@@ -38,21 +41,21 @@
     function onloadeddata() {
         loaded = true;
     }
-    function oncanplay() {
-        // paused = false;
-    }
-
-    // function onerror(e: Event) {
-    //     const [_, id] = stream.match(/ice(\d)/);
-    //     const random = () => Math.floor(Math.random() * 5) + 1;
-
-    //     streamID = random();
-    //     // const i = +id + 1;
-    //     // const indx = ((i % n) + n) % n;
-    //     if (Number(id) === streamID) {
-    //         streamID = random();
-    //     }
+    // function oncanplay() {
+    //     // paused = false;
     // }
+
+    function onerror(e: Event) {
+        console.error(src);
+        const id = src.match(/ice(\d)/)?.[1];
+        const random = () => Math.floor(Math.random() * 5) + 1;
+        streamID = random();
+        while (Number(id) === streamID) {
+            streamID = random();
+            console.error(src);
+        }
+        console.log(src);
+    }
 </script>
 
 <audio
@@ -62,6 +65,7 @@
     preload="auto"
     {onloadstart}
     {onloadeddata}
+    {onerror}
     {onpause}
     {onplay}
     {src}
