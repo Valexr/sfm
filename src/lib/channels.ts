@@ -61,7 +61,7 @@ function createPlayed() {
         return song;
 
         async function getSongs(channelID: string): Promise<Array<SongType>> {
-            const res = await fetch(` https://somafm.com/songs/${channelID}.json`);
+            const res = await fetch(`https://somafm.com/songs/${channelID}.json`);
             const { songs } = await res.json();
             return songs;
         }
@@ -72,17 +72,11 @@ function createPlayed() {
                 const { results } = await ituned.json();
 
                 if (results.length) {
-                    const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
-                        results;
+                    const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] = results;
 
                     song.url = trackViewUrl;
-                    song.time = new Date(trackTimeMillis * 1000)
-                        .toISOString()
-                        .slice(11, -5);
-                    song.albumArt = artworkUrl100.replace(
-                        "100x100bb.jpg",
-                        "500x500bb.png",
-                    );
+                    song.time = new Date(trackTimeMillis * 1000).toISOString().slice(11, -5);
+                    song.albumArt = artworkUrl100.replace("100x100bb.jpg", "500x500bb.png");
                 }
             } catch (e) {
                 console.error(e);
