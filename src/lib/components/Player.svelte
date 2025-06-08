@@ -7,7 +7,7 @@
     let {
         paused = $bindable(false),
         loaded = $bindable(false),
-        quality = $bindable(1),
+        quality = $bindable(0),
         onpause,
         onplay,
     }: {
