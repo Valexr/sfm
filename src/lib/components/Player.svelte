@@ -18,7 +18,7 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    let streamID = $state(1);
+    let streamID = $state(3);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
