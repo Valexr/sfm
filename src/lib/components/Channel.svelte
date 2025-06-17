@@ -46,7 +46,7 @@
         aspect-ratio: 1/1;
         border: 0;
         cursor: pointer;
-        opacity: 1;
+        opacity: 0.5;
         padding: 0;
         position: relative;
         transition: opacity 250ms ease;
