@@ -33,7 +33,7 @@
     title={channel.description}
     aria-roledescription={channel.title}
     onclick={() => play(channel)}
-    style="background-image: url({cover})"
+    style="--background-image: url('{cover}')"
 >
     {#if selected}{@html stateICO}{/if}
     {#if channel.img}
@@ -46,13 +46,13 @@
         aspect-ratio: 1/1;
         border: 0;
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.75;
         padding: 0;
         position: relative;
         transition: opacity 250ms ease;
-        background: center/cover no-repeat;
+        background: var(--background-image) center/cover no-repeat;
 
-        img {
+        & img {
             position: absolute;
             width: 45%;
             inset: 0;
