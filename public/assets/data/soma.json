@@ -3,7 +3,7 @@
         "id": "7soul",
         "title": "Seven Inch Soul",
         "description": "Vintage soul tracks from the original 45 RPM vinyl.",
-        "bg": "/sfm/assets/img/soma/7soul.jpg",
+        "bg": "assets/img/soma/7soul.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/7soul.pls",
@@ -31,7 +31,7 @@
         "id": "beatblender",
         "title": "Beat Blender",
         "description": "A late night blend of deep-house and downtempo chill.",
-        "bg": "/sfm/assets/img/soma/beatblender.jpg",
+        "bg": "assets/img/soma/beatblender.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/beatblender.pls",
@@ -59,7 +59,7 @@
         "id": "bootliquor",
         "title": "Boot Liquor",
         "description": "Americana Roots music for Cowhands, Cowpokes and Cowtippers",
-        "bg": "/sfm/assets/img/soma/bootliquor.jpg",
+        "bg": "assets/img/soma/bootliquor.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/bootliquor320.pls",
@@ -87,7 +87,7 @@
         "id": "brfm",
         "title": "Black Rock FM",
         "description": "From the Playa to the world, for the annual Burning Man festival.",
-        "bg": "/sfm/assets/img/soma/brfm.jpg",
+        "bg": "assets/img/soma/brfm.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/brfm.pls",
@@ -115,7 +115,7 @@
         "id": "christmas",
         "title": "Christmas Lounge",
         "description": "Chilled holiday grooves and classic winter lounge tracks. (Kid and Parent safe!) ",
-        "bg": "/sfm/assets/img/soma/christmas.jpg",
+        "bg": "assets/img/soma/christmas.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/christmas256.pls",
@@ -143,7 +143,7 @@
         "id": "cliqhop",
         "title": "cliqhop idm",
         "description": "Blips'n'beeps backed mostly w/beats. Intelligent Dance Music.",
-        "bg": "/sfm/assets/img/soma/cliqhop.jpg",
+        "bg": "assets/img/soma/cliqhop.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/cliqhop256.pls",
@@ -171,7 +171,7 @@
         "id": "covers",
         "title": "Covers",
         "description": "Just covers. Songs you know by artists you don't. We've got you covered. ",
-        "bg": "/sfm/assets/img/soma/covers.jpg",
+        "bg": "assets/img/soma/covers.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/covers.pls",
@@ -199,7 +199,7 @@
         "id": "deepspaceone",
         "title": "Deep Space One",
         "description": "Deep ambient electronic, experimental and space music. For inner and outer space exploration.",
-        "bg": "/sfm/assets/img/soma/deepspaceone.jpg",
+        "bg": "assets/img/soma/deepspaceone.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/deepspaceone.pls",
@@ -227,7 +227,7 @@
         "id": "defcon",
         "title": "DEF CON Radio",
         "description": "Music for Hacking. The DEF CON Year-Round Channel.",
-        "bg": "/sfm/assets/img/soma/defcon.jpg",
+        "bg": "assets/img/soma/defcon.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/defcon256.pls",
@@ -255,7 +255,7 @@
         "id": "digitalis",
         "title": "Digitalis",
         "description": "Digitally affected analog rock to calm the agitated heart.",
-        "bg": "/sfm/assets/img/soma/digitalis.jpg",
+        "bg": "assets/img/soma/digitalis.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/digitalis256.pls",
@@ -283,7 +283,7 @@
         "id": "doomed",
         "title": "Doomed",
         "description": "Where every day is Halloween: Dark industrial/ambient music for tortured souls. ",
-        "bg": "/sfm/assets/img/soma/doomed.jpg",
+        "bg": "assets/img/soma/doomed.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/doomed256.pls",
@@ -311,7 +311,7 @@
         "id": "dronezone",
         "title": "Drone Zone",
         "description": "Served best chilled, safe with most medications. Atmospheric textures with minimal beats.",
-        "bg": "/sfm/assets/img/soma/dronezone.jpg",
+        "bg": "assets/img/soma/dronezone.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/dronezone256.pls",
@@ -339,7 +339,7 @@
         "id": "dubstep",
         "title": "Dub Step Beyond",
         "description": "Dubstep, Dub and Deep Bass. May damage speakers at high volume.",
-        "bg": "/sfm/assets/img/soma/dubstep.jpg",
+        "bg": "assets/img/soma/dubstep.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/dubstep256.pls",
@@ -367,7 +367,7 @@
         "id": "fluid",
         "title": "Fluid",
         "description": "Drown in the electronic sound of instrumental hiphop, future soul and liquid trap.",
-        "bg": "/sfm/assets/img/soma/fluid.jpg",
+        "bg": "assets/img/soma/fluid.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/fluid.pls",
@@ -395,7 +395,7 @@
         "id": "folkfwd",
         "title": "Folk Forward",
         "description": "Indie Folk, Alt-folk and the occasional folk classics. ",
-        "bg": "/sfm/assets/img/soma/folkfwd.jpg",
+        "bg": "assets/img/soma/folkfwd.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/folkfwd.pls",
@@ -423,7 +423,7 @@
         "id": "groovesalad",
         "title": "Groove Salad",
         "description": "A nicely chilled plate of ambient/downtempo beats and grooves.",
-        "bg": "/sfm/assets/img/soma/groovesalad.jpg",
+        "bg": "assets/img/soma/groovesalad.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/groovesalad256.pls",
@@ -451,7 +451,7 @@
         "id": "gsclassic",
         "title": "Groove Salad Classic",
         "description": "The classic (early 2000s) version of a nicely chilled plate of ambient/downtempo beats and grooves.",
-        "bg": "/sfm/assets/img/soma/gsclassic.jpg",
+        "bg": "assets/img/soma/gsclassic.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/gsclassic.pls",
@@ -479,7 +479,7 @@
         "id": "illstreet",
         "title": "Illinois Street Lounge",
         "description": "Classic bachelor pad, playful exotica and vintage music of tomorrow.",
-        "bg": "/sfm/assets/img/soma/illstreet.jpg",
+        "bg": "assets/img/soma/illstreet.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/illstreet.pls",
@@ -507,7 +507,7 @@
         "id": "indiepop",
         "title": "Indie Pop Rocks!",
         "description": "New and classic favorite indie pop tracks.",
-        "bg": "/sfm/assets/img/soma/indiepop.jpg",
+        "bg": "assets/img/soma/indiepop.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/indiepop.pls",
@@ -535,7 +535,7 @@
         "id": "jollysoul",
         "title": "Jolly Ol' Soul",
         "description": "Where we cut right to the soul of the season.",
-        "bg": "/sfm/assets/img/soma/jollysoul.jpg",
+        "bg": "assets/img/soma/jollysoul.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/jollysoul.pls",
@@ -563,7 +563,7 @@
         "id": "live",
         "title": "SomaFM Live",
         "description": "Special Live Events and rebroadcasts of past live events",
-        "bg": "/sfm/assets/img/soma/live.jpg",
+        "bg": "assets/img/soma/live.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/live.pls",
@@ -591,7 +591,7 @@
         "id": "lush",
         "title": "Lush",
         "description": "Sensuous and mellow female vocals, many with an electronic influence.",
-        "bg": "/sfm/assets/img/soma/lush.jpg",
+        "bg": "assets/img/soma/lush.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/lush.pls",
@@ -619,7 +619,7 @@
         "id": "missioncontrol",
         "title": "Mission Control",
         "description": "Celebrating NASA and Space Explorers everywhere.",
-        "bg": "/sfm/assets/img/soma/missioncontrol.jpg",
+        "bg": "assets/img/soma/missioncontrol.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/missioncontrol.pls",
@@ -647,7 +647,7 @@
         "id": "poptron",
         "title": "PopTron",
         "description": "Electropop and indie dance rock with sparkle and pop.",
-        "bg": "/sfm/assets/img/soma/poptron.jpg",
+        "bg": "assets/img/soma/poptron.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/poptron.pls",
@@ -675,7 +675,7 @@
         "id": "secretagent",
         "title": "Secret Agent",
         "description": "The soundtrack for your stylish, mysterious, dangerous life. For Spies and PIs too!",
-        "bg": "/sfm/assets/img/soma/secretagent.jpg",
+        "bg": "assets/img/soma/secretagent.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/secretagent.pls",
@@ -703,7 +703,7 @@
         "id": "seventies",
         "title": "Left Coast 70s",
         "description": "Mellow album rock from the Seventies. Yacht not required.",
-        "bg": "/sfm/assets/img/soma/seventies.jpg",
+        "bg": "assets/img/soma/seventies.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/seventies320.pls",
@@ -731,7 +731,7 @@
         "id": "sf1033",
         "title": "SF 10-33",
         "description": "Ambient music mixed with the sounds of San Francisco public safety radio traffic.",
-        "bg": "/sfm/assets/img/soma/sf1033.jpg",
+        "bg": "assets/img/soma/sf1033.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/sf1033.pls",
@@ -759,7 +759,7 @@
         "id": "sonicuniverse",
         "title": "Sonic Universe",
         "description": "Transcending the world of jazz with eclectic, avant-garde takes on tradition.",
-        "bg": "/sfm/assets/img/soma/sonicuniverse.jpg",
+        "bg": "assets/img/soma/sonicuniverse.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/sonicuniverse256.pls",
@@ -787,7 +787,7 @@
         "id": "spacestation",
         "title": "Space Station Soma",
         "description": "Tune in, turn on, space out. Spaced-out ambient and mid-tempo electronica.",
-        "bg": "/sfm/assets/img/soma/spacestation.jpg",
+        "bg": "assets/img/soma/spacestation.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/spacestation.pls",
@@ -815,7 +815,7 @@
         "id": "suburbsofgoa",
         "title": "Suburbs of Goa",
         "description": "Desi-influenced Asian world beats and beyond.",
-        "bg": "/sfm/assets/img/soma/suburbsofgoa.jpg",
+        "bg": "assets/img/soma/suburbsofgoa.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/suburbsofgoa.pls",
@@ -843,7 +843,7 @@
         "id": "thetrip",
         "title": "The Trip",
         "description": "Progressive house / trance. Tip top tunes.",
-        "bg": "/sfm/assets/img/soma/thetrip.jpg",
+        "bg": "assets/img/soma/thetrip.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/thetrip.pls",
@@ -871,7 +871,7 @@
         "id": "thistle",
         "title": "ThistleRadio",
         "description": "Exploring music from Celtic roots and branches",
-        "bg": "/sfm/assets/img/soma/thistle.jpg",
+        "bg": "assets/img/soma/thistle.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/thistle.pls",
@@ -899,7 +899,7 @@
         "id": "u80s",
         "title": "Underground 80s",
         "description": "Early 80s UK Synthpop and a bit of New Wave.",
-        "bg": "/sfm/assets/img/soma/u80s.jpg",
+        "bg": "assets/img/soma/u80s.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/u80s256.pls",
@@ -927,7 +927,7 @@
         "id": "xmasinfrisko",
         "title": "Xmas in Frisko",
         "description": "SomaFM's wacky and eclectic holiday mix. Not for the easily offended. ",
-        "bg": "/sfm/assets/img/soma/xmasinfrisko.jpg",
+        "bg": "assets/img/soma/xmasinfrisko.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/xmasinfrisko.pls",
@@ -955,7 +955,7 @@
         "id": "xmasrocks",
         "title": "Christmas Rocks!",
         "description": "Have your self an indie/alternative holiday season!",
-        "bg": "/sfm/assets/img/soma/xmasrocks.jpg",
+        "bg": "assets/img/soma/xmasrocks.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/xmasrocks.pls",
@@ -983,7 +983,7 @@
         "id": "metal",
         "title": "Metal Detector",
         "description": "From black to doom, prog to sludge, thrash to post, stoner to crossover, punk to industrial.",
-        "bg": "/sfm/assets/img/soma/metal.jpg",
+        "bg": "assets/img/soma/metal.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/metal.pls",
@@ -1011,7 +1011,7 @@
         "id": "reggae",
         "title": "Heavyweight Reggae",
         "description": "Reggae, Ska, Rocksteady classic and deep tracks.",
-        "bg": "/sfm/assets/img/soma/reggae.jpg",
+        "bg": "assets/img/soma/reggae.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/reggae256.pls",
@@ -1039,7 +1039,7 @@
         "id": "scanner",
         "title": "SF Police Scanner",
         "description": "San Francisco Public Safety Scanner Feed",
-        "bg": "/sfm/assets/img/soma/scanner.jpg",
+        "bg": "assets/img/soma/scanner.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/scanner.pls",
@@ -1067,7 +1067,7 @@
         "id": "vaporwaves",
         "title": "Vaporwaves",
         "description": "All Vaporwave. All the time.",
-        "bg": "/sfm/assets/img/soma/vaporwaves.jpg",
+        "bg": "assets/img/soma/vaporwaves.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/vaporwaves.pls",
@@ -1095,7 +1095,7 @@
         "id": "specials",
         "title": "SomaFM Specials",
         "description": "Now featuring Afternoon Jazz, Wavepool, DubX, The Surf Report & More!",
-        "bg": "/sfm/assets/img/soma/specials.jpg",
+        "bg": "assets/img/soma/specials.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/specials.pls",
@@ -1123,7 +1123,7 @@
         "id": "n5md",
         "title": "n5MD Radio",
         "description": "Emotional Experiments in Music: Ambient, modern composition, post-rock, & experimental electronic music",
-        "bg": "/sfm/assets/img/soma/n5md.jpg",
+        "bg": "assets/img/soma/n5md.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/n5md.pls",
@@ -1151,7 +1151,7 @@
         "id": "synphaera",
         "title": "Synphaera Radio",
         "description": "Featuring the music from an independent record label focused on modern electronic ambient and space music.",
-        "bg": "/sfm/assets/img/soma/synphaera.jpg",
+        "bg": "assets/img/soma/synphaera.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/synphaera256.pls",
@@ -1179,7 +1179,7 @@
         "id": "darkzone",
         "title": "The Dark Zone",
         "description": "The darker side of deep ambient. Music for staring into the Abyss. ",
-        "bg": "/sfm/assets/img/soma/darkzone.jpg",
+        "bg": "assets/img/soma/darkzone.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/darkzone256.pls",
@@ -1207,7 +1207,7 @@
         "id": "sfinsf",
         "title": "SF in SF",
         "description": "Author readings and discussions from the science fiction, fantasy, horror, and genre literary fields.",
-        "bg": "/sfm/assets/img/soma/sfinsf.jpg",
+        "bg": "assets/img/soma/sfinsf.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/sfinsf.pls",
@@ -1235,7 +1235,7 @@
         "id": "tikitime",
         "title": "Tiki Time",
         "description": "Classic Tiki music and Vintage island rhythms to sip cocktails by.",
-        "bg": "/sfm/assets/img/soma/tikitime.jpg",
+        "bg": "assets/img/soma/tikitime.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/tikitime256.pls",
@@ -1263,7 +1263,7 @@
         "id": "bossa",
         "title": "Bossa Beyond",
         "description": "Silky-smooth, laid-back Brazilian-style rhythms of Bossa Nova, Samba and beyond",
-        "bg": "/sfm/assets/img/soma/bossa.jpg",
+        "bg": "assets/img/soma/bossa.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/bossa256.pls",
@@ -1291,7 +1291,7 @@
         "id": "insound",
         "title": "The In-Sound",
         "description": "60s/70s Hipster Euro Pop where psychedelic melodies meets groovy vibes. ",
-        "bg": "/sfm/assets/img/soma/insound.jpg",
+        "bg": "assets/img/soma/insound.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/insound256.pls",
@@ -1319,7 +1319,7 @@
         "id": "deptstore",
         "title": "Department Store Christmas",
         "description": "Holiday Elevator Music from a more innocent time.",
-        "bg": "/sfm/assets/img/soma/deptstore.jpg",
+        "bg": "assets/img/soma/deptstore.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/deptstore256.pls",
@@ -1347,7 +1347,7 @@
         "id": "chillits",
         "title": "Chillits Radio",
         "description": "Celebrating 25 years of music, chilling and camping",
-        "bg": "/sfm/assets/img/soma/chillits.jpg",
+        "bg": "assets/img/soma/chillits.jpg",
         "playlists": [
             {
                 "pls": "https://api.somafm.com/chillits256.pls",

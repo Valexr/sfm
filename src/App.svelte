@@ -77,8 +77,8 @@
 
     main {
         --cell-size: 100px;
-        gap: 1rem;
-        margin: 1rem;
+        gap: 1.5rem;
+        margin: 1.5rem;
         display: grid;
         grid-auto-flow: row dense;
         grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 1fr));
