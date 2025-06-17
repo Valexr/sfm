@@ -22,7 +22,7 @@
     const selected = $derived($played?.id === channel.id);
 
     const cover = $derived(
-        (selected && $played?.song?.albumArt) || location.pathname + channel?.bg
+        (selected && $played?.song?.albumArt) || (location?.pathname + channel?.bg)
     );
     const stateICO = $derived(!loaded ? loader : !paused ? equaliser : player);
 </script>
