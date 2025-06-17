@@ -22,7 +22,7 @@
     const selected = $derived($played?.id === channel.id);
 
     const cover = $derived(
-        (selected && $played?.song?.albumArt) || channel?.bg
+        (selected && $played?.song?.albumArt) || location.pathname + channel?.bg
     );
     const stateICO = $derived(!loaded ? loader : !paused ? equaliser : player);
 </script>
@@ -33,7 +33,7 @@
     title={channel.description}
     aria-roledescription={channel.title}
     onclick={() => play(channel)}
-    style="--background-image: url('{location.pathname}{cover}')"
+    style="--background-image: url('{cover}')"
 >
     {#if selected}{@html stateICO}{/if}
     {#if channel.img}
