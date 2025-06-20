@@ -65,7 +65,6 @@
     preload="auto"
     {onloadstart}
     {onloadeddata}
-    {onerror}
     {onpause}
     {onplay}
     {src}
