@@ -1,5 +1,5 @@
 <script lang="ts" module>
-    import { played } from "$lib/channels";
+    import { played, station } from "$lib/channels";
     import type { EventHandler } from "svelte/elements";
 </script>
 
@@ -25,7 +25,9 @@
     );
 
     const src = $derived(
-        `https://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`,
+        $station === "soma"
+            ? `https://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`
+            : $played?.playlists[quality].src,
     );
 
     // function onclick(e: { currentTarget: HTMLButtonElement }) {

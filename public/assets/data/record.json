@@ -3,8 +3,8 @@
         "id": "record",
         "title": "Record",
         "description": "Танцевальный мейнстрим",
-        "img": "assets/imgs/record/record.png",
-        "bg": "assets/imgs/record/record.jpg",
+        "img": "assets/img/record/record.png",
+        "bg": "assets/img/record/record.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -30,8 +30,8 @@
         "id": "rus",
         "title": "Russian Mix",
         "description": "Русские хиты в танцевальной обработке: Zivert, Niletto, Rasa",
-        "img": "assets/imgs/record/rus.png",
-        "bg": "assets/imgs/record/rus.jpg",
+        "img": "assets/img/record/rus.png",
+        "bg": "assets/img/record/rus.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -57,8 +57,8 @@
         "id": "christmas-chill",
         "title": "Christmas Chill",
         "description": "Downtempo-бит для тёплого новогоднего уюта",
-        "img": "assets/imgs/record/christmas-chill.png",
-        "bg": "assets/imgs/record/christmas-chill.jpg",
+        "img": "assets/img/record/christmas-chill.png",
+        "bg": "assets/img/record/christmas-chill.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -84,8 +84,8 @@
         "id": "christmas-radio",
         "title": "Christmas",
         "description": "Популярные новогодние и рождественские треки",
-        "img": "assets/imgs/record/christmas-radio.png",
-        "bg": "assets/imgs/record/christmas-radio.jpg",
+        "img": "assets/img/record/christmas-radio.png",
+        "bg": "assets/img/record/christmas-radio.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -111,8 +111,8 @@
         "id": "ruszima",
         "title": "Русская Зима",
         "description": "Родные согревающие песни",
-        "img": "assets/imgs/record/ruszima.png",
-        "bg": "assets/imgs/record/ruszima.jpg",
+        "img": "assets/img/record/ruszima.png",
+        "bg": "assets/img/record/ruszima.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -138,8 +138,8 @@
         "id": "sd90",
         "title": "Супердискотека 90-х",
         "description": "Танцевальные боевики нашей юности Руки Вверх, 2 Unlimited, Masterboy",
-        "img": "assets/imgs/record/sd90.png",
-        "bg": "assets/imgs/record/sd90.jpg",
+        "img": "assets/img/record/sd90.png",
+        "bg": "assets/img/record/sd90.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -165,8 +165,8 @@
         "id": "beach",
         "title": "Beach Party",
         "description": "Жаркий саунд пляжной вечеринки",
-        "img": "assets/imgs/record/beach.png",
-        "bg": "assets/imgs/record/beach.jpg",
+        "img": "assets/img/record/beach.png",
+        "bg": "assets/img/record/beach.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -192,8 +192,8 @@
         "id": "russianhits",
         "title": "Russian Hits",
         "description": "Русский танцевальный поп: Клава Кока, Niletto, Тима Белорусских",
-        "img": "assets/imgs/record/russianhits.png",
-        "bg": "assets/imgs/record/russianhits.jpg",
+        "img": "assets/img/record/russianhits.png",
+        "bg": "assets/img/record/russianhits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -219,8 +219,8 @@
         "id": "live-dj-sets",
         "title": "Festivals",
         "description": "Лучшие живые сеты от звезд электронной сцены",
-        "img": "assets/imgs/record/live-dj-sets.png",
-        "bg": "assets/imgs/record/live-dj-sets.jpg",
+        "img": "assets/img/record/live-dj-sets.png",
+        "bg": "assets/img/record/live-dj-sets.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -246,8 +246,8 @@
         "id": "deep",
         "title": "Deep",
         "description": "Глубокое house-звучание",
-        "img": "assets/imgs/record/deep.png",
-        "bg": "assets/imgs/record/deep.jpg",
+        "img": "assets/img/record/deep.png",
+        "bg": "assets/img/record/deep.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -273,8 +273,8 @@
         "id": "chil",
         "title": "Chill-Out",
         "description": "Расслабляющий вайб",
-        "img": "assets/imgs/record/chil.png",
-        "bg": "assets/imgs/record/chil.jpg",
+        "img": "assets/img/record/chil.png",
+        "bg": "assets/img/record/chil.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -300,8 +300,8 @@
         "id": "skazki",
         "title": "Сказки MC V",
         "description": "Волшебные истории от старого сказочника",
-        "img": "assets/imgs/record/skazki.png",
-        "bg": "assets/imgs/record/skazki.jpg",
+        "img": "assets/img/record/skazki.png",
+        "bg": "assets/img/record/skazki.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -327,8 +327,8 @@
         "id": "nashashlyki",
         "title": "На шашлыки!",
         "description": "Русское. Летнее. Танцевальное.",
-        "img": "assets/imgs/record/nashashlyki.png",
-        "bg": "assets/imgs/record/nashashlyki.jpg",
+        "img": "assets/img/record/nashashlyki.png",
+        "bg": "assets/img/record/nashashlyki.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -354,8 +354,8 @@
         "id": "mix",
         "title": "Megamix",
         "description": "Mash-up из главных хитов Рекорда со скоростью 5 треков в минуту! ",
-        "img": "assets/imgs/record/mix.png",
-        "bg": "assets/imgs/record/mix.jpg",
+        "img": "assets/img/record/mix.png",
+        "bg": "assets/img/record/mix.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -381,8 +381,8 @@
         "id": "rock",
         "title": "Rock",
         "description": "Первоапрельский спецпроект: от Цоя до Metallica",
-        "img": "assets/imgs/record/rock.png",
-        "bg": "assets/imgs/record/rock.jpg",
+        "img": "assets/img/record/rock.png",
+        "bg": "assets/img/record/rock.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -408,8 +408,8 @@
         "id": "rmx",
         "title": "Remix",
         "description": "Иностранные хиты в танцевальной обработке: Black Eyed Peas, Ariana Grande, Ed Sheeran",
-        "img": "assets/imgs/record/rmx.png",
-        "bg": "assets/imgs/record/rmx.jpg",
+        "img": "assets/img/record/rmx.png",
+        "bg": "assets/img/record/rmx.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -435,8 +435,8 @@
         "id": "gop",
         "title": "Гоп FM",
         "description": "Первоапрельский спецпроект. Памп и лоходенс",
-        "img": "assets/imgs/record/gop.png",
-        "bg": "assets/imgs/record/gop.jpg",
+        "img": "assets/img/record/gop.png",
+        "bg": "assets/img/record/gop.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -462,8 +462,8 @@
         "id": "bighits",
         "title": "Big Hits",
         "description": "Зарубежные танцевальные хиты: Dua Lipa, Ave Max, Sia",
-        "img": "assets/imgs/record/bighits.png",
-        "bg": "assets/imgs/record/bighits.jpg",
+        "img": "assets/img/record/bighits.png",
+        "bg": "assets/img/record/bighits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -489,8 +489,8 @@
         "id": "chillhouse",
         "title": "Chill House",
         "description": "Легкий, мелодичный вайб",
-        "img": "assets/imgs/record/chillhouse.png",
-        "bg": "assets/imgs/record/chillhouse.jpg",
+        "img": "assets/img/record/chillhouse.png",
+        "bg": "assets/img/record/chillhouse.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -516,8 +516,8 @@
         "id": "record00",
         "title": "Рекорд 00-х",
         "description": " Хиты танцполов нулевых: ATB, Benassi, Klubbheads и другие",
-        "img": "assets/imgs/record/record00.png",
-        "bg": "assets/imgs/record/record00.jpg",
+        "img": "assets/img/record/record00.png",
+        "bg": "assets/img/record/record00.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -543,8 +543,8 @@
         "id": "1980",
         "title": "Record 80-х",
         "description": "Ритмы советской и зарубежной эстрады. C. C. Catch, Modern Talking, В. Леонтьев и Ласковый Май",
-        "img": "assets/imgs/record/1980.png",
-        "bg": "assets/imgs/record/1980.jpg",
+        "img": "assets/img/record/1980.png",
+        "bg": "assets/img/record/1980.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -570,8 +570,8 @@
         "id": "naft",
         "title": "Нафталин FM",
         "description": "Первоапрельский спецпроект: Советская эстрада",
-        "img": "assets/imgs/record/naft.png",
-        "bg": "assets/imgs/record/naft.jpg",
+        "img": "assets/img/record/naft.png",
+        "bg": "assets/img/record/naft.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -597,8 +597,8 @@
         "id": "mf",
         "title": "Маятник Фуко",
         "description": "Новая школа русского рэпа без цензуры: Morgenshtern, Markul, Obladaet & co. [18+]",
-        "img": "assets/imgs/record/mf.png",
-        "bg": "assets/imgs/record/mf.jpg",
+        "img": "assets/img/record/mf.png",
+        "bg": "assets/img/record/mf.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -624,8 +624,8 @@
         "id": "tm",
         "title": "Trancemission",
         "description": "Лучшее из транс-музыки: Armin, Above & Beyond, Christina Novelli",
-        "img": "assets/imgs/record/tm.png",
-        "bg": "assets/imgs/record/tm.jpg",
+        "img": "assets/img/record/tm.png",
+        "bg": "assets/img/record/tm.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -651,8 +651,8 @@
         "id": "summer-dance",
         "title": "Summer Dance",
         "description": "Летние танцевальные хиты 24/7",
-        "img": "assets/imgs/record/summer-dance.png",
-        "bg": "assets/imgs/record/summer-dance.jpg",
+        "img": "assets/img/record/summer-dance.png",
+        "bg": "assets/img/record/summer-dance.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -678,8 +678,8 @@
         "id": "russiangold",
         "title": "Russian Gold",
         "description": "Российские хиты в ремиксах",
-        "img": "assets/imgs/record/russiangold.png",
-        "bg": "assets/imgs/record/russiangold.jpg",
+        "img": "assets/img/record/russiangold.png",
+        "bg": "assets/img/record/russiangold.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -705,8 +705,8 @@
         "id": "ps",
         "title": "Pirate Station",
         "description": "Лучшее из drum & bass: Pendulum, Chase & Status, Camo & Krooked",
-        "img": "assets/imgs/record/ps.png",
-        "bg": "assets/imgs/record/ps.jpg",
+        "img": "assets/img/record/ps.png",
+        "bg": "assets/img/record/ps.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -732,8 +732,8 @@
         "id": "ibiza",
         "title": "Innocence",
         "description": "Techno, Minimal, Deep. Саунд как у Solomun, Boris Brejcha и Nina Kravitz",
-        "img": "assets/imgs/record/ibiza.png",
-        "bg": "assets/imgs/record/ibiza.jpg",
+        "img": "assets/img/record/ibiza.png",
+        "bg": "assets/img/record/ibiza.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -759,8 +759,8 @@
         "id": "mdl",
         "title": "Медляк FM",
         "description": "Первоапрельский спецпроект",
-        "img": "assets/imgs/record/mdl.png",
-        "bg": "assets/imgs/record/mdl.jpg",
+        "img": "assets/img/record/mdl.png",
+        "bg": "assets/img/record/mdl.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -786,8 +786,8 @@
         "id": "party-24-7",
         "title": "Party 24/7",
         "description": "Вечеринка с танцевальными хитами",
-        "img": "assets/imgs/record/party-24-7.png",
-        "bg": "assets/imgs/record/party-24-7.jpg",
+        "img": "assets/img/record/party-24-7.png",
+        "bg": "assets/img/record/party-24-7.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -813,8 +813,8 @@
         "id": "phonk",
         "title": "Phonk",
         "description": "Атмосфера дрифта и уличных гонок ",
-        "img": "assets/imgs/record/phonk.png",
-        "bg": "assets/imgs/record/phonk.jpg",
+        "img": "assets/img/record/phonk.png",
+        "bg": "assets/img/record/phonk.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -840,8 +840,8 @@
         "id": "gold",
         "title": "Record Gold",
         "description": "Хиты Рекорда эпохи Avicii и Swedish House Mafia",
-        "img": "assets/imgs/record/gold.png",
-        "bg": "assets/imgs/record/gold.jpg",
+        "img": "assets/img/record/gold.png",
+        "bg": "assets/img/record/gold.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -867,8 +867,8 @@
         "id": "rv19",
         "title": "Руки Вверх!",
         "description": "24 часа в сутки - только песни Руки Вверх!",
-        "img": "assets/imgs/record/rv19.png",
-        "bg": "assets/imgs/record/rv19.jpg",
+        "img": "assets/img/record/rv19.png",
+        "bg": "assets/img/record/rv19.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -894,8 +894,8 @@
         "id": "hype",
         "title": "На Хайпе",
         "description": "Топ российского стриминга",
-        "img": "assets/imgs/record/hype.png",
-        "bg": "assets/imgs/record/hype.jpg",
+        "img": "assets/img/record/hype.png",
+        "bg": "assets/img/record/hype.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -921,8 +921,8 @@
         "id": "rap",
         "title": "Rap Hits",
         "description": "Рэп новой волны из России и из-за рубежа",
-        "img": "assets/imgs/record/rap.png",
-        "bg": "assets/imgs/record/rap.jpg",
+        "img": "assets/img/record/rap.png",
+        "bg": "assets/img/record/rap.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -948,8 +948,8 @@
         "id": "rapclassics",
         "title": "Rap Classics",
         "description": "Хип-хоп золотого периода: 2Pac, Cypress Hill, Notorius BIG, ONYX",
-        "img": "assets/imgs/record/rapclassics.png",
-        "bg": "assets/imgs/record/rapclassics.jpg",
+        "img": "assets/img/record/rapclassics.png",
+        "bg": "assets/img/record/rapclassics.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -975,8 +975,8 @@
         "id": "trancehits",
         "title": "Trance Classics",
         "description": "Главные хиты trance-музыки: Above&Beyond, Armin van Buuren, Ferry Corsten",
-        "img": "assets/imgs/record/trancehits.png",
-        "bg": "assets/imgs/record/trancehits.jpg",
+        "img": "assets/img/record/trancehits.png",
+        "bg": "assets/img/record/trancehits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1002,8 +1002,8 @@
         "id": "pump",
         "title": "Колбасный Цех",
         "description": "Саунд золотой эпохи рейвов: DJ Aligator, Klubbheads, Club Caviar",
-        "img": "assets/imgs/record/pump.png",
-        "bg": "assets/imgs/record/pump.jpg",
+        "img": "assets/img/record/pump.png",
+        "bg": "assets/img/record/pump.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1029,8 +1029,8 @@
         "id": "drumhits",
         "title": "D'n'B Classics",
         "description": "Золотые хиты drum'n'bass Aphrodite, Pendulum, Sub Focus",
-        "img": "assets/imgs/record/drumhits.png",
-        "bg": "assets/imgs/record/drumhits.jpg",
+        "img": "assets/img/record/drumhits.png",
+        "bg": "assets/img/record/drumhits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1056,8 +1056,8 @@
         "id": "armin",
         "title": "Armin van Buuren",
         "description": "Лучшие треки, ремиксы и коллабы",
-        "img": "assets/imgs/record/armin.png",
-        "bg": "assets/imgs/record/armin.jpg",
+        "img": "assets/img/record/armin.png",
+        "bg": "assets/img/record/armin.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1083,8 +1083,8 @@
         "id": "summerlounge",
         "title": "Summer Lounge",
         "description": "Летний чил в стиле Cafe del Mar",
-        "img": "assets/imgs/record/summerlounge.png",
-        "bg": "assets/imgs/record/summerlounge.jpg",
+        "img": "assets/img/record/summerlounge.png",
+        "bg": "assets/img/record/summerlounge.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1110,8 +1110,8 @@
         "id": "organic",
         "title": "Organic",
         "description": "Легкий грув. В стиле Tim Green и Sebastien Leger",
-        "img": "assets/imgs/record/organic.png",
-        "bg": "assets/imgs/record/organic.jpg",
+        "img": "assets/img/record/organic.png",
+        "bg": "assets/img/record/organic.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1137,8 +1137,8 @@
         "id": "ultra",
         "title": "Ultra Music Festival",
         "description": "Live-сеты с одного из лучших электронных фестивалей мира",
-        "img": "assets/imgs/record/ultra.png",
-        "bg": "assets/imgs/record/ultra.jpg",
+        "img": "assets/img/record/ultra.png",
+        "bg": "assets/img/record/ultra.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1164,8 +1164,8 @@
         "id": "vip",
         "title": "VIP House",
         "description": "Изысканный саунд закрытых вечеринок",
-        "img": "assets/imgs/record/vip.png",
-        "bg": "assets/imgs/record/vip.jpg",
+        "img": "assets/img/record/vip.png",
+        "bg": "assets/img/record/vip.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1191,8 +1191,8 @@
         "id": "brks",
         "title": "Breaks",
         "description": "Лучшее из breakbeat, nu breaks и jungle",
-        "img": "assets/imgs/record/brks.png",
-        "bg": "assets/imgs/record/brks.jpg",
+        "img": "assets/img/record/brks.png",
+        "bg": "assets/img/record/brks.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1218,8 +1218,8 @@
         "id": "liquidfunk",
         "title": "Liquid Funk",
         "description": "Атмосферный drum'n'bass",
-        "img": "assets/imgs/record/liquidfunk.png",
-        "bg": "assets/imgs/record/liquidfunk.jpg",
+        "img": "assets/img/record/liquidfunk.png",
+        "bg": "assets/img/record/liquidfunk.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1245,8 +1245,8 @@
         "id": "workout",
         "title": "Workout",
         "description": "Бит для спортивного тонуса",
-        "img": "assets/imgs/record/workout.png",
-        "bg": "assets/imgs/record/workout.jpg",
+        "img": "assets/img/record/workout.png",
+        "bg": "assets/img/record/workout.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1272,8 +1272,8 @@
         "id": "club",
         "title": "EDM",
         "description": "Музыка стадионов. ",
-        "img": "assets/imgs/record/club.png",
-        "bg": "assets/imgs/record/club.jpg",
+        "img": "assets/img/record/club.png",
+        "bg": "assets/img/record/club.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1299,8 +1299,8 @@
         "id": "jackin",
         "title": "Bass House",
         "description": "Современный house с характерным басом: Malaa, Volac, Valentino Khan",
-        "img": "assets/imgs/record/jackin.png",
-        "bg": "assets/imgs/record/jackin.jpg",
+        "img": "assets/img/record/jackin.png",
+        "bg": "assets/img/record/jackin.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1326,8 +1326,8 @@
         "id": "goa",
         "title": "GOA/PSY",
         "description": "Психоделический и Goa-trance",
-        "img": "assets/imgs/record/goa.png",
-        "bg": "assets/imgs/record/goa.jpg",
+        "img": "assets/img/record/goa.png",
+        "bg": "assets/img/record/goa.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1353,8 +1353,8 @@
         "id": "2010",
         "title": "10's Dance",
         "description": "Танцевальные хиты десятых",
-        "img": "assets/imgs/record/2010.png",
-        "bg": "assets/imgs/record/2010.jpg",
+        "img": "assets/img/record/2010.png",
+        "bg": "assets/img/record/2010.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1380,8 +1380,8 @@
         "id": "trancehouse",
         "title": "Trancehouse",
         "description": "Trancehouse - сочетание трансовой мелодики и хаусового бита.",
-        "img": "assets/imgs/record/trancehouse.png",
-        "bg": "assets/imgs/record/trancehouse.jpg",
+        "img": "assets/img/record/trancehouse.png",
+        "bg": "assets/img/record/trancehouse.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1407,8 +1407,8 @@
         "id": "yo",
         "title": "Black Rap",
         "description": "Рэп на английском",
-        "img": "assets/imgs/record/yo.png",
-        "bg": "assets/imgs/record/yo.jpg",
+        "img": "assets/img/record/yo.png",
+        "bg": "assets/img/record/yo.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1434,8 +1434,8 @@
         "id": "techno",
         "title": "Techno",
         "description": "Техно для тех, кто любит пожёстче",
-        "img": "assets/imgs/record/techno.png",
-        "bg": "assets/imgs/record/techno.jpg",
+        "img": "assets/img/record/techno.png",
+        "bg": "assets/img/record/techno.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1461,8 +1461,8 @@
         "id": "trop",
         "title": "Tropical",
         "description": "Жаркий и солнечный house",
-        "img": "assets/imgs/record/trop.png",
-        "bg": "assets/imgs/record/trop.jpg",
+        "img": "assets/img/record/trop.png",
+        "bg": "assets/img/record/trop.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1488,8 +1488,8 @@
         "id": "lofi",
         "title": "Lo-Fi",
         "description": "Ламповый бит и треск винила. В стиле Nujabes и J Dilla",
-        "img": "assets/imgs/record/lofi.png",
-        "bg": "assets/imgs/record/lofi.jpg",
+        "img": "assets/img/record/lofi.png",
+        "bg": "assets/img/record/lofi.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1515,8 +1515,8 @@
         "id": "techouse",
         "title": "Tech House",
         "description": "На стыке хауса и техно. В стиле Fisher и Dont Blink",
-        "img": "assets/imgs/record/techouse.png",
-        "bg": "assets/imgs/record/techouse.jpg",
+        "img": "assets/img/record/techouse.png",
+        "bg": "assets/img/record/techouse.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1542,8 +1542,8 @@
         "id": "trap",
         "title": "Trap",
         "description": "Главные Trap-хиты: Yellow Claw, Apashe, DJ Snake",
-        "img": "assets/imgs/record/trap.png",
-        "bg": "assets/imgs/record/trap.jpg",
+        "img": "assets/img/record/trap.png",
+        "bg": "assets/img/record/trap.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1569,8 +1569,8 @@
         "id": "technopop",
         "title": "Technopop",
         "description": "Технопоп эпохи 90-х: E-Type, Masterboy, Culture Beat",
-        "img": "assets/imgs/record/technopop.png",
-        "bg": "assets/imgs/record/technopop.jpg",
+        "img": "assets/img/record/technopop.png",
+        "bg": "assets/img/record/technopop.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1596,8 +1596,8 @@
         "id": "1970",
         "title": "70's Dance",
         "description": "Легендарный грув. Abba, Boney M, Bee Gees",
-        "img": "assets/imgs/record/1970.png",
-        "bg": "assets/imgs/record/1970.jpg",
+        "img": "assets/img/record/1970.png",
+        "bg": "assets/img/record/1970.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1623,8 +1623,8 @@
         "id": "dream",
         "title": "Dream Dance",
         "description": "Мелодичный trance 90х-00х: Robert Miles, ATB, Blank&Jones",
-        "img": "assets/imgs/record/dream.png",
-        "bg": "assets/imgs/record/dream.jpg",
+        "img": "assets/img/record/dream.png",
+        "bg": "assets/img/record/dream.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1650,8 +1650,8 @@
         "id": "neurofunk",
         "title": "Neurofunk",
         "description": "Технологичный и стремительный бит: Black Sun Empire, Dimension, Camo & Krooked",
-        "img": "assets/imgs/record/neurofunk.png",
-        "bg": "assets/imgs/record/neurofunk.jpg",
+        "img": "assets/img/record/neurofunk.png",
+        "bg": "assets/img/record/neurofunk.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1677,8 +1677,8 @@
         "id": "ambient",
         "title": "Ambient",
         "description": "Атмосферный саунд",
-        "img": "assets/imgs/record/ambient.png",
-        "bg": "assets/imgs/record/ambient.jpg",
+        "img": "assets/img/record/ambient.png",
+        "bg": "assets/img/record/ambient.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1704,8 +1704,8 @@
         "id": "recordclassix",
         "title": "Record Classix",
         "description": "Золотые танцевальные хиты Рекорда | hosted by MC Жан",
-        "img": "assets/imgs/record/recordclassix.png",
-        "bg": "assets/imgs/record/recordclassix.jpg",
+        "img": "assets/img/record/recordclassix.png",
+        "bg": "assets/img/record/recordclassix.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1731,8 +1731,8 @@
         "id": "recordclubshow",
         "title": "Record Club Show",
         "description": "Радиошоу об актуальной клубной музыке | hosted by Tim Vox",
-        "img": "assets/imgs/record/recordclubshow.png",
-        "bg": "assets/imgs/record/recordclubshow.jpg",
+        "img": "assets/img/record/recordclubshow.png",
+        "bg": "assets/img/record/recordclubshow.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1758,8 +1758,8 @@
         "id": "eurodance",
         "title": "Eurodance",
         "description": "Дискотечные бэнгеры 90-х: Culture Beat, Haddaway, La Bouche",
-        "img": "assets/imgs/record/eurodance.png",
-        "bg": "assets/imgs/record/eurodance.jpg",
+        "img": "assets/img/record/eurodance.png",
+        "bg": "assets/img/record/eurodance.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1785,8 +1785,8 @@
         "id": "lo-fi-house",
         "title": "Lo-Fi House",
         "description": "Ламповый бит в стиле DJ Seinfeld & Bruce Trail.",
-        "img": "assets/imgs/record/lo-fi-house.png",
-        "bg": "assets/imgs/record/lo-fi-house.jpg",
+        "img": "assets/img/record/lo-fi-house.png",
+        "bg": "assets/img/record/lo-fi-house.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1812,8 +1812,8 @@
         "id": "househits",
         "title": "House Hits",
         "description": "Свежие house-новинки",
-        "img": "assets/imgs/record/househits.png",
-        "bg": "assets/imgs/record/househits.jpg",
+        "img": "assets/img/record/househits.png",
+        "bg": "assets/img/record/househits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1839,8 +1839,8 @@
         "id": "uplift",
         "title": "Uplifting",
         "description": "Атмосферный и космический trance",
-        "img": "assets/imgs/record/uplift.png",
-        "bg": "assets/imgs/record/uplift.jpg",
+        "img": "assets/img/record/uplift.png",
+        "bg": "assets/img/record/uplift.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1866,8 +1866,8 @@
         "id": "feel",
         "title": "Feel",
         "description": "Главное trance-радиошоу России от DJ Feel",
-        "img": "assets/imgs/record/feel.png",
-        "bg": "assets/imgs/record/feel.jpg",
+        "img": "assets/img/record/feel.png",
+        "bg": "assets/img/record/feel.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1893,8 +1893,8 @@
         "id": "tiesto",
         "title": "Tiesto",
         "description": "Лучшие треки, ремиксы и коллабы ",
-        "img": "assets/imgs/record/tiesto.png",
-        "bg": "assets/imgs/record/tiesto.jpg",
+        "img": "assets/img/record/tiesto.png",
+        "bg": "assets/img/record/tiesto.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1920,8 +1920,8 @@
         "id": "a-state-of-trance",
         "title": "A State of Trance",
         "description": "Легендарное радиошоу Армина ван Бюрена",
-        "img": "assets/imgs/record/a-state-of-trance.png",
-        "bg": "assets/imgs/record/a-state-of-trance.jpg",
+        "img": "assets/img/record/a-state-of-trance.png",
+        "bg": "assets/img/record/a-state-of-trance.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1947,8 +1947,8 @@
         "id": "deti",
         "title": "Веснушка FM",
         "description": "Первоапрельский спецпроект: песни детства",
-        "img": "assets/imgs/record/deti.png",
-        "bg": "assets/imgs/record/deti.jpg",
+        "img": "assets/img/record/deti.png",
+        "bg": "assets/img/record/deti.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -1974,8 +1974,8 @@
         "id": "symph",
         "title": "Симфония FM",
         "description": "Первоапрельский спецпроект: Моцарт, Бетховен, Чайковский & co.",
-        "img": "assets/imgs/record/symph.png",
-        "bg": "assets/imgs/record/symph.jpg",
+        "img": "assets/img/record/symph.png",
+        "bg": "assets/img/record/symph.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2001,8 +2001,8 @@
         "id": "mini",
         "title": "Minimal/Tech",
         "description": "Саунд изысканных и дорогих party",
-        "img": "assets/imgs/record/mini.png",
-        "bg": "assets/imgs/record/mini.jpg",
+        "img": "assets/img/record/mini.png",
+        "bg": "assets/img/record/mini.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2028,8 +2028,8 @@
         "id": "top-100-edm",
         "title": "TOP 100 EDM",
         "description": "Актуальный топ электронной музыки",
-        "img": "assets/imgs/record/top-100-edm.png",
-        "bg": "assets/imgs/record/top-100-edm.jpg",
+        "img": "assets/img/record/top-100-edm.png",
+        "bg": "assets/img/record/top-100-edm.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2055,8 +2055,8 @@
         "id": "dream-pop",
         "title": "Dream Pop",
         "description": "Лёгкий вайб для отдыха и хорошего настроения",
-        "img": "assets/imgs/record/dream-pop.png",
-        "bg": "assets/imgs/record/dream-pop.jpg",
+        "img": "assets/img/record/dream-pop.png",
+        "bg": "assets/img/record/dream-pop.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2082,8 +2082,8 @@
         "id": "houseclss",
         "title": "House Classics",
         "description": "Золотой фонд мелодичных house-хитов",
-        "img": "assets/imgs/record/houseclss.png",
-        "bg": "assets/imgs/record/houseclss.jpg",
+        "img": "assets/img/record/houseclss.png",
+        "bg": "assets/img/record/houseclss.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2109,8 +2109,8 @@
         "id": "guetta",
         "title": "David Guetta",
         "description": "Лучшие треки, ремиксы и коллабы",
-        "img": "assets/imgs/record/guetta.png",
-        "bg": "assets/imgs/record/guetta.jpg",
+        "img": "assets/img/record/guetta.png",
+        "bg": "assets/img/record/guetta.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2136,8 +2136,8 @@
         "id": "tsvetkov",
         "title": "DJ Цветкоff",
         "description": "Радиошоу ди-джея Цветкова",
-        "img": "assets/imgs/record/tsvetkov.png",
-        "bg": "assets/imgs/record/tsvetkov.jpg",
+        "img": "assets/img/record/tsvetkov.png",
+        "bg": "assets/img/record/tsvetkov.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2163,8 +2163,8 @@
         "id": "discofunk",
         "title": "Disco/Funk",
         "description": "Disco-саунд нового тысячелетия",
-        "img": "assets/imgs/record/discofunk.png",
-        "bg": "assets/imgs/record/discofunk.jpg",
+        "img": "assets/img/record/discofunk.png",
+        "bg": "assets/img/record/discofunk.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2190,8 +2190,8 @@
         "id": "hbass",
         "title": "Hard Bass",
         "description": "Расколбас родившийся в Петербурге.",
-        "img": "assets/imgs/record/hbass.png",
-        "bg": "assets/imgs/record/hbass.jpg",
+        "img": "assets/img/record/hbass.png",
+        "bg": "assets/img/record/hbass.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2217,8 +2217,8 @@
         "id": "afro",
         "title": "Afro House",
         "description": "Этно-ритмы на стыке Kwaito & soulful house.",
-        "img": "assets/imgs/record/afro.png",
-        "bg": "assets/imgs/record/afro.jpg",
+        "img": "assets/img/record/afro.png",
+        "bg": "assets/img/record/afro.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2244,8 +2244,8 @@
         "id": "rave",
         "title": "Rave FM",
         "description": "Первоапрельский спецпроект",
-        "img": "assets/imgs/record/rave.png",
-        "bg": "assets/imgs/record/rave.jpg",
+        "img": "assets/img/record/rave.png",
+        "bg": "assets/img/record/rave.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2271,8 +2271,8 @@
         "id": "nu-dance",
         "title": "Nu Dance",
         "description": "Дэнс на скорости 150 bpm в стиле Oliver Tree & Hardwell.",
-        "img": "assets/imgs/record/nu-dance.png",
-        "bg": "assets/imgs/record/nu-dance.jpg",
+        "img": "assets/img/record/nu-dance.png",
+        "bg": "assets/img/record/nu-dance.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2298,8 +2298,8 @@
         "id": "cadillac",
         "title": "60's Dance",
         "description": "Танцевальная музыка эпохи рок-н-ролла",
-        "img": "assets/imgs/record/cadillac.png",
-        "bg": "assets/imgs/record/cadillac.jpg",
+        "img": "assets/img/record/cadillac.png",
+        "bg": "assets/img/record/cadillac.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2325,8 +2325,8 @@
         "id": "lady-waks",
         "title": "Lady Waks",
         "description": "Радиошоу от первой леди breaks-ритмов",
-        "img": "assets/imgs/record/lady-waks.png",
-        "bg": "assets/imgs/record/lady-waks.jpg",
+        "img": "assets/img/record/lady-waks.png",
+        "bg": "assets/img/record/lady-waks.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2352,8 +2352,8 @@
         "id": "dc",
         "title": "Dancecore",
         "description": "Dance на скорости до 150bpm",
-        "img": "assets/imgs/record/dc.png",
-        "bg": "assets/imgs/record/dc.jpg",
+        "img": "assets/img/record/dc.png",
+        "bg": "assets/img/record/dc.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2379,8 +2379,8 @@
         "id": "fut",
         "title": "Future House",
         "description": "Future и Jackin' house: Don Diablo, Tchami, Oliver Heldens",
-        "img": "assets/imgs/record/fut.png",
-        "bg": "assets/imgs/record/fut.jpg",
+        "img": "assets/img/record/fut.png",
+        "bg": "assets/img/record/fut.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2406,8 +2406,8 @@
         "id": "darkside",
         "title": "Darkside",
         "description": "Тёмная сторона drum'n'bass: Noisia, Panacea, Limewax",
-        "img": "assets/imgs/record/darkside.png",
-        "bg": "assets/imgs/record/darkside.jpg",
+        "img": "assets/img/record/darkside.png",
+        "bg": "assets/img/record/darkside.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2433,8 +2433,8 @@
         "id": "futurerave",
         "title": "Future Rave",
         "description": "Включай и ты на рейве!",
-        "img": "assets/imgs/record/futurerave.png",
-        "bg": "assets/imgs/record/futurerave.jpg",
+        "img": "assets/img/record/futurerave.png",
+        "bg": "assets/img/record/futurerave.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2460,8 +2460,8 @@
         "id": "reggae",
         "title": "Reggae",
         "description": "Танцевальный вайб с берегов Ямайки",
-        "img": "assets/imgs/record/reggae.png",
-        "bg": "assets/imgs/record/reggae.jpg",
+        "img": "assets/img/record/reggae.png",
+        "bg": "assets/img/record/reggae.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2487,8 +2487,8 @@
         "id": "elect",
         "title": "Electro",
         "description": "Лучшее в Electro-house: Wolfgang Gartner, Knife Party, Curbi",
-        "img": "assets/imgs/record/elect.png",
-        "bg": "assets/imgs/record/elect.jpg",
+        "img": "assets/img/record/elect.png",
+        "bg": "assets/img/record/elect.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2514,8 +2514,8 @@
         "id": "teo",
         "title": "Hardstyle",
         "description": "Маршевый бас и мелодичный лид: бескомпромиссная смесь",
-        "img": "assets/imgs/record/teo.png",
-        "bg": "assets/imgs/record/teo.jpg",
+        "img": "assets/img/record/teo.png",
+        "bg": "assets/img/record/teo.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2541,8 +2541,8 @@
         "id": "dub",
         "title": "Dubstep",
         "description": "Басы на максимум!",
-        "img": "assets/imgs/record/dub.png",
-        "bg": "assets/imgs/record/dub.jpg",
+        "img": "assets/img/record/dub.png",
+        "bg": "assets/img/record/dub.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2568,8 +2568,8 @@
         "id": "progr",
         "title": "Progressive",
         "description": "Лучшее из progressive trance & house",
-        "img": "assets/imgs/record/progr.png",
-        "bg": "assets/imgs/record/progr.jpg",
+        "img": "assets/img/record/progr.png",
+        "bg": "assets/img/record/progr.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2595,8 +2595,8 @@
         "id": "nejtrinobaur",
         "title": "Nejtrino & Baur",
         "description": "Радиошоу от резидентов Радио Record",
-        "img": "assets/imgs/record/nejtrinobaur.png",
-        "bg": "assets/imgs/record/nejtrinobaur.jpg",
+        "img": "assets/img/record/nejtrinobaur.png",
+        "bg": "assets/img/record/nejtrinobaur.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2622,8 +2622,8 @@
         "id": "synth",
         "title": "Synthwave",
         "description": "Вайб в стиле электронной музыки 80-х",
-        "img": "assets/imgs/record/synth.png",
-        "bg": "assets/imgs/record/synth.jpg",
+        "img": "assets/img/record/synth.png",
+        "bg": "assets/img/record/synth.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2649,8 +2649,8 @@
         "id": "latina",
         "title": "Latina Dance",
         "description": "Despacito, Gazolina, Danza Kuduro и подобное",
-        "img": "assets/imgs/record/latina.png",
-        "bg": "assets/imgs/record/latina.jpg",
+        "img": "assets/img/record/latina.png",
+        "bg": "assets/img/record/latina.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2676,8 +2676,8 @@
         "id": "dj-gvozd",
         "title": "DJ Gvozd",
         "description": "Легендарное радиошоу о d'n'b музыке",
-        "img": "assets/imgs/record/dj-gvozd.png",
-        "bg": "assets/imgs/record/dj-gvozd.jpg",
+        "img": "assets/img/record/dj-gvozd.png",
+        "bg": "assets/img/record/dj-gvozd.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2703,8 +2703,8 @@
         "id": "edmhits",
         "title": "EDM Classics",
         "description": "Фестивальные гимны",
-        "img": "assets/imgs/record/edmhits.png",
-        "bg": "assets/imgs/record/edmhits.jpg",
+        "img": "assets/img/record/edmhits.png",
+        "bg": "assets/img/record/edmhits.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2730,8 +2730,8 @@
         "id": "tecktonik",
         "title": "Tecktonik",
         "description": "Стиль, породивший танцевальный бум 2000-х",
-        "img": "assets/imgs/record/tecktonik.png",
-        "bg": "assets/imgs/record/tecktonik.jpg",
+        "img": "assets/img/record/tecktonik.png",
+        "bg": "assets/img/record/tecktonik.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2757,8 +2757,8 @@
         "id": "jungle",
         "title": "Jungle",
         "description": "История и современность jungle-музыки: DJ Hype, Shy FX, Ed Rush",
-        "img": "assets/imgs/record/jungle.png",
-        "bg": "assets/imgs/record/jungle.jpg",
+        "img": "assets/img/record/jungle.png",
+        "bg": "assets/img/record/jungle.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2784,8 +2784,8 @@
         "id": "hypno",
         "title": "Hypnotic",
         "description": "Идеальный бэкграунд для работы или поездки в авто",
-        "img": "assets/imgs/record/hypno.png",
-        "bg": "assets/imgs/record/hypno.jpg",
+        "img": "assets/img/record/hypno.png",
+        "bg": "assets/img/record/hypno.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2811,8 +2811,8 @@
         "id": "uk-garage",
         "title": "UK Garage",
         "description": "Атмосфера клубов восточного Лондона конца 90-х",
-        "img": "assets/imgs/record/uk-garage.png",
-        "bg": "assets/imgs/record/uk-garage.jpg",
+        "img": "assets/img/record/uk-garage.png",
+        "bg": "assets/img/record/uk-garage.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2838,8 +2838,8 @@
         "id": "gast",
         "title": "Гастарбайтер FM",
         "description": "Первоапрельский спецпроект",
-        "img": "assets/imgs/record/gast.png",
-        "bg": "assets/imgs/record/gast.jpg",
+        "img": "assets/img/record/gast.png",
+        "bg": "assets/img/record/gast.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2865,8 +2865,8 @@
         "id": "mt",
         "title": "Midtempo",
         "description": "Dance на минималках",
-        "img": "assets/imgs/record/mt.png",
-        "bg": "assets/imgs/record/mt.jpg",
+        "img": "assets/img/record/mt.png",
+        "bg": "assets/img/record/mt.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2892,8 +2892,8 @@
         "id": "fbass",
         "title": "Future Bass",
         "description": "Flume, Illenium, Marshmello",
-        "img": "assets/imgs/record/fbass.png",
-        "bg": "assets/imgs/record/fbass.jpg",
+        "img": "assets/img/record/fbass.png",
+        "bg": "assets/img/record/fbass.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2919,8 +2919,8 @@
         "id": "martingarrix",
         "title": "Martin Garrix",
         "description": "Радиошоу STMPD от Martin Garrix",
-        "img": "assets/imgs/record/martingarrix.png",
-        "bg": "assets/imgs/record/martingarrix.jpg",
+        "img": "assets/img/record/martingarrix.png",
+        "bg": "assets/img/record/martingarrix.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2946,8 +2946,8 @@
         "id": "oliverheldens",
         "title": "Oliver Heldens",
         "description": "Радиошоу Heldeep от знаменитого голландского DJ",
-        "img": "assets/imgs/record/oliverheldens.png",
-        "bg": "assets/imgs/record/oliverheldens.jpg",
+        "img": "assets/img/record/oliverheldens.png",
+        "bg": "assets/img/record/oliverheldens.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -2973,8 +2973,8 @@
         "id": "mmbt",
         "title": "Moombahton",
         "description": "Синтез house- и reggae-ритмов.",
-        "img": "assets/imgs/record/mmbt.png",
-        "bg": "assets/imgs/record/mmbt.jpg",
+        "img": "assets/img/record/mmbt.png",
+        "bg": "assets/img/record/mmbt.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -3000,8 +3000,8 @@
         "id": "2step",
         "title": "2-step",
         "description": "Атмосферные синкопированные ритмы",
-        "img": "assets/imgs/record/2step.png",
-        "bg": "assets/imgs/record/2step.jpg",
+        "img": "assets/img/record/2step.png",
+        "bg": "assets/img/record/2step.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -3027,8 +3027,8 @@
         "id": "complextro",
         "title": "Complextro",
         "description": "Синтез house и dubstep",
-        "img": "assets/imgs/record/complextro.png",
-        "bg": "assets/imgs/record/complextro.jpg",
+        "img": "assets/img/record/complextro.png",
+        "bg": "assets/img/record/complextro.jpg",
         "playlists": [
             {
                 "format": "aacp",
@@ -3054,8 +3054,8 @@
         "id": "groovetribal",
         "title": "Groove/Tribal",
         "description": "Этнический бит",
-        "img": "assets/imgs/record/groovetribal.png",
-        "bg": "assets/imgs/record/groovetribal.jpg",
+        "img": "assets/img/record/groovetribal.png",
+        "bg": "assets/img/record/groovetribal.jpg",
         "playlists": [
             {
                 "format": "aacp",
