@@ -18,7 +18,7 @@
         onplay: EventHandler<Event, HTMLAudioElement> | null | undefined;
     } = $props();
 
-    let streamID = $state(3);
+    let streamID = $state(1);
 
     const term = $derived(
         `${$played?.song?.artist || ""} / ${$played?.song?.title || ""}`,
@@ -43,20 +43,18 @@
     function onloadeddata() {
         loaded = true;
     }
-    // function oncanplay() {
-    //     // paused = false;
-    // }
+    function oncanplay() {
+        paused = false;
+    }
 
     function onerror(e: Event) {
-        console.error(src);
-        const [_, id] = src.match(/ice(\d)/)!;
-        const random = () => Math.floor(Math.random() * 5) + 1;
-        streamID = random();
-        while (Number(id) === streamID) {
-            console.error(src);
-            streamID = random();
+        if ($station === "soma") {
+            const errorID = streamID;
+            while (errorID === streamID) {
+                console.error(e);
+                streamID = Math.floor(Math.random() * 5) + 1;
+            }
         }
-        console.log(src);
     }
 </script>
 
@@ -67,6 +65,8 @@
     preload="auto"
     {onloadstart}
     {onloadeddata}
+    {oncanplay}
+    {onerror}
     {onpause}
     {onplay}
     {src}
