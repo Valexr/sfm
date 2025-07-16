@@ -17,7 +17,6 @@ const svelteOptions = {
             return `${pkg.name}-${hash(css)}`;
         },
         runes: true,
-        immutable: true,
         modernAst: true
     },
     preprocess: [
