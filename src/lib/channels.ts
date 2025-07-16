@@ -8,7 +8,7 @@ export const played = createPlayed();
 
 export const station = readable('soma', (set) => {
     onhashchange = () => set(location.hash.slice(1));
-    // set(location.hash.slice(1));
+    set(location.hash.slice(1) || 'soma');
 });
 
 function createChannels() {
