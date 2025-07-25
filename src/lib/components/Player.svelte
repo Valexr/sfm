@@ -51,7 +51,7 @@
         if ($station === "soma") {
             const errorID = streamID;
             while (errorID === streamID) {
-                console.error(e);
+                console.error("onerror", e);
                 streamID = Math.floor(Math.random() * 5) + 1;
             }
         }

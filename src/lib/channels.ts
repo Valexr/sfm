@@ -44,6 +44,7 @@ function createPlayed() {
         async song() {
             try {
                 const song = await getSong(get(played));
+                console.log('song:', song);
                 update((played) => Object.assign(played, { song }));
             } catch (e) {
                 console.error(e);
