@@ -48,12 +48,14 @@
     }
 
     function onerror(e: Event) {
+        paused = true;
         if ($station === "soma") {
             const errorID = streamID;
             while (errorID === streamID) {
                 console.error("onerror", e);
                 streamID = Math.floor(Math.random() * 5) + 1;
             }
+            paused = false;
         }
     }
 </script>
