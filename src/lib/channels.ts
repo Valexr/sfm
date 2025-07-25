@@ -63,12 +63,16 @@ function createPlayed() {
     };
 
     async function getSong(channel: ChannelType) {
-        const [curentSong] = await getSongs(channel.id);
-        const song = await setMeta(curentSong);
+        try {
+            const [curentSong] = await getSongs(channel.id);
+            const song = await setMeta(curentSong);
 
-        setMediaSession(song);
+            setMediaSession(song);
 
-        return song;
+            return song;
+        } catch (e) {
+            console.error('getSong', e);
+        }
 
         async function getSongs(channelID: string) {
             try {
