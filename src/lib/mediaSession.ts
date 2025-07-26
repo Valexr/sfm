@@ -9,7 +9,7 @@ export function setMediaSession(song: SongType) {
         '384x384',
         '512x512',
     ];
-    if (navigator.mediaSession) {
+    if ('mediaSession' in navigator) {
         navigator.mediaSession.metadata = new MediaMetadata({
             title: song.title,
             artist: song.artist,
