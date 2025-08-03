@@ -1,6 +1,6 @@
 export async function downloadImage(
     imageSrc: string,
-    nameOfDownload = 'my-image.png',
+    nameOfDownload = "my-image.png",
 ) {
     const response = await fetch(imageSrc);
 
@@ -8,7 +8,7 @@ export async function downloadImage(
 
     const href = URL.createObjectURL(blobImage);
 
-    const anchorElement = document.createElement('a');
+    const anchorElement = document.createElement("a");
     anchorElement.href = href;
     anchorElement.download = nameOfDownload;
 
@@ -23,11 +23,11 @@ async function getStream(url: string) {
     const res = await fetch(url);
     const txt = await res.text();
     const [stream] = txt.match(/http.+/) || [];
-    return stream || ''
+    return stream || "";
 }
 
-export function match(channel: Record<string, any>, query: Record<string, any>) {
-    return Object.entries(query).every(([key, val]) => channel[key] === val)
+export function match(object: Record<string, any>, query: Record<string, any>) {
+    return Object.entries(query).every(([key, val]) => object[key] === val);
 }
 
 export async function getJSON<T>(url: string): Promise<T> {
@@ -38,9 +38,9 @@ export async function getJSON<T>(url: string): Promise<T> {
 export function imgColor(src: string) {
     const context = document.createElement("canvas").getContext("2d");
     const img = new Image();
-    Object.assign(img, { src, crossOrigin: '' });
+    Object.assign(img, { src, crossOrigin: "" });
 
-    console.log(img)
+    console.log(img);
 
     if (context && img.complete) {
         context.imageSmoothingEnabled = true;
@@ -60,12 +60,14 @@ export function imgColor(src: string) {
     }
 }
 
-
-export function imageBrightness(src: string, callback: (brightness: number) => void) {
+export function imageBrightness(
+    src: string,
+    callback: (brightness: number) => void,
+) {
     const img = document.createElement("img");
     img.src = src;
     img.style.display = "none";
-    img.crossOrigin = "anonymous"
+    img.crossOrigin = "anonymous";
 
     let colorSum = 0;
 
@@ -79,7 +81,12 @@ export function imageBrightness(src: string, callback: (brightness: number) => v
         if (ctx) {
             ctx.drawImage(img, 0, 0);
 
-            const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const { data, width, height } = ctx.getImageData(
+                0,
+                0,
+                canvas.width,
+                canvas.height,
+            );
 
             let r, g, b, avg;
 
@@ -95,5 +102,5 @@ export function imageBrightness(src: string, callback: (brightness: number) => v
             const brightness = Math.floor(colorSum / (width * height));
             callback(brightness);
         }
-    }
+    };
 }

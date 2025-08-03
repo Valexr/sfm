@@ -23,7 +23,7 @@
 
     const cover = $derived(
         (selected && $played?.song?.albumArt) ||
-            (location && location.pathname + channel?.bg),
+            (location && location.pathname + channel?.bg)
     );
     const stateICO = $derived(!loaded ? loader : !paused ? equaliser : player);
 </script>

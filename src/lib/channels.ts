@@ -1,21 +1,21 @@
-import { get, writable, readable } from 'svelte/store';
-import { cacheable } from './utils/cacheable';
-import { setMediaSession } from './mediaSession';
-import { getJSON, match } from './utils';
+import { get, writable, readable } from "svelte/store";
+import { cacheable } from "./utils/cacheable";
+import { setMediaSession } from "./mediaSession";
+import { getJSON, match } from "./utils";
 
 export const channels = createChannels();
 export const played = createPlayed();
 
-export const station = readable('soma', (set) => {
+export const station = readable("soma", (set) => {
     onhashchange = () => set(location.hash.slice(1));
-    set(location.hash.slice(1) || 'soma');
+    set(location.hash.slice(1) || "soma");
 });
 
 function createChannels() {
     const { subscribe, set, update, get } = cacheable<ChannelType[]>(
-        'somafmChannels',
+        "somafmChannels",
         [],
-        true
+        true,
     );
 
     return {
@@ -23,8 +23,8 @@ function createChannels() {
         set,
         update,
         get,
-        async load(hash = 'soma') {
-            const URL = `assets/data/${hash || 'soma'}.json`;
+        async load(hash = "soma") {
+            const URL = `assets/data/${hash || "soma"}.json`;
             const channels = await getJSON<ChannelType[]>(URL);
             set(channels);
         },
@@ -44,8 +44,11 @@ function createPlayed() {
         async song() {
             try {
                 const song = await getSong(get(played));
-                console.log('song:', song);
-                update((played) => Object.assign(played, { song }));
+                console.log("song:", song);
+                if (song) {
+                    setMediaSession(song);
+                    update((played) => Object.assign(played, { song }));
+                }
             } catch (e) {
                 console.error(e);
             }
@@ -72,17 +75,15 @@ function createPlayed() {
                 song.albumArt = location.pathname + channel.bg;
             }
 
-            setMediaSession(song);
-
             return song;
         } catch (e) {
-            console.error('getSong', e);
+            console.error("getSong", e);
         }
 
         async function getSongs(channelID: string) {
             try {
                 const res = await fetch(
-                    `https://somafm.com/songs/${channelID}.json`
+                    `https://somafm.com/songs/${channelID}.json`,
                 );
                 const { songs } = await res.json();
                 return songs;
@@ -105,8 +106,8 @@ function createPlayed() {
                         .toISOString()
                         .slice(11, -5);
                     song.albumArt = artworkUrl100.replace(
-                        '100x100bb.jpg',
-                        '500x500bb.png'
+                        "100x100bb.jpg",
+                        "500x500bb.png",
                     );
                 }
             } catch (e) {
@@ -118,7 +119,7 @@ function createPlayed() {
             function itunesURL(artist: string, title: string) {
                 const term = `${artist} - ${title}`;
                 return `https://itunes.apple.com/search?term=${encodeURIComponent(
-                    term
+                    term,
                 )}`;
             }
         }
