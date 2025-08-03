@@ -28,7 +28,7 @@ function createChannels() {
             const channels = await getJSON<ChannelType[]>(URL);
             set(channels);
         },
-        search(query: Record<keyof ChannelType, any>) {
+        search(query: Partial<Record<keyof ChannelType, any>>) {
             return get().filter((channel) => match(channel, query));
         },
     };
@@ -67,6 +67,10 @@ function createPlayed() {
         try {
             const [curentSong] = await getSongs(channel.id);
             const song = await setMeta(curentSong);
+
+            if (!song.albumArt) {
+                song.albumArt = location.pathname + channel.bg;
+            }
 
             setMediaSession(song);
 

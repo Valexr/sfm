@@ -3,26 +3,26 @@ declare module '*.svg' {
     export default content;
 }
 
-type Name = string
+type Name = string;
 type Repository = {
-    type: string
-    url: string
-}
+    type: string;
+    url: string;
+};
 
 interface ChannelType {
-    id: string,
-    title: string,
-    description: string,
-    img: string,
-    bg: string
-    playlists: Array<PlaylistType>,
-    song: SongType,
+    id: string;
+    title: string;
+    description: string;
+    img: string;
+    bg: string;
+    playlists: Array<PlaylistType>;
+    song: SongType;
 }
 
 interface PlaylisType {
-    pls: string,
-    src: string
-    title: string
+    pls: string;
+    src: string;
+    title: string;
 }
 
 interface SongType {
@@ -31,7 +31,7 @@ interface SongType {
     artist: string;
     title: string;
     date: string;
-    time: string
+    time: string;
     url: string;
+    bg: string;
 }
-
