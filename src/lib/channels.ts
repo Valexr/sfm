@@ -44,13 +44,12 @@ function createPlayed() {
         async song() {
             try {
                 const song = await getSong(get(played));
-                console.log("song:", song);
                 if (song) {
                     setMediaSession(song);
                     update((played) => Object.assign(played, { song }));
                 }
             } catch (e) {
-                console.error(e);
+                console.error("createPlayed.song", e);
             }
         },
         skip(direction: number) {
@@ -88,7 +87,7 @@ function createPlayed() {
                 const { songs } = await res.json();
                 return songs;
             } catch (e) {
-                console.error(e);
+                console.error("getSongs", e);
             }
         }
 
@@ -111,7 +110,7 @@ function createPlayed() {
                     );
                 }
             } catch (e) {
-                console.error(e);
+                console.error("setMeta", e);
                 // throw e;
             }
             return song;
