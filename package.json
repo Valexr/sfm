@@ -15,9 +15,9 @@
     },
     "devDependencies": {
         "@tsconfig/svelte": "^5.0.5",
-        "esbuild": "^0.25.9",
+        "esbuild": "^0.25.10",
         "esbuild-svelte": "^0.9.3",
-        "svelte": "^5.38.10",
+        "svelte": "^5.39.3",
         "svelte-preprocess": "^6.0.3",
         "typescript": "^5.9.2"
     },
