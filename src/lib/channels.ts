@@ -93,14 +93,11 @@ function createPlayed() {
 
         async function setMeta(song: SongType) {
             try {
-                console.log(song);
                 const res = await fetch(itunesURL(song.artist, song.title), {
                     headers: { Accept: 'application/json' },
                     redirect: 'manual',
                 });
                 const { results } = await res.json();
-
-                console.log(results);
 
                 if (results.length) {
                     const track = results.find(
