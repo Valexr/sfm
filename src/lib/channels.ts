@@ -100,11 +100,11 @@ function createPlayed() {
                 const { results } = await res.json();
 
                 if (results.length) {
-                    const track = results.find(
-                        (r) => r.trackName === song.title
-                    );
-                    const { trackTimeMillis, trackViewUrl, artworkUrl100 } =
-                        track || results[0];
+                    // const track = results.find(
+                    //     (r) => r.trackName === song.title
+                    // );
+                    const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
+                        results;
 
                     song.url = trackViewUrl;
                     song.time = new Date(trackTimeMillis * 1000)
@@ -126,12 +126,15 @@ function createPlayed() {
                 // https://performance-partners.apple.com/search-api
                 return `https://itunes.apple.com/search?term=${encodeURIComponent(
                     term
-                )}&media=music`;
+                )}&entity=song`;
             }
         }
     }
 }
 
 function clear(value: string) {
-    return value.replace(/[^A-Za-z0-9\s]+/g, '');
+    return value
+        .split('(')[0]
+        .trim()
+        .replace(/[^A-Za-z0-9\s]+/g, '');
 }

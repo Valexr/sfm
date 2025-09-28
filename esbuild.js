@@ -49,7 +49,12 @@ if (DEV) {
     const ctx = await context(buildOptions);
 
     await ctx.watch();
-    await ctx.serve({ host: '0.0.0.0', servedir: 'public' });
+    await ctx.serve({ 
+        host: '0.0.0.0', 
+        servedir: 'public',
+        certfile:'localhost.crt',
+        keyfile: 'localhost.key'
+    });
 
     // SPA && proxy().listen(8080);
 
