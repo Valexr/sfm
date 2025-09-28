@@ -133,5 +133,5 @@ function createPlayed() {
 }
 
 function clear(value: string) {
-    return value.replace(/[^A-Za-z0-9]+/g, '');
+    return value.replace(/[^A-Za-z0-9\s]+/g, '');
 }
