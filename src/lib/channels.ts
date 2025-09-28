@@ -93,15 +93,21 @@ function createPlayed() {
 
         async function setMeta(song: SongType) {
             try {
-                const ituned = await fetch(itunesURL(song.artist, song.title), {
+                console.log(song);
+                const res = await fetch(itunesURL(song.artist, song.title), {
                     headers: { Accept: 'application/json' },
                     redirect: 'manual',
                 });
-                const { results } = await ituned.json();
+                const { results } = await res.json();
+
+                console.log(results);
 
                 if (results.length) {
-                    const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
-                        results;
+                    const track = results.find(
+                        (r) => r.trackName === song.title
+                    );
+                    const { trackTimeMillis, trackViewUrl, artworkUrl100 } =
+                        track || results[0];
 
                     song.url = trackViewUrl;
                     song.time = new Date(trackTimeMillis * 1000)
