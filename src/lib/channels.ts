@@ -125,7 +125,7 @@ function createPlayed() {
             return song;
 
             function itunesURL(artist: string, title: string) {
-                const term = `${artist} - ${title}`;
+                const term = `${clear(artist)} - ${clear(title)}`;
                 // https://performance-partners.apple.com/search-api
                 return `https://itunes.apple.com/search?term=${encodeURIComponent(
                     term
@@ -133,4 +133,8 @@ function createPlayed() {
             }
         }
     }
+}
+
+function clear(value: string) {
+    return value.replace(/[^A-Za-z0-9]+/g, '');
 }

@@ -19,13 +19,12 @@
     );
     const cover = $derived($played?.song?.albumArt || $played?.bg);
 
-    function play(channel: ChannelType) {
-        if (channel.id === $played?.id) {
-            paused = !paused;
-        } else {
+    async function play(channel: ChannelType) {
+        paused = !paused;
+        if (channel.id !== $played?.id) {
             played.set(channel);
-            played.song();
         }
+        await played.song();
     }
 
     function onpause() {
