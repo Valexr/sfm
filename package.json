@@ -7,19 +7,30 @@
     "scripts": {
         "build": "node esbuild",
         "dev": "node esbuild --dev --spa",
-        "preview": "npx esbuild --servedir=public"
+        "preview": "npx esbuild --servedir=public",
+        "lint": "eslint ./src && prettier --check ./src",
+        "format": "prettier --write ./src"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/Valexr/sfm.git"
     },
     "devDependencies": {
+        "@eslint/compat": "^1.4.0",
+        "@eslint/js": "^9.36.0",
         "@tsconfig/svelte": "^5.0.5",
         "esbuild": "^0.25.10",
         "esbuild-svelte": "^0.9.3",
+        "eslint": "^9.36.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-svelte": "^3.12.4",
+        "globals": "^16.4.0",
+        "prettier": "^3.6.2",
+        "prettier-plugin-svelte": "^3.4.0",
         "svelte": "^5.39.6",
         "svelte-preprocess": "^6.0.3",
-        "typescript": "^5.9.2"
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.44.1"
     },
     "pnpm": {
         "onlyBuiltDependencies": [

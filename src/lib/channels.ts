@@ -7,134 +7,118 @@ export const channels = createChannels();
 export const played = createPlayed();
 
 export const station = readable('soma', (set) => {
-    onhashchange = () => set(location.hash.slice(1));
-    set(location.hash.slice(1) || 'soma');
+  onhashchange = () => set(location.hash.slice(1));
+  set(location.hash.slice(1) || 'soma');
 });
 
 function createChannels() {
-    const { subscribe, set, update, get } = cacheable<ChannelType[]>(
-        'somafmChannels',
-        [],
-        true
-    );
+  const { subscribe, set, update, get } = cacheable<ChannelType[]>('somafmChannels', [], true);
 
-    return {
-        subscribe,
-        set,
-        update,
-        get,
-        async load(hash = 'soma') {
-            const URL = `assets/data/${hash || 'soma'}.json`;
-            const channels = await getJSON<ChannelType[]>(URL);
-            set(channels);
-        },
-        search(query: Partial<Record<keyof ChannelType, any>>) {
-            return get().filter((channel) => match(channel, query));
-        },
-    };
+  return {
+    subscribe,
+    set,
+    update,
+    get,
+    async load(hash = 'soma') {
+      const URL = `assets/data/${hash || 'soma'}.json`;
+      const channels = await getJSON<ChannelType[]>(URL);
+      set(channels);
+    },
+    search(query: Partial<Record<keyof ChannelType, any>>) {
+      return get().filter((channel) => match(channel, query));
+    }
+  };
 }
 
 function createPlayed() {
-    const { subscribe, set, update } = writable<ChannelType>();
+  const { subscribe, set, update } = writable<ChannelType>();
 
-    return {
-        subscribe,
-        set,
-        update,
-        async song() {
-            try {
-                const song = await getSong(get(played));
-                if (song) {
-                    setMediaSession(song);
-                    update((played) => Object.assign(played, { song }));
-                }
-            } catch (e) {
-                console.error('createPlayed.song', e);
-            }
-        },
-        skip(direction: number) {
-            const playedINDEX = channels
-                .get()
-                .findIndex((c) => c.id === get(played).id);
-            const INDEX = playedINDEX + direction;
-            const { length } = channels.get();
-            const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
-            const channel = channels.get()[channelINDEX];
-            this.set(channel);
-            this.song();
-        },
-    };
-
-    async function getSong(channel: ChannelType) {
-        try {
-            const [curentSong] = await getSongs(channel.id);
-            const song = await setMeta(curentSong);
-
-            if (!song.albumArt) {
-                song.albumArt = location.pathname + channel.bg;
-            }
-
-            return song;
-        } catch (e) {
-            console.error('getSong', e);
+  return {
+    subscribe,
+    set,
+    update,
+    async song() {
+      try {
+        const song = await getSong(get(played));
+        if (song) {
+          setMediaSession(song);
+          update((played) => Object.assign(played, { song }));
         }
-
-        async function getSongs(channelID: string) {
-            try {
-                const res = await fetch(
-                    `https://somafm.com/songs/${channelID}.json`
-                );
-                const { songs } = await res.json();
-                return songs;
-            } catch (e) {
-                console.error('getSongs', e);
-            }
-        }
-
-        async function setMeta(song: SongType) {
-            try {
-                const res = await fetch(itunesURL(song.artist, song.title), {
-                    headers: { Accept: 'application/json' },
-                    redirect: 'manual',
-                });
-                const { results } = await res.json();
-
-                if (results.length) {
-                    // const track = results.find(
-                    //     (r) => r.trackName === song.title
-                    // );
-                    const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] =
-                        results;
-
-                    song.url = trackViewUrl;
-                    song.time = new Date(trackTimeMillis * 1000)
-                        .toISOString()
-                        .slice(11, -5);
-                    song.albumArt = artworkUrl100.replace(
-                        '100x100bb.jpg',
-                        '500x500bb.png'
-                    );
-                }
-            } catch (e) {
-                console.error('setMeta', e);
-                // throw e;
-            }
-            return song;
-
-            function itunesURL(artist: string, title: string) {
-                const term = `${clear(artist)} - ${clear(title)}`;
-                // https://performance-partners.apple.com/search-api
-                return `https://itunes.apple.com/search?term=${encodeURIComponent(
-                    term
-                )}&entity=song`;
-            }
-        }
+      } catch (e) {
+        console.error('createPlayed.song', e);
+      }
+    },
+    skip(direction: number) {
+      const playedINDEX = channels.get().findIndex((c) => c.id === get(played).id);
+      const INDEX = playedINDEX + direction;
+      const { length } = channels.get();
+      const channelINDEX = ((INDEX % length) + length) % length; // (i % n + n) % n - circular array index
+      const channel = channels.get()[channelINDEX];
+      this.set(channel);
+      this.song();
     }
+  };
+
+  async function getSong(channel: ChannelType) {
+    try {
+      const [curentSong] = await getSongs(channel.id);
+      const song = await setMeta(curentSong);
+
+      if (!song.albumArt) {
+        song.albumArt = location.pathname + channel.bg;
+      }
+
+      return song;
+    } catch (e) {
+      console.error('getSong', e);
+    }
+
+    async function getSongs(channelID: string) {
+      try {
+        const res = await fetch(`https://somafm.com/songs/${channelID}.json`);
+        const { songs } = await res.json();
+        return songs;
+      } catch (e) {
+        console.error('getSongs', e);
+      }
+    }
+
+    async function setMeta(song: SongType) {
+      try {
+        const res = await fetch(itunesURL(song.artist, song.title), {
+          headers: { Accept: 'application/json' },
+          redirect: 'manual'
+        });
+        const { results } = await res.json();
+
+        if (results.length) {
+          // const track = results.find(
+          //     (r) => r.trackName === song.title
+          // );
+          const [{ trackTimeMillis, trackViewUrl, artworkUrl100 }] = results;
+
+          song.url = trackViewUrl;
+          song.time = new Date(trackTimeMillis * 1000).toISOString().slice(11, -5);
+          song.albumArt = artworkUrl100.replace('100x100bb.jpg', '500x500bb.png');
+        }
+      } catch (e) {
+        console.error('setMeta', e);
+        // throw e;
+      }
+      return song;
+
+      function itunesURL(artist: string, title: string) {
+        const term = `${clear(artist)} - ${clear(title)}`;
+        // https://performance-partners.apple.com/search-api
+        return `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song`;
+      }
+    }
+  }
 }
 
 function clear(value: string) {
-    return value
-        .split('(')[0]
-        .trim()
-        .replace(/[^A-Za-z0-9\s]+/g, '');
+  return value
+    .split('(')[0]
+    .trim()
+    .replace(/[^A-Za-z0-9\s]+/g, '');
 }

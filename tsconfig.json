@@ -3,12 +3,8 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "$lib/*": [
-                "src/lib/*"
-            ],
-            "$svg/*": [
-                "src/svg/*"
-            ],
+            "$lib/*": ["src/lib/*"],
+            "$svg/*": ["src/svg/*"]
         },
         "strict": true,
         "sourceMap": true,
@@ -18,18 +14,10 @@
         "resolveJsonModule": true,
         "moduleResolution": "Node",
         "verbatimModuleSyntax": true,
-        "lib": [
-            "DOM",
-            "ESNext",
-            "DOM.Iterable"
-        ],
+        "lib": ["DOM", "ESNext", "DOM.Iterable"],
         "module": "ESNext",
         "target": "ESNext",
-        "types": [
-            "svelte"
-        ]
+        "types": ["svelte"]
     },
-    "include": [
-        "src/**/*"
-    ],
+    "include": ["src/**/*"]
 }
