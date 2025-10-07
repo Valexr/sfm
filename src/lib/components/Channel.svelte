@@ -61,7 +61,7 @@
 
     &:hover,
     &.selected {
-      outline-width: 0.5rem;
+      outline-width: 0.3rem;
       outline-style: solid;
       outline-color: var(--hover);
       opacity: 1;
