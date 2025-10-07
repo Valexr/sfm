@@ -50,7 +50,7 @@
     padding: 0;
     position: relative;
     transition: opacity 250ms ease;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background: var(--background-image) center/cover no-repeat;
 
     & img {
@@ -61,7 +61,7 @@
 
     &:hover,
     &.selected {
-      outline-width: 2px;
+      outline-width: 0.5rem;
       outline-style: solid;
       outline-color: var(--hover);
       opacity: 1;
@@ -72,9 +72,9 @@
       grid-row: auto / span 2;
       grid-column: auto / span 2;
       position: sticky;
-      bottom: 100px;
+      bottom: 5.5rem;
       z-index: 1;
-      top: 70px;
+      top: 4.5rem;
     }
   }
 </style>

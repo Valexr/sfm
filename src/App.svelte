@@ -73,15 +73,15 @@
   }
 
   main {
-    --cell-size: 100px;
+    --cell-size: 5.5rem;
     gap: 1rem;
     margin: 1rem;
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 1fr));
 
-    @media (min-width: 600px) {
-      --cell-size: 145px;
+    @media (min-width: 37.5rem) {
+      --cell-size: 7.5rem;
     }
   }
 
