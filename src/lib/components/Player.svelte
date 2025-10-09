@@ -75,7 +75,7 @@
 <section>
   <p>{term}</p>
   <select bind:value={quality}>
-    {#each $played.playlists as { title }, i}
+    {#each $played.playlists as { title }, i (title)}
       <option value={i}>{title}</option>
     {/each}
   </select>
