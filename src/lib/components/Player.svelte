@@ -20,7 +20,7 @@
 
   let streamID = $state(1);
 
-  const term = $derived(`${$played?.song?.artist || ''} / ${$played?.song?.title || ''}`);
+  // const term = $derived(`${$played?.song?.artist || ''} / ${$played?.song?.title || ''}`);
 
   const src = $derived(
     $station === 'soma'
@@ -73,7 +73,7 @@
 >
 </audio>
 <section>
-  <p>{term}</p>
+  <p>{$played?.song?.title || ''}</p>
   <select bind:value={quality}>
     {#each $played.playlists as { title }, i (title)}
       <option value={i}>{title}</option>
