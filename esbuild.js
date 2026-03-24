@@ -1,6 +1,6 @@
 import { build, context } from 'esbuild';
 import svelte from 'esbuild-svelte';
-import { sveltePreprocess } from 'svelte-preprocess';
+// import { sveltePreprocess } from 'svelte-preprocess';
 import rm from './env/rm.js';
 import log from './env/log.js';
 import meta from './env/meta.js';
@@ -18,13 +18,13 @@ const svelteOptions = {
     },
     runes: true,
     modernAst: true
-  },
-  preprocess: [
-    sveltePreprocess({
-      sourceMap: DEV,
-      typescript: true
-    })
-  ]
+  }
+  // preprocess: [
+  //   sveltePreprocess({
+  //     sourceMap: DEV,
+  //     typescript: true
+  //   })
+  // ]
 };
 
 const buildOptions = {
