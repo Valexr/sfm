@@ -1,23 +1,24 @@
 {
-    "extends": "@tsconfig/svelte/tsconfig.json",
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "$lib/*": ["src/lib/*"],
-            "$svg/*": ["src/svg/*"]
-        },
-        "strict": true,
-        "sourceMap": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "resolveJsonModule": true,
-        "moduleResolution": "Node",
-        "verbatimModuleSyntax": true,
-        "lib": ["DOM", "ESNext", "DOM.Iterable"],
-        "module": "ESNext",
-        "target": "ESNext",
-        "types": ["svelte"]
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "$lib/*": ["src/lib/*"],
+      "$svg/*": ["src/svg/*"]
     },
-    "include": ["src/**/*"]
+    "strict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "verbatimModuleSyntax": true,
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "types": ["svelte"],
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src/**/*"]
 }
