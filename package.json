@@ -16,20 +16,20 @@
     "url": "https://github.com/Valexr/sfm.git"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.3",
+    "@eslint/compat": "^2.0.5",
     "@eslint/js": "^10.0.1",
     "@tsconfig/svelte": "^5.0.8",
-    "esbuild": "^0.27.4",
+    "esbuild": "^0.27.7",
     "esbuild-svelte": "^0.9.4",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.16.0",
-    "globals": "^17.4.0",
-    "prettier": "^3.8.1",
+    "eslint-plugin-svelte": "^3.17.0",
+    "globals": "^17.5.0",
+    "prettier": "^3.8.3",
     "prettier-plugin-svelte": "^3.5.1",
-    "svelte": "^5.55.0",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.57.2"
+    "svelte": "^5.55.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
