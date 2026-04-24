@@ -1,1374 +1,1402 @@
 [
-    {
-        "id": "7soul",
-        "title": "Seven Inch Soul",
-        "description": "Vintage soul tracks from the original 45 RPM vinyl.",
-        "bg": "assets/img/soma/7soul.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/7soul.pls",
-                "src": "https://ice1.somafm.com/7soul-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/7soul130.pls",
-                "src": "https://ice1.somafm.com/7soul-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/7soul64.pls",
-                "src": "https://ice1.somafm.com/7soul-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/7soul32.pls",
-                "src": "https://ice1.somafm.com/7soul-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "beatblender",
-        "title": "Beat Blender",
-        "description": "A late night blend of deep-house and downtempo chill.",
-        "bg": "assets/img/soma/beatblender.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/beatblender.pls",
-                "src": "https://ice1.somafm.com/beatblender-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/beatblender130.pls",
-                "src": "https://ice1.somafm.com/beatblender-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/beatblender64.pls",
-                "src": "https://ice1.somafm.com/beatblender-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/beatblender32.pls",
-                "src": "https://ice1.somafm.com/beatblender-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "bootliquor",
-        "title": "Boot Liquor",
-        "description": "Americana Roots music for Cowhands, Cowpokes and Cowtippers",
-        "bg": "assets/img/soma/bootliquor.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/bootliquor320.pls",
-                "src": "https://ice1.somafm.com/bootliquor-320-mp3",
-                "title": "320-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/bootliquor130.pls",
-                "src": "https://ice1.somafm.com/bootliquor-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/bootliquor64.pls",
-                "src": "https://ice1.somafm.com/bootliquor-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/bootliquor32.pls",
-                "src": "https://ice1.somafm.com/bootliquor-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "brfm",
-        "title": "Black Rock FM",
-        "description": "From the Playa to the world, for the annual Burning Man festival.",
-        "bg": "assets/img/soma/brfm.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/brfm.pls",
-                "src": "https://ice1.somafm.com/brfm-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/brfm130.pls",
-                "src": "https://ice1.somafm.com/brfm-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/brfm64.pls",
-                "src": "https://ice1.somafm.com/brfm-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/brfm32.pls",
-                "src": "https://ice1.somafm.com/brfm-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "christmas",
-        "title": "Christmas Lounge",
-        "description": "Chilled holiday grooves and classic winter lounge tracks. (Kid and Parent safe!) ",
-        "bg": "assets/img/soma/christmas.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/christmas256.pls",
-                "src": "https://ice1.somafm.com/christmas-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/christmas130.pls",
-                "src": "https://ice1.somafm.com/christmas-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/christmas64.pls",
-                "src": "https://ice1.somafm.com/christmas-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/christmas32.pls",
-                "src": "https://ice1.somafm.com/christmas-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "cliqhop",
-        "title": "cliqhop idm",
-        "description": "Blips'n'beeps backed mostly w/beats. Intelligent Dance Music.",
-        "bg": "assets/img/soma/cliqhop.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/cliqhop256.pls",
-                "src": "https://ice1.somafm.com/cliqhop-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/cliqhop130.pls",
-                "src": "https://ice1.somafm.com/cliqhop-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/cliqhop64.pls",
-                "src": "https://ice1.somafm.com/cliqhop-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/cliqhop32.pls",
-                "src": "https://ice1.somafm.com/cliqhop-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "covers",
-        "title": "Covers",
-        "description": "Just covers. Songs you know by artists you don't. We've got you covered. ",
-        "bg": "assets/img/soma/covers.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/covers.pls",
-                "src": "https://ice1.somafm.com/covers-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/covers130.pls",
-                "src": "https://ice1.somafm.com/covers-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/covers64.pls",
-                "src": "https://ice1.somafm.com/covers-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/covers32.pls",
-                "src": "https://ice1.somafm.com/covers-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "deepspaceone",
-        "title": "Deep Space One",
-        "description": "Deep ambient electronic, experimental and space music. For inner and outer space exploration.",
-        "bg": "assets/img/soma/deepspaceone.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/deepspaceone.pls",
-                "src": "https://ice1.somafm.com/deepspaceone-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/deepspaceone130.pls",
-                "src": "https://ice1.somafm.com/deepspaceone-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/deepspaceone64.pls",
-                "src": "https://ice1.somafm.com/deepspaceone-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/deepspaceone32.pls",
-                "src": "https://ice1.somafm.com/deepspaceone-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "defcon",
-        "title": "DEF CON Radio",
-        "description": "Music for Hacking. The DEF CON Year-Round Channel.",
-        "bg": "assets/img/soma/defcon.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/defcon256.pls",
-                "src": "https://ice1.somafm.com/defcon-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/defcon130.pls",
-                "src": "https://ice1.somafm.com/defcon-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/defcon64.pls",
-                "src": "https://ice1.somafm.com/defcon-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/defcon32.pls",
-                "src": "https://ice1.somafm.com/defcon-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "digitalis",
-        "title": "Digitalis",
-        "description": "Digitally affected analog rock to calm the agitated heart.",
-        "bg": "assets/img/soma/digitalis.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/digitalis256.pls",
-                "src": "https://ice1.somafm.com/digitalis-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/digitalis130.pls",
-                "src": "https://ice1.somafm.com/digitalis-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/digitalis64.pls",
-                "src": "https://ice1.somafm.com/digitalis-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/digitalis32.pls",
-                "src": "https://ice1.somafm.com/digitalis-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "doomed",
-        "title": "Doomed",
-        "description": "Where every day is Halloween: Dark industrial/ambient music for tortured souls. ",
-        "bg": "assets/img/soma/doomed.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/doomed256.pls",
-                "src": "https://ice1.somafm.com/doomed-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/doomed130.pls",
-                "src": "https://ice1.somafm.com/doomed-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/doomed64.pls",
-                "src": "https://ice1.somafm.com/doomed-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/doomed32.pls",
-                "src": "https://ice1.somafm.com/doomed-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "dronezone",
-        "title": "Drone Zone",
-        "description": "Served best chilled, safe with most medications. Atmospheric textures with minimal beats.",
-        "bg": "assets/img/soma/dronezone.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/dronezone256.pls",
-                "src": "https://ice1.somafm.com/dronezone-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/dronezone130.pls",
-                "src": "https://ice1.somafm.com/dronezone-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/dronezone64.pls",
-                "src": "https://ice1.somafm.com/dronezone-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/dronezone32.pls",
-                "src": "https://ice1.somafm.com/dronezone-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "dubstep",
-        "title": "Dub Step Beyond",
-        "description": "Dubstep, Dub and Deep Bass. May damage speakers at high volume.",
-        "bg": "assets/img/soma/dubstep.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/dubstep256.pls",
-                "src": "https://ice1.somafm.com/dubstep-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/dubstep130.pls",
-                "src": "https://ice1.somafm.com/dubstep-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/dubstep64.pls",
-                "src": "https://ice1.somafm.com/dubstep-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/dubstep32.pls",
-                "src": "https://ice1.somafm.com/dubstep-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "fluid",
-        "title": "Fluid",
-        "description": "Drown in the electronic sound of instrumental hiphop, future soul and liquid trap.",
-        "bg": "assets/img/soma/fluid.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/fluid.pls",
-                "src": "https://ice1.somafm.com/fluid-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/fluid130.pls",
-                "src": "https://ice1.somafm.com/fluid-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/fluid64.pls",
-                "src": "https://ice1.somafm.com/fluid-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/fluid32.pls",
-                "src": "https://ice1.somafm.com/fluid-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "folkfwd",
-        "title": "Folk Forward",
-        "description": "Indie Folk, Alt-folk and the occasional folk classics. ",
-        "bg": "assets/img/soma/folkfwd.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/folkfwd.pls",
-                "src": "https://ice1.somafm.com/folkfwd-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/folkfwd130.pls",
-                "src": "https://ice1.somafm.com/folkfwd-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/folkfwd64.pls",
-                "src": "https://ice1.somafm.com/folkfwd-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/folkfwd32.pls",
-                "src": "https://ice1.somafm.com/folkfwd-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "groovesalad",
-        "title": "Groove Salad",
-        "description": "A nicely chilled plate of ambient/downtempo beats and grooves.",
-        "bg": "assets/img/soma/groovesalad.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/groovesalad256.pls",
-                "src": "https://ice1.somafm.com/groovesalad-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/groovesalad130.pls",
-                "src": "https://ice1.somafm.com/groovesalad-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/groovesalad64.pls",
-                "src": "https://ice1.somafm.com/groovesalad-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/groovesalad32.pls",
-                "src": "https://ice1.somafm.com/groovesalad-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "gsclassic",
-        "title": "Groove Salad Classic",
-        "description": "The classic (early 2000s) version of a nicely chilled plate of ambient/downtempo beats and grooves.",
-        "bg": "assets/img/soma/gsclassic.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/gsclassic.pls",
-                "src": "https://ice1.somafm.com/gsclassic-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/gsclassic130.pls",
-                "src": "https://ice1.somafm.com/gsclassic-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/gsclassic64.pls",
-                "src": "https://ice1.somafm.com/gsclassic-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/gsclassic32.pls",
-                "src": "https://ice1.somafm.com/gsclassic-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "illstreet",
-        "title": "Illinois Street Lounge",
-        "description": "Classic bachelor pad, playful exotica and vintage music of tomorrow.",
-        "bg": "assets/img/soma/illstreet.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/illstreet.pls",
-                "src": "https://ice1.somafm.com/illstreet-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/illstreet130.pls",
-                "src": "https://ice1.somafm.com/illstreet-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/illstreet64.pls",
-                "src": "https://ice1.somafm.com/illstreet-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/illstreet32.pls",
-                "src": "https://ice1.somafm.com/illstreet-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "indiepop",
-        "title": "Indie Pop Rocks!",
-        "description": "New and classic favorite indie pop tracks.",
-        "bg": "assets/img/soma/indiepop.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/indiepop.pls",
-                "src": "https://ice1.somafm.com/indiepop-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/indiepop130.pls",
-                "src": "https://ice1.somafm.com/indiepop-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/indiepop64.pls",
-                "src": "https://ice1.somafm.com/indiepop-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/indiepop32.pls",
-                "src": "https://ice1.somafm.com/indiepop-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "jollysoul",
-        "title": "Jolly Ol' Soul",
-        "description": "Where we cut right to the soul of the season.",
-        "bg": "assets/img/soma/jollysoul.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/jollysoul.pls",
-                "src": "https://ice1.somafm.com/jollysoul-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/jollysoul130.pls",
-                "src": "https://ice1.somafm.com/jollysoul-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/jollysoul64.pls",
-                "src": "https://ice1.somafm.com/jollysoul-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/jollysoul32.pls",
-                "src": "https://ice1.somafm.com/jollysoul-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "live",
-        "title": "SomaFM Live",
-        "description": "Special Live Events and rebroadcasts of past live events",
-        "bg": "assets/img/soma/live.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/live.pls",
-                "src": "https://ice1.somafm.com/live-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/live130.pls",
-                "src": "https://ice1.somafm.com/live-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/live64.pls",
-                "src": "https://ice1.somafm.com/live-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/live32.pls",
-                "src": "https://ice1.somafm.com/live-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "lush",
-        "title": "Lush",
-        "description": "Sensuous and mellow female vocals, many with an electronic influence.",
-        "bg": "assets/img/soma/lush.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/lush.pls",
-                "src": "https://ice1.somafm.com/lush-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/lush130.pls",
-                "src": "https://ice1.somafm.com/lush-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/lush64.pls",
-                "src": "https://ice1.somafm.com/lush-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/lush32.pls",
-                "src": "https://ice1.somafm.com/lush-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "missioncontrol",
-        "title": "Mission Control",
-        "description": "Celebrating NASA and Space Explorers everywhere.",
-        "bg": "assets/img/soma/missioncontrol.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/missioncontrol.pls",
-                "src": "https://ice1.somafm.com/missioncontrol-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/missioncontrol130.pls",
-                "src": "https://ice1.somafm.com/missioncontrol-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/missioncontrol64.pls",
-                "src": "https://ice1.somafm.com/missioncontrol-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/missioncontrol32.pls",
-                "src": "https://ice1.somafm.com/missioncontrol-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "poptron",
-        "title": "PopTron",
-        "description": "Electropop and indie dance rock with sparkle and pop.",
-        "bg": "assets/img/soma/poptron.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/poptron.pls",
-                "src": "https://ice1.somafm.com/poptron-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/poptron130.pls",
-                "src": "https://ice1.somafm.com/poptron-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/poptron64.pls",
-                "src": "https://ice1.somafm.com/poptron-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/poptron32.pls",
-                "src": "https://ice1.somafm.com/poptron-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "secretagent",
-        "title": "Secret Agent",
-        "description": "The soundtrack for your stylish, mysterious, dangerous life. For Spies and PIs too!",
-        "bg": "assets/img/soma/secretagent.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/secretagent.pls",
-                "src": "https://ice1.somafm.com/secretagent-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/secretagent130.pls",
-                "src": "https://ice1.somafm.com/secretagent-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/secretagent64.pls",
-                "src": "https://ice1.somafm.com/secretagent-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/secretagent32.pls",
-                "src": "https://ice1.somafm.com/secretagent-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "seventies",
-        "title": "Left Coast 70s",
-        "description": "Mellow album rock from the Seventies. Yacht not required.",
-        "bg": "assets/img/soma/seventies.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/seventies320.pls",
-                "src": "https://ice1.somafm.com/seventies-320-mp3",
-                "title": "320-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/seventies130.pls",
-                "src": "https://ice1.somafm.com/seventies-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/seventies64.pls",
-                "src": "https://ice1.somafm.com/seventies-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/seventies32.pls",
-                "src": "https://ice1.somafm.com/seventies-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "sf1033",
-        "title": "SF 10-33",
-        "description": "Ambient music mixed with the sounds of San Francisco public safety radio traffic.",
-        "bg": "assets/img/soma/sf1033.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/sf1033.pls",
-                "src": "https://ice1.somafm.com/sf1033-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/sf1033130.pls",
-                "src": "https://ice1.somafm.com/sf1033-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sf103364.pls",
-                "src": "https://ice1.somafm.com/sf1033-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sf103332.pls",
-                "src": "https://ice1.somafm.com/sf1033-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "sonicuniverse",
-        "title": "Sonic Universe",
-        "description": "Transcending the world of jazz with eclectic, avant-garde takes on tradition.",
-        "bg": "assets/img/soma/sonicuniverse.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/sonicuniverse256.pls",
-                "src": "https://ice1.somafm.com/sonicuniverse-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/sonicuniverse130.pls",
-                "src": "https://ice1.somafm.com/sonicuniverse-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sonicuniverse64.pls",
-                "src": "https://ice1.somafm.com/sonicuniverse-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sonicuniverse32.pls",
-                "src": "https://ice1.somafm.com/sonicuniverse-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "spacestation",
-        "title": "Space Station Soma",
-        "description": "Tune in, turn on, space out. Spaced-out ambient and mid-tempo electronica.",
-        "bg": "assets/img/soma/spacestation.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/spacestation.pls",
-                "src": "https://ice1.somafm.com/spacestation-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/spacestation130.pls",
-                "src": "https://ice1.somafm.com/spacestation-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/spacestation64.pls",
-                "src": "https://ice1.somafm.com/spacestation-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/spacestation32.pls",
-                "src": "https://ice1.somafm.com/spacestation-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "suburbsofgoa",
-        "title": "Suburbs of Goa",
-        "description": "Desi-influenced Asian world beats and beyond.",
-        "bg": "assets/img/soma/suburbsofgoa.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/suburbsofgoa.pls",
-                "src": "https://ice1.somafm.com/suburbsofgoa-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/suburbsofgoa130.pls",
-                "src": "https://ice1.somafm.com/suburbsofgoa-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/suburbsofgoa64.pls",
-                "src": "https://ice1.somafm.com/suburbsofgoa-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/suburbsofgoa32.pls",
-                "src": "https://ice1.somafm.com/suburbsofgoa-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "thetrip",
-        "title": "The Trip",
-        "description": "Progressive house / trance. Tip top tunes.",
-        "bg": "assets/img/soma/thetrip.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/thetrip.pls",
-                "src": "https://ice1.somafm.com/thetrip-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/thetrip130.pls",
-                "src": "https://ice1.somafm.com/thetrip-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/thetrip64.pls",
-                "src": "https://ice1.somafm.com/thetrip-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/thetrip32.pls",
-                "src": "https://ice1.somafm.com/thetrip-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "thistle",
-        "title": "ThistleRadio",
-        "description": "Exploring music from Celtic roots and branches",
-        "bg": "assets/img/soma/thistle.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/thistle.pls",
-                "src": "https://ice1.somafm.com/thistle-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/thistle130.pls",
-                "src": "https://ice1.somafm.com/thistle-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/thistle64.pls",
-                "src": "https://ice1.somafm.com/thistle-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/thistle32.pls",
-                "src": "https://ice1.somafm.com/thistle-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "u80s",
-        "title": "Underground 80s",
-        "description": "Early 80s UK Synthpop and a bit of New Wave.",
-        "bg": "assets/img/soma/u80s.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/u80s256.pls",
-                "src": "https://ice1.somafm.com/u80s-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/u80s130.pls",
-                "src": "https://ice1.somafm.com/u80s-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/u80s64.pls",
-                "src": "https://ice1.somafm.com/u80s-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/u80s32.pls",
-                "src": "https://ice1.somafm.com/u80s-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "xmasinfrisko",
-        "title": "Xmas in Frisko",
-        "description": "SomaFM's wacky and eclectic holiday mix. Not for the easily offended. ",
-        "bg": "assets/img/soma/xmasinfrisko.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/xmasinfrisko.pls",
-                "src": "https://ice1.somafm.com/xmasinfrisko-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasinfrisko130.pls",
-                "src": "https://ice1.somafm.com/xmasinfrisko-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasinfrisko64.pls",
-                "src": "https://ice1.somafm.com/xmasinfrisko-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasinfrisko32.pls",
-                "src": "https://ice1.somafm.com/xmasinfrisko-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "xmasrocks",
-        "title": "Christmas Rocks!",
-        "description": "Have your self an indie/alternative holiday season!",
-        "bg": "assets/img/soma/xmasrocks.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/xmasrocks.pls",
-                "src": "https://ice1.somafm.com/xmasrocks-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasrocks130.pls",
-                "src": "https://ice1.somafm.com/xmasrocks-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasrocks64.pls",
-                "src": "https://ice1.somafm.com/xmasrocks-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/xmasrocks32.pls",
-                "src": "https://ice1.somafm.com/xmasrocks-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "metal",
-        "title": "Metal Detector",
-        "description": "From black to doom, prog to sludge, thrash to post, stoner to crossover, punk to industrial.",
-        "bg": "assets/img/soma/metal.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/metal.pls",
-                "src": "https://ice1.somafm.com/metal-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/metal130.pls",
-                "src": "https://ice1.somafm.com/metal-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/metal64.pls",
-                "src": "https://ice1.somafm.com/metal-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/metal32.pls",
-                "src": "https://ice1.somafm.com/metal-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "reggae",
-        "title": "Heavyweight Reggae",
-        "description": "Reggae, Ska, Rocksteady classic and deep tracks.",
-        "bg": "assets/img/soma/reggae.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/reggae256.pls",
-                "src": "https://ice1.somafm.com/reggae-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/reggae130.pls",
-                "src": "https://ice1.somafm.com/reggae-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/reggae80.pls",
-                "src": "https://ice1.somafm.com/reggae-80-aac",
-                "title": "80-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/reggae32.pls",
-                "src": "https://ice1.somafm.com/reggae-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "scanner",
-        "title": "SF Police Scanner",
-        "description": "San Francisco Public Safety Scanner Feed",
-        "bg": "assets/img/soma/scanner.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/scanner.pls",
-                "src": "https://ice1.somafm.com/scanner-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/scanner130.pls",
-                "src": "https://ice1.somafm.com/scanner-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/scanner64.pls",
-                "src": "https://ice1.somafm.com/scanner-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/scanner32.pls",
-                "src": "https://ice1.somafm.com/scanner-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "vaporwaves",
-        "title": "Vaporwaves",
-        "description": "All Vaporwave. All the time.",
-        "bg": "assets/img/soma/vaporwaves.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/vaporwaves.pls",
-                "src": "https://ice1.somafm.com/vaporwaves-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/vaporwaves130.pls",
-                "src": "https://ice1.somafm.com/vaporwaves-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/vaporwaves64.pls",
-                "src": "https://ice1.somafm.com/vaporwaves-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/vaporwaves32.pls",
-                "src": "https://ice1.somafm.com/vaporwaves-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "specials",
-        "title": "SomaFM Specials",
-        "description": "Now featuring Afternoon Jazz, Wavepool, DubX, The Surf Report & More!",
-        "bg": "assets/img/soma/specials.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/specials.pls",
-                "src": "https://ice1.somafm.com/specials-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/specials130.pls",
-                "src": "https://ice1.somafm.com/specials-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/specials64.pls",
-                "src": "https://ice1.somafm.com/specials-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/specials32.pls",
-                "src": "https://ice1.somafm.com/specials-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "n5md",
-        "title": "n5MD Radio",
-        "description": "Emotional Experiments in Music: Ambient, modern composition, post-rock, & experimental electronic music",
-        "bg": "assets/img/soma/n5md.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/n5md.pls",
-                "src": "https://ice1.somafm.com/n5md-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/n5md130.pls",
-                "src": "https://ice1.somafm.com/n5md-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/n5md64.pls",
-                "src": "https://ice1.somafm.com/n5md-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/n5md32.pls",
-                "src": "https://ice1.somafm.com/n5md-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "synphaera",
-        "title": "Synphaera Radio",
-        "description": "Featuring the music from an independent record label focused on modern electronic ambient and space music.",
-        "bg": "assets/img/soma/synphaera.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/synphaera256.pls",
-                "src": "https://ice1.somafm.com/synphaera-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/synphaera130.pls",
-                "src": "https://ice1.somafm.com/synphaera-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/synphaera64.pls",
-                "src": "https://ice1.somafm.com/synphaera-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/synphaera32.pls",
-                "src": "https://ice1.somafm.com/synphaera-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "darkzone",
-        "title": "The Dark Zone",
-        "description": "The darker side of deep ambient. Music for staring into the Abyss. ",
-        "bg": "assets/img/soma/darkzone.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/darkzone256.pls",
-                "src": "https://ice1.somafm.com/darkzone-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/darkzone130.pls",
-                "src": "https://ice1.somafm.com/darkzone-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/darkzone64.pls",
-                "src": "https://ice1.somafm.com/darkzone-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/darkzone32.pls",
-                "src": "https://ice1.somafm.com/darkzone-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "sfinsf",
-        "title": "SF in SF",
-        "description": "Author readings and discussions from the science fiction, fantasy, horror, and genre literary fields.",
-        "bg": "assets/img/soma/sfinsf.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/sfinsf.pls",
-                "src": "https://ice1.somafm.com/sfinsf-128-mp3",
-                "title": "128-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/sfinsf130.pls",
-                "src": "https://ice1.somafm.com/sfinsf-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sfinsf64.pls",
-                "src": "https://ice1.somafm.com/sfinsf-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/sfinsf32.pls",
-                "src": "https://ice1.somafm.com/sfinsf-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "tikitime",
-        "title": "Tiki Time",
-        "description": "Classic Tiki music and Vintage island rhythms to sip cocktails by.",
-        "bg": "assets/img/soma/tikitime.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/tikitime256.pls",
-                "src": "https://ice1.somafm.com/tikitime-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/tikitime130.pls",
-                "src": "https://ice1.somafm.com/tikitime-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/tikitime64.pls",
-                "src": "https://ice1.somafm.com/tikitime-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/tikitime32.pls",
-                "src": "https://ice1.somafm.com/tikitime-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "bossa",
-        "title": "Bossa Beyond",
-        "description": "Silky-smooth, laid-back Brazilian-style rhythms of Bossa Nova, Samba and beyond",
-        "bg": "assets/img/soma/bossa.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/bossa256.pls",
-                "src": "https://ice1.somafm.com/bossa-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/bossa130.pls",
-                "src": "https://ice1.somafm.com/bossa-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/bossa64.pls",
-                "src": "https://ice1.somafm.com/bossa-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/bossa32.pls",
-                "src": "https://ice1.somafm.com/bossa-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "insound",
-        "title": "The In-Sound",
-        "description": "60s/70s Hipster Euro Pop where psychedelic melodies meets groovy vibes. ",
-        "bg": "assets/img/soma/insound.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/insound256.pls",
-                "src": "https://ice1.somafm.com/insound-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/insound130.pls",
-                "src": "https://ice1.somafm.com/insound-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/insound64.pls",
-                "src": "https://ice1.somafm.com/insound-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/insound32.pls",
-                "src": "https://ice1.somafm.com/insound-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "deptstore",
-        "title": "Department Store Christmas",
-        "description": "Holiday Elevator Music from a more innocent time.",
-        "bg": "assets/img/soma/deptstore.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/deptstore256.pls",
-                "src": "https://ice1.somafm.com/deptstore-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/deptstore130.pls",
-                "src": "https://ice1.somafm.com/deptstore-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/deptstore64.pls",
-                "src": "https://ice1.somafm.com/deptstore-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/deptstore32.pls",
-                "src": "https://ice1.somafm.com/deptstore-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    },
-    {
-        "id": "chillits",
-        "title": "Chillits Radio",
-        "description": "Celebrating 25 years of music, chilling and camping",
-        "bg": "assets/img/soma/chillits.jpg",
-        "playlists": [
-            {
-                "pls": "https://api.somafm.com/chillits256.pls",
-                "src": "https://ice1.somafm.com/chillits-256-mp3",
-                "title": "256-mp3"
-            },
-            {
-                "pls": "https://api.somafm.com/chillits130.pls",
-                "src": "https://ice1.somafm.com/chillits-128-aac",
-                "title": "128-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/chillits64.pls",
-                "src": "https://ice1.somafm.com/chillits-64-aac",
-                "title": "64-aac"
-            },
-            {
-                "pls": "https://api.somafm.com/chillits32.pls",
-                "src": "https://ice1.somafm.com/chillits-32-aac",
-                "title": "32-aac"
-            }
-        ]
-    }
+  {
+    "id": "7soul",
+    "title": "Seven Inch Soul",
+    "description": "Vintage soul tracks from the original 45 RPM vinyl.",
+    "bg": "assets/img/soma/7soul.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/7soul.pls",
+        "src": "https://ice1.somafm.com/7soul-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/7soul130.pls",
+        "src": "https://ice1.somafm.com/7soul-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/7soul64.pls",
+        "src": "https://ice1.somafm.com/7soul-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/7soul32.pls",
+        "src": "https://ice1.somafm.com/7soul-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "beatblender",
+    "title": "Beat Blender",
+    "description": "A late night blend of deep-house and downtempo chill.",
+    "bg": "assets/img/soma/beatblender.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/beatblender.pls",
+        "src": "https://ice1.somafm.com/beatblender-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/beatblender130.pls",
+        "src": "https://ice1.somafm.com/beatblender-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/beatblender64.pls",
+        "src": "https://ice1.somafm.com/beatblender-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/beatblender32.pls",
+        "src": "https://ice1.somafm.com/beatblender-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "bootliquor",
+    "title": "Boot Liquor",
+    "description": "Americana Roots music for Cowhands, Cowpokes and Cowtippers",
+    "bg": "assets/img/soma/bootliquor.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/bootliquor320.pls",
+        "src": "https://ice1.somafm.com/bootliquor-320-mp3",
+        "title": "320-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/bootliquor130.pls",
+        "src": "https://ice1.somafm.com/bootliquor-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/bootliquor64.pls",
+        "src": "https://ice1.somafm.com/bootliquor-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/bootliquor32.pls",
+        "src": "https://ice1.somafm.com/bootliquor-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "brfm",
+    "title": "Black Rock FM",
+    "description": "From the Playa to the world, for the annual Burning Man festival.",
+    "bg": "assets/img/soma/brfm.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/brfm.pls",
+        "src": "https://ice1.somafm.com/brfm-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/brfm130.pls",
+        "src": "https://ice1.somafm.com/brfm-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/brfm64.pls",
+        "src": "https://ice1.somafm.com/brfm-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/brfm32.pls",
+        "src": "https://ice1.somafm.com/brfm-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "christmas",
+    "title": "Christmas Lounge",
+    "description": "Chilled holiday grooves and classic winter lounge tracks. (Kid and Parent safe!) ",
+    "bg": "assets/img/soma/christmas.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/christmas256.pls",
+        "src": "https://ice1.somafm.com/christmas-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/christmas130.pls",
+        "src": "https://ice1.somafm.com/christmas-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/christmas64.pls",
+        "src": "https://ice1.somafm.com/christmas-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/christmas32.pls",
+        "src": "https://ice1.somafm.com/christmas-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "cliqhop",
+    "title": "cliqhop idm",
+    "description": "Blips'n'beeps backed mostly w/beats. Intelligent Dance Music.",
+    "bg": "assets/img/soma/cliqhop.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/cliqhop256.pls",
+        "src": "https://ice1.somafm.com/cliqhop-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/cliqhop130.pls",
+        "src": "https://ice1.somafm.com/cliqhop-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/cliqhop64.pls",
+        "src": "https://ice1.somafm.com/cliqhop-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/cliqhop32.pls",
+        "src": "https://ice1.somafm.com/cliqhop-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "covers",
+    "title": "Covers",
+    "description": "Just covers. Songs you know by artists you don't. We've got you covered. ",
+    "bg": "assets/img/soma/covers.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/covers.pls",
+        "src": "https://ice1.somafm.com/covers-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/covers130.pls",
+        "src": "https://ice1.somafm.com/covers-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/covers64.pls",
+        "src": "https://ice1.somafm.com/covers-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/covers32.pls",
+        "src": "https://ice1.somafm.com/covers-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "deepspaceone",
+    "title": "Deep Space One",
+    "description": "Deep ambient electronic, experimental and space music. For inner and outer space exploration.",
+    "bg": "assets/img/soma/deepspaceone.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/deepspaceone.pls",
+        "src": "https://ice1.somafm.com/deepspaceone-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/deepspaceone130.pls",
+        "src": "https://ice1.somafm.com/deepspaceone-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/deepspaceone64.pls",
+        "src": "https://ice1.somafm.com/deepspaceone-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/deepspaceone32.pls",
+        "src": "https://ice1.somafm.com/deepspaceone-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "defcon",
+    "title": "DEF CON Radio",
+    "description": "Music for Hacking. The DEF CON Year-Round Channel.",
+    "bg": "assets/img/soma/defcon.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/defcon256.pls",
+        "src": "https://ice1.somafm.com/defcon-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/defcon130.pls",
+        "src": "https://ice1.somafm.com/defcon-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/defcon64.pls",
+        "src": "https://ice1.somafm.com/defcon-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/defcon32.pls",
+        "src": "https://ice1.somafm.com/defcon-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "digitalis",
+    "title": "Digitalis",
+    "description": "Digitally affected analog rock to calm the agitated heart.",
+    "bg": "assets/img/soma/digitalis.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/digitalis256.pls",
+        "src": "https://ice1.somafm.com/digitalis-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/digitalis130.pls",
+        "src": "https://ice1.somafm.com/digitalis-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/digitalis64.pls",
+        "src": "https://ice1.somafm.com/digitalis-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/digitalis32.pls",
+        "src": "https://ice1.somafm.com/digitalis-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "doomed",
+    "title": "Doomed",
+    "description": "Where every day is Halloween: Dark industrial/ambient music for tortured souls. ",
+    "bg": "assets/img/soma/doomed.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/doomed256.pls",
+        "src": "https://ice1.somafm.com/doomed-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/doomed130.pls",
+        "src": "https://ice1.somafm.com/doomed-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/doomed64.pls",
+        "src": "https://ice1.somafm.com/doomed-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/doomed32.pls",
+        "src": "https://ice1.somafm.com/doomed-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "dronezone",
+    "title": "Drone Zone",
+    "description": "Served best chilled, safe with most medications. Atmospheric textures with minimal beats.",
+    "bg": "assets/img/soma/dronezone.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/dronezone256.pls",
+        "src": "https://ice1.somafm.com/dronezone-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/dronezone130.pls",
+        "src": "https://ice1.somafm.com/dronezone-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dronezone64.pls",
+        "src": "https://ice1.somafm.com/dronezone-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dronezone32.pls",
+        "src": "https://ice1.somafm.com/dronezone-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "dz2",
+    "title": "Drone Zone 2",
+    "description": "A more eclectic alternative mix of atmospheric textures with minimal beats.",
+    "bg": "assets/img/soma/dronezone2.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/dz2.pls",
+        "src": "https://ice1.somafm.com/dz2-128-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/dz2130.pls",
+        "src": "https://ice1.somafm.com/dz2-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dz264.pls",
+        "src": "https://ice1.somafm.com/dz2-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dz232.pls",
+        "src": "https://ice1.somafm.com/dz2-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "dubstep",
+    "title": "Dub Step Beyond",
+    "description": "Dubstep, Dub and Deep Bass. May damage speakers at high volume.",
+    "bg": "assets/img/soma/dubstep.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/dubstep256.pls",
+        "src": "https://ice1.somafm.com/dubstep-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/dubstep130.pls",
+        "src": "https://ice1.somafm.com/dubstep-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dubstep64.pls",
+        "src": "https://ice1.somafm.com/dubstep-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/dubstep32.pls",
+        "src": "https://ice1.somafm.com/dubstep-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "fluid",
+    "title": "Fluid",
+    "description": "Drown in the electronic sound of instrumental hiphop, future soul and liquid trap.",
+    "bg": "assets/img/soma/fluid.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/fluid.pls",
+        "src": "https://ice1.somafm.com/fluid-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/fluid130.pls",
+        "src": "https://ice1.somafm.com/fluid-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/fluid64.pls",
+        "src": "https://ice1.somafm.com/fluid-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/fluid32.pls",
+        "src": "https://ice1.somafm.com/fluid-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "folkfwd",
+    "title": "Folk Forward",
+    "description": "Indie Folk, Alt-folk and the occasional folk classics. ",
+    "bg": "assets/img/soma/folkfwd.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/folkfwd.pls",
+        "src": "https://ice1.somafm.com/folkfwd-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/folkfwd130.pls",
+        "src": "https://ice1.somafm.com/folkfwd-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/folkfwd64.pls",
+        "src": "https://ice1.somafm.com/folkfwd-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/folkfwd32.pls",
+        "src": "https://ice1.somafm.com/folkfwd-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "groovesalad",
+    "title": "Groove Salad",
+    "description": "A nicely chilled plate of ambient/downtempo beats and grooves.",
+    "bg": "assets/img/soma/groovesalad.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/groovesalad256.pls",
+        "src": "https://ice1.somafm.com/groovesalad-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/groovesalad130.pls",
+        "src": "https://ice1.somafm.com/groovesalad-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/groovesalad64.pls",
+        "src": "https://ice1.somafm.com/groovesalad-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/groovesalad32.pls",
+        "src": "https://ice1.somafm.com/groovesalad-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "gsclassic",
+    "title": "Groove Salad Classic",
+    "description": "The classic (early 2000s) version of a nicely chilled plate of ambient/downtempo beats and grooves.",
+    "bg": "assets/img/soma/gsclassic.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/gsclassic.pls",
+        "src": "https://ice1.somafm.com/gsclassic-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/gsclassic130.pls",
+        "src": "https://ice1.somafm.com/gsclassic-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/gsclassic64.pls",
+        "src": "https://ice1.somafm.com/gsclassic-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/gsclassic32.pls",
+        "src": "https://ice1.somafm.com/gsclassic-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "illstreet",
+    "title": "Illinois Street Lounge",
+    "description": "Classic bachelor pad, playful exotica and vintage music of tomorrow.",
+    "bg": "assets/img/soma/illstreet.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/illstreet.pls",
+        "src": "https://ice1.somafm.com/illstreet-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/illstreet130.pls",
+        "src": "https://ice1.somafm.com/illstreet-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/illstreet64.pls",
+        "src": "https://ice1.somafm.com/illstreet-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/illstreet32.pls",
+        "src": "https://ice1.somafm.com/illstreet-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "indiepop",
+    "title": "Indie Pop Rocks!",
+    "description": "New and classic favorite indie pop tracks.",
+    "bg": "assets/img/soma/indiepop.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/indiepop.pls",
+        "src": "https://ice1.somafm.com/indiepop-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/indiepop130.pls",
+        "src": "https://ice1.somafm.com/indiepop-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/indiepop64.pls",
+        "src": "https://ice1.somafm.com/indiepop-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/indiepop32.pls",
+        "src": "https://ice1.somafm.com/indiepop-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "jollysoul",
+    "title": "Jolly Ol' Soul",
+    "description": "Where we cut right to the soul of the season.",
+    "bg": "assets/img/soma/jollysoul.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/jollysoul.pls",
+        "src": "https://ice1.somafm.com/jollysoul-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/jollysoul130.pls",
+        "src": "https://ice1.somafm.com/jollysoul-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/jollysoul64.pls",
+        "src": "https://ice1.somafm.com/jollysoul-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/jollysoul32.pls",
+        "src": "https://ice1.somafm.com/jollysoul-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "live",
+    "title": "SomaFM Live",
+    "description": "Special Live Events and rebroadcasts of past live events",
+    "bg": "assets/img/soma/live.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/live.pls",
+        "src": "https://ice1.somafm.com/live-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/live130.pls",
+        "src": "https://ice1.somafm.com/live-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/live64.pls",
+        "src": "https://ice1.somafm.com/live-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/live32.pls",
+        "src": "https://ice1.somafm.com/live-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "lush",
+    "title": "Lush",
+    "description": "Sensuous and mellow female vocals, many with an electronic influence.",
+    "bg": "assets/img/soma/lush.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/lush.pls",
+        "src": "https://ice1.somafm.com/lush-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/lush130.pls",
+        "src": "https://ice1.somafm.com/lush-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/lush64.pls",
+        "src": "https://ice1.somafm.com/lush-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/lush32.pls",
+        "src": "https://ice1.somafm.com/lush-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "missioncontrol",
+    "title": "Mission Control",
+    "description": "Celebrating NASA and Space Explorers everywhere.",
+    "bg": "assets/img/soma/missioncontrol.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/missioncontrol.pls",
+        "src": "https://ice1.somafm.com/missioncontrol-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/missioncontrol130.pls",
+        "src": "https://ice1.somafm.com/missioncontrol-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/missioncontrol64.pls",
+        "src": "https://ice1.somafm.com/missioncontrol-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/missioncontrol32.pls",
+        "src": "https://ice1.somafm.com/missioncontrol-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "poptron",
+    "title": "PopTron",
+    "description": "Electropop and indie dance rock with sparkle and pop.",
+    "bg": "assets/img/soma/poptron.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/poptron.pls",
+        "src": "https://ice1.somafm.com/poptron-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/poptron130.pls",
+        "src": "https://ice1.somafm.com/poptron-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/poptron64.pls",
+        "src": "https://ice1.somafm.com/poptron-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/poptron32.pls",
+        "src": "https://ice1.somafm.com/poptron-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "secretagent",
+    "title": "Secret Agent",
+    "description": "The soundtrack for your stylish, mysterious, dangerous life. For Spies and PIs too!",
+    "bg": "assets/img/soma/secretagent.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/secretagent.pls",
+        "src": "https://ice1.somafm.com/secretagent-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/secretagent130.pls",
+        "src": "https://ice1.somafm.com/secretagent-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/secretagent64.pls",
+        "src": "https://ice1.somafm.com/secretagent-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/secretagent32.pls",
+        "src": "https://ice1.somafm.com/secretagent-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "seventies",
+    "title": "Left Coast 70s",
+    "description": "Mellow album rock from the Seventies. Yacht not required.",
+    "bg": "assets/img/soma/seventies.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/seventies320.pls",
+        "src": "https://ice1.somafm.com/seventies-320-mp3",
+        "title": "320-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/seventies130.pls",
+        "src": "https://ice1.somafm.com/seventies-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/seventies64.pls",
+        "src": "https://ice1.somafm.com/seventies-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/seventies32.pls",
+        "src": "https://ice1.somafm.com/seventies-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "sf1033",
+    "title": "SF 10-33",
+    "description": "Ambient music mixed with the sounds of San Francisco public safety radio traffic.",
+    "bg": "assets/img/soma/sf1033.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/sf1033.pls",
+        "src": "https://ice1.somafm.com/sf1033-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/sf1033130.pls",
+        "src": "https://ice1.somafm.com/sf1033-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sf103364.pls",
+        "src": "https://ice1.somafm.com/sf1033-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sf103332.pls",
+        "src": "https://ice1.somafm.com/sf1033-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "sonicuniverse",
+    "title": "Sonic Universe",
+    "description": "Transcending the world of jazz with eclectic, avant-garde takes on tradition.",
+    "bg": "assets/img/soma/sonicuniverse.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/sonicuniverse256.pls",
+        "src": "https://ice1.somafm.com/sonicuniverse-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/sonicuniverse130.pls",
+        "src": "https://ice1.somafm.com/sonicuniverse-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sonicuniverse64.pls",
+        "src": "https://ice1.somafm.com/sonicuniverse-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sonicuniverse32.pls",
+        "src": "https://ice1.somafm.com/sonicuniverse-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "spacestation",
+    "title": "Space Station Soma",
+    "description": "Tune in, turn on, space out. Spaced-out ambient and mid-tempo electronica.",
+    "bg": "assets/img/soma/spacestation.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/spacestation.pls",
+        "src": "https://ice1.somafm.com/spacestation-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/spacestation130.pls",
+        "src": "https://ice1.somafm.com/spacestation-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/spacestation64.pls",
+        "src": "https://ice1.somafm.com/spacestation-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/spacestation32.pls",
+        "src": "https://ice1.somafm.com/spacestation-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "suburbsofgoa",
+    "title": "Suburbs of Goa",
+    "description": "Desi-influenced Asian world beats and beyond.",
+    "bg": "assets/img/soma/suburbsofgoa.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/suburbsofgoa.pls",
+        "src": "https://ice1.somafm.com/suburbsofgoa-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/suburbsofgoa130.pls",
+        "src": "https://ice1.somafm.com/suburbsofgoa-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/suburbsofgoa64.pls",
+        "src": "https://ice1.somafm.com/suburbsofgoa-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/suburbsofgoa32.pls",
+        "src": "https://ice1.somafm.com/suburbsofgoa-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "thetrip",
+    "title": "The Trip",
+    "description": "Progressive house / trance. Tip top tunes.",
+    "bg": "assets/img/soma/thetrip.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/thetrip.pls",
+        "src": "https://ice1.somafm.com/thetrip-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/thetrip130.pls",
+        "src": "https://ice1.somafm.com/thetrip-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/thetrip64.pls",
+        "src": "https://ice1.somafm.com/thetrip-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/thetrip32.pls",
+        "src": "https://ice1.somafm.com/thetrip-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "thistle",
+    "title": "ThistleRadio",
+    "description": "Exploring music from Celtic roots and branches",
+    "bg": "assets/img/soma/thistle.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/thistle.pls",
+        "src": "https://ice1.somafm.com/thistle-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/thistle130.pls",
+        "src": "https://ice1.somafm.com/thistle-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/thistle64.pls",
+        "src": "https://ice1.somafm.com/thistle-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/thistle32.pls",
+        "src": "https://ice1.somafm.com/thistle-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "u80s",
+    "title": "Underground 80s",
+    "description": "Early 80s UK Synthpop and a bit of New Wave.",
+    "bg": "assets/img/soma/u80s.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/u80s256.pls",
+        "src": "https://ice1.somafm.com/u80s-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/u80s130.pls",
+        "src": "https://ice1.somafm.com/u80s-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/u80s64.pls",
+        "src": "https://ice1.somafm.com/u80s-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/u80s32.pls",
+        "src": "https://ice1.somafm.com/u80s-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "xmasinfrisko",
+    "title": "Xmas in Frisko",
+    "description": "SomaFM's wacky and eclectic holiday mix. Not for the easily offended. ",
+    "bg": "assets/img/soma/xmasinfrisko.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/xmasinfrisko.pls",
+        "src": "https://ice1.somafm.com/xmasinfrisko-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasinfrisko130.pls",
+        "src": "https://ice1.somafm.com/xmasinfrisko-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasinfrisko64.pls",
+        "src": "https://ice1.somafm.com/xmasinfrisko-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasinfrisko32.pls",
+        "src": "https://ice1.somafm.com/xmasinfrisko-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "xmasrocks",
+    "title": "Christmas Rocks!",
+    "description": "Have your self an indie/alternative holiday season!",
+    "bg": "assets/img/soma/xmasrocks.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/xmasrocks.pls",
+        "src": "https://ice1.somafm.com/xmasrocks-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasrocks130.pls",
+        "src": "https://ice1.somafm.com/xmasrocks-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasrocks64.pls",
+        "src": "https://ice1.somafm.com/xmasrocks-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/xmasrocks32.pls",
+        "src": "https://ice1.somafm.com/xmasrocks-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "metal",
+    "title": "Metal Detector",
+    "description": "From black to doom, prog to sludge, thrash to post, stoner to crossover, punk to industrial.",
+    "bg": "assets/img/soma/metal.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/metal.pls",
+        "src": "https://ice1.somafm.com/metal-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/metal130.pls",
+        "src": "https://ice1.somafm.com/metal-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/metal64.pls",
+        "src": "https://ice1.somafm.com/metal-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/metal32.pls",
+        "src": "https://ice1.somafm.com/metal-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "reggae",
+    "title": "Heavyweight Reggae",
+    "description": "Reggae, Ska, Rocksteady classic and deep tracks.",
+    "bg": "assets/img/soma/reggae.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/reggae256.pls",
+        "src": "https://ice1.somafm.com/reggae-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/reggae130.pls",
+        "src": "https://ice1.somafm.com/reggae-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/reggae80.pls",
+        "src": "https://ice1.somafm.com/reggae-80-aac",
+        "title": "80-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/reggae32.pls",
+        "src": "https://ice1.somafm.com/reggae-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "scanner",
+    "title": "SF Police Scanner",
+    "description": "San Francisco Public Safety Scanner Feed",
+    "bg": "assets/img/soma/scanner.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/scanner.pls",
+        "src": "https://ice1.somafm.com/scanner-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/scanner130.pls",
+        "src": "https://ice1.somafm.com/scanner-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/scanner64.pls",
+        "src": "https://ice1.somafm.com/scanner-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/scanner32.pls",
+        "src": "https://ice1.somafm.com/scanner-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "vaporwaves",
+    "title": "Vaporwaves",
+    "description": "All Vaporwave. All the time.",
+    "bg": "assets/img/soma/vaporwaves.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/vaporwaves.pls",
+        "src": "https://ice1.somafm.com/vaporwaves-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/vaporwaves130.pls",
+        "src": "https://ice1.somafm.com/vaporwaves-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/vaporwaves64.pls",
+        "src": "https://ice1.somafm.com/vaporwaves-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/vaporwaves32.pls",
+        "src": "https://ice1.somafm.com/vaporwaves-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "specials",
+    "title": "SomaFM Specials",
+    "description": "Now featuring Afternoon Jazz, Wavepool, DubX, The Surf Report & More!",
+    "bg": "assets/img/soma/specials.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/specials.pls",
+        "src": "https://ice1.somafm.com/specials-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/specials130.pls",
+        "src": "https://ice1.somafm.com/specials-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/specials64.pls",
+        "src": "https://ice1.somafm.com/specials-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/specials32.pls",
+        "src": "https://ice1.somafm.com/specials-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "n5md",
+    "title": "n5MD Radio",
+    "description": "Emotional Experiments in Music: Ambient, modern composition, post-rock, & experimental electronic music",
+    "bg": "assets/img/soma/n5md.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/n5md.pls",
+        "src": "https://ice1.somafm.com/n5md-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/n5md130.pls",
+        "src": "https://ice1.somafm.com/n5md-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/n5md64.pls",
+        "src": "https://ice1.somafm.com/n5md-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/n5md32.pls",
+        "src": "https://ice1.somafm.com/n5md-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "synphaera",
+    "title": "Synphaera Radio",
+    "description": "Featuring the music from an independent record label focused on modern electronic ambient and space music.",
+    "bg": "assets/img/soma/synphaera.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/synphaera256.pls",
+        "src": "https://ice1.somafm.com/synphaera-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/synphaera130.pls",
+        "src": "https://ice1.somafm.com/synphaera-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/synphaera64.pls",
+        "src": "https://ice1.somafm.com/synphaera-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/synphaera32.pls",
+        "src": "https://ice1.somafm.com/synphaera-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "darkzone",
+    "title": "The Dark Zone",
+    "description": "The darker side of deep ambient. Music for staring into the Abyss. ",
+    "bg": "assets/img/soma/darkzone.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/darkzone256.pls",
+        "src": "https://ice1.somafm.com/darkzone-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/darkzone130.pls",
+        "src": "https://ice1.somafm.com/darkzone-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/darkzone64.pls",
+        "src": "https://ice1.somafm.com/darkzone-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/darkzone32.pls",
+        "src": "https://ice1.somafm.com/darkzone-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "sfinsf",
+    "title": "SF in SF",
+    "description": "Author readings and discussions from the science fiction, fantasy, horror, and genre literary fields.",
+    "bg": "assets/img/soma/sfinsf.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/sfinsf.pls",
+        "src": "https://ice1.somafm.com/sfinsf-128-mp3",
+        "title": "128-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/sfinsf130.pls",
+        "src": "https://ice1.somafm.com/sfinsf-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sfinsf64.pls",
+        "src": "https://ice1.somafm.com/sfinsf-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/sfinsf32.pls",
+        "src": "https://ice1.somafm.com/sfinsf-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "tikitime",
+    "title": "Tiki Time",
+    "description": "Classic Tiki music and Vintage island rhythms to sip cocktails by.",
+    "bg": "assets/img/soma/tikitime.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/tikitime256.pls",
+        "src": "https://ice1.somafm.com/tikitime-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/tikitime130.pls",
+        "src": "https://ice1.somafm.com/tikitime-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/tikitime64.pls",
+        "src": "https://ice1.somafm.com/tikitime-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/tikitime32.pls",
+        "src": "https://ice1.somafm.com/tikitime-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "bossa",
+    "title": "Bossa Beyond",
+    "description": "Silky-smooth, laid-back Brazilian-style rhythms of Bossa Nova, Samba and beyond",
+    "bg": "assets/img/soma/bossa.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/bossa256.pls",
+        "src": "https://ice1.somafm.com/bossa-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/bossa130.pls",
+        "src": "https://ice1.somafm.com/bossa-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/bossa64.pls",
+        "src": "https://ice1.somafm.com/bossa-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/bossa32.pls",
+        "src": "https://ice1.somafm.com/bossa-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "insound",
+    "title": "The In-Sound",
+    "description": "60s/70s Hipster Euro Pop where psychedelic melodies meets groovy vibes. ",
+    "bg": "assets/img/soma/insound.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/insound256.pls",
+        "src": "https://ice1.somafm.com/insound-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/insound130.pls",
+        "src": "https://ice1.somafm.com/insound-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/insound64.pls",
+        "src": "https://ice1.somafm.com/insound-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/insound32.pls",
+        "src": "https://ice1.somafm.com/insound-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "deptstore",
+    "title": "Department Store Christmas",
+    "description": "Holiday Elevator Music from a more innocent time.",
+    "bg": "assets/img/soma/deptstore.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/deptstore256.pls",
+        "src": "https://ice1.somafm.com/deptstore-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/deptstore130.pls",
+        "src": "https://ice1.somafm.com/deptstore-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/deptstore64.pls",
+        "src": "https://ice1.somafm.com/deptstore-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/deptstore32.pls",
+        "src": "https://ice1.somafm.com/deptstore-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  },
+  {
+    "id": "chillits",
+    "title": "Chillits Radio",
+    "description": "Celebrating 25 years of music, chilling and camping",
+    "bg": "assets/img/soma/chillits.jpg",
+    "playlists": [
+      {
+        "pls": "https://api.somafm.com/chillits256.pls",
+        "src": "https://ice1.somafm.com/chillits-256-mp3",
+        "title": "256-mp3"
+      },
+      {
+        "pls": "https://api.somafm.com/chillits130.pls",
+        "src": "https://ice1.somafm.com/chillits-128-aac",
+        "title": "128-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/chillits64.pls",
+        "src": "https://ice1.somafm.com/chillits-64-aac",
+        "title": "64-aac"
+      },
+      {
+        "pls": "https://api.somafm.com/chillits32.pls",
+        "src": "https://ice1.somafm.com/chillits-32-aac",
+        "title": "32-aac"
+      }
+    ]
+  }
 ]
