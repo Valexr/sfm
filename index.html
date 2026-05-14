@@ -24,11 +24,16 @@
     <link rel="apple-touch-icon" type="image/png" sizes="any" href="assets/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" type="image/png" sizes="any"
       href="assets/apple-touch-icon-precomposed.png" />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
 
     <link rel="stylesheet" href="build/app.css" />
 
     <script async defer type="module" src="build/app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
   </head>
 
   <body />
