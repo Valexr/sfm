@@ -1,7 +1,7 @@
 {
   "name": "sfm",
   "short_name": "sfm",
-  "start_url": "/",
+  "start_url": "/sfm",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
