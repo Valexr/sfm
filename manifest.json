@@ -1,9 +1,10 @@
 {
   "name": "sfm",
   "short_name": "sfm",
-  "start_url": "/sfm",
+  "start_url": "/sfm/",
+  "scope": "/sfm/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
