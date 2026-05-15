@@ -4,8 +4,9 @@
   "start_url": "/sfm/",
   "scope": "/sfm/",
   "display": "standalone",
-  "background_color": "var(--light)",
-  "theme_color": "var(--light)",
+  "display_override": ["window-controls-overlay"],
+  "background_color": "transparent",
+  "theme_color": "transparent",
   "icons": [
     {
       "src": "assets/favicon-192.png",
