@@ -1,30 +1,21 @@
 import { build, context } from 'esbuild';
 import svelte from 'esbuild-svelte';
-// import { sveltePreprocess } from 'svelte-preprocess';
 import rm from './env/rm.js';
 import log from './env/log.js';
 import meta from './env/meta.js';
-// import proxy from './env/proxy.js';
 import pkg from './package.json' with { type: 'json' };
 
 const DEV = process.argv.includes('--dev');
-// const SPA = process.argv.includes('--spa');
 
 const svelteOptions = {
   compilerOptions: {
     css: 'external',
-    cssHash: ({ css, filename, name, hash }) => {
+    cssHash: ({ hash, css }) => {
       return `${pkg.name}-${hash(css)}`;
     },
     runes: true,
     modernAst: true
   }
-  // preprocess: [
-  //   sveltePreprocess({
-  //     sourceMap: DEV,
-  //     typescript: true
-  //   })
-  // ]
 };
 
 const buildOptions = {
@@ -36,7 +27,6 @@ const buildOptions = {
   format: 'esm',
   loader: { '.svg': 'text' },
   plugins: [svelte(svelteOptions), log],
-  // inject: DEV ? ['./env/lr.js'] : [],
   legalComments: 'none',
   logLevel: 'info',
   metafile: !DEV,
@@ -58,8 +48,6 @@ if (DEV) {
     // certfile:'localhost.crt',
     // keyfile: 'localhost.key'
   });
-
-  // SPA && proxy().listen(8080);
 
   process.on('SIGTERM', ctx.dispose);
   process.on('exit', ctx.dispose);
