@@ -73,16 +73,16 @@
   }
 
   main {
-    --cell-size: 5rem;
+    --cell-size: 5.3rem;
     gap: 1rem;
     margin: 1rem;
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 1fr));
 
-    @media (min-width: 37rem) {
+    /* @media (min-width: 37rem) {
       --cell-size: 7rem;
-    }
+    } */
   }
 
   footer {
