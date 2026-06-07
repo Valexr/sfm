@@ -61,14 +61,10 @@
 
     &:hover,
     &.selected {
-      outline-width: 0.3rem;
-      outline-style: solid;
-      outline-color: var(--hover);
       opacity: 1;
     }
 
     &.selected {
-      outline-color: var(--dark);
       grid-row: auto / span 2;
       grid-column: auto / span 2;
       position: sticky;
