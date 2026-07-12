@@ -1,9 +1,9 @@
 <script lang="ts" module>
-  import { played } from '$lib/channels';
+import { played } from '$lib/channels';
 
-  import equaliser from '$svg/equaliser.svg';
-  import loader from '$svg/loader.svg';
-  import player from '$svg/player.svg';
+import equaliser from '$svg/equaliser.svg';
+import loader from '$svg/loader.svg';
+import player from '$svg/player.svg';
 </script>
 
 <script lang="ts">

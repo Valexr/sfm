@@ -1,5 +1,5 @@
 <script lang="ts" module>
-  import gh from '$svg/gh.svg';
+import gh from '$svg/gh.svg';
 </script>
 
 <script lang="ts">
