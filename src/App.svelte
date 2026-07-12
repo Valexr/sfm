@@ -1,9 +1,9 @@
 <script lang="ts" module>
-  import Gh from '$lib/components/Gh.svelte';
-  import Player from '$lib/components/Player.svelte';
-  import Channel from '$lib/components/Channel.svelte';
+import Gh from '$lib/components/Gh.svelte';
+import Player from '$lib/components/Player.svelte';
+import Channel from '$lib/components/Channel.svelte';
 
-  import { station, channels, played } from '$lib/channels';
+import { station, channels, played } from '$lib/channels';
 </script>
 
 <script lang="ts">

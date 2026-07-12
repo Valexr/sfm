@@ -8,50 +8,50 @@ import pkg from './package.json' with { type: 'json' };
 const DEV = process.argv.includes('--dev');
 
 const serveOptions = {
-	servedir: 'public',
-	cors: {
-		origin: 'https://somafm.com',
-	},
-	certfile: 'localhost.crt',
-	keyfile: 'localhost.key',
+  servedir: 'public',
+  cors: {
+    origin: 'https://somafm.com',
+  },
+  certfile: 'localhost.crt',
+  keyfile: 'localhost.key',
 };
 
 const svelteOptions = {
-	compilerOptions: {
-		css: 'external',
-		cssHash: ({ hash, css }) => {
-			return `${pkg.name}-${hash(css)}`;
-		},
-		runes: true,
-		modernAst: true,
-	},
+  compilerOptions: {
+    css: 'external',
+    cssHash: ({ hash, css }) => {
+      return `${pkg.name}-${hash(css)}`;
+    },
+    runes: true,
+    modernAst: true,
+  },
 };
 
 const buildOptions = {
-	bundle: true,
-	minify: !DEV,
-	sourcemap: DEV,
-	entryPoints: ['src/app.ts'],
-	outdir: 'public/build',
-	format: 'esm',
-	loader: { '.svg': 'text' },
-	plugins: [svelte(svelteOptions), log],
-	legalComments: 'none',
-	logLevel: 'info',
-	metafile: !DEV,
-	conditions: ['development', 'production'],
+  bundle: true,
+  minify: !DEV,
+  sourcemap: DEV,
+  entryPoints: ['src/app.ts'],
+  outdir: 'public/build',
+  format: 'esm',
+  loader: { '.svg': 'text' },
+  plugins: [svelte(svelteOptions), log],
+  legalComments: 'none',
+  logLevel: 'info',
+  metafile: !DEV,
+  conditions: ['development', 'production'],
 };
 
 await rm(['public/build']);
 
 if (DEV) {
-	const ctx = await context(buildOptions);
+  const ctx = await context(buildOptions);
 
-	await ctx.watch();
-	await ctx.serve(serveOptions);
+  await ctx.watch();
+  await ctx.serve(serveOptions);
 
-	process.on('SIGTERM', ctx.dispose);
-	process.on('exit', ctx.dispose);
+  process.on('SIGTERM', ctx.dispose);
+  process.on('exit', ctx.dispose);
 } else {
-	await meta(await build(buildOptions));
+  await meta(await build(buildOptions));
 }

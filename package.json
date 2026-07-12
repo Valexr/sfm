@@ -1,40 +1,41 @@
 {
-	"name": "sfm",
-	"description": "SomaFM svelteJS player",
-	"version": "1.0.0",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "node esbuild",
-		"dev": "node esbuild --dev --spa",
-		"preview": "npx esbuild --servedir=public",
-		"lint": "biome check --fix"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Valexr/sfm.git"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.5.3",
-		"@eslint/compat": "^2.1.0",
-		"@eslint/js": "^10.0.1",
-		"@tsconfig/svelte": "^5.0.8",
-		"esbuild": "^0.28.1",
-		"esbuild-svelte": "^0.9.5",
-		"eslint": "^10.7.0",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.20.0",
-		"globals": "^17.7.0",
-		"prettier": "^3.9.5",
-		"prettier-plugin-svelte": "^4.1.1",
-		"svelte": "^5.56.4",
-		"typescript": "^7.0.2",
-		"typescript-eslint": "^8.63.0"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild",
-			"svelte-preprocess"
-		]
-	}
+  "name": "sfm",
+  "description": "SomaFM svelteJS player",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild",
+    "dev": "node esbuild --dev --spa",
+    "preview": "npx esbuild --servedir=public",
+    "lint": "biome check --fix --max-diagnostics=100",
+    "format": "biome format --write --max-diagnostics=100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Valexr/sfm.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.3",
+    "@eslint/compat": "^2.1.0",
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "esbuild": "^0.28.1",
+    "esbuild-svelte": "^0.9.5",
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-svelte": "^3.20.0",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.5",
+    "prettier-plugin-svelte": "^4.1.1",
+    "svelte": "^5.56.4",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.63.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "svelte-preprocess"
+    ]
+  }
 }

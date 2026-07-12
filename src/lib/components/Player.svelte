@@ -1,6 +1,6 @@
 <script lang="ts" module>
-  import { played, station } from '$lib/channels';
-  import type { EventHandler } from 'svelte/elements';
+import { played, station } from '$lib/channels';
+import type { EventHandler } from 'svelte/elements';
 </script>
 
 <script lang="ts">
