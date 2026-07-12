@@ -7,6 +7,15 @@ import pkg from './package.json' with { type: 'json' };
 
 const DEV = process.argv.includes('--dev');
 
+const serveOptions = {
+	servedir: 'public',
+	cors: {
+		origin: 'https://somafm.com',
+	},
+	certfile: 'localhost.crt',
+	keyfile: 'localhost.key',
+};
+
 const svelteOptions = {
 	compilerOptions: {
 		css: 'external',
@@ -39,15 +48,7 @@ if (DEV) {
 	const ctx = await context(buildOptions);
 
 	await ctx.watch();
-	await ctx.serve({
-		host: '0.0.0.0',
-		servedir: 'public',
-		// cors: {
-		//   origin: 'https://somafm.com'
-		// }
-		// certfile:'localhost.crt',
-		// keyfile: 'localhost.key'
-	});
+	await ctx.serve(serveOptions);
 
 	process.on('SIGTERM', ctx.dispose);
 	process.on('exit', ctx.dispose);

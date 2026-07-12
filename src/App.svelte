@@ -73,12 +73,12 @@
   }
 
   main {
-    --cell-size: 5.3rem;
+    --cell-size: 5.5rem;
     gap: 1rem;
     margin: 1rem;
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--cell-size), 7vw));
 
     /* @media (min-width: 37rem) {
       --cell-size: 7rem;
