@@ -73,7 +73,7 @@
   }
 
   main {
-    --cell-size: 5.3rem;
+    --cell-size: 5.5rem;
     gap: 1rem;
     margin: 1rem;
     display: grid;
