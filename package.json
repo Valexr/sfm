@@ -16,12 +16,12 @@
     "url": "https://github.com/Valexr/sfm.git"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.3",
+    "@biomejs/biome": "^2.5.4",
     "@tsconfig/svelte": "^5.0.8",
     "esbuild": "^0.28.1",
     "esbuild-svelte": "^0.9.5",
     "globals": "^17.7.0",
-    "svelte": "^5.56.4",
+    "svelte": "^5.56.6",
     "typescript": "^7.0.2"
   },
   "pnpm": {
