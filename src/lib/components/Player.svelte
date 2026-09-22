@@ -24,7 +24,7 @@ import type { EventHandler } from 'svelte/elements';
 
   const src = $derived(
     $station === 'soma'
-      ? `http://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}?_ic2=1790058194819`
+      ? `https://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`
       : $played?.playlists[quality].src
   );
 
@@ -61,6 +61,7 @@ import type { EventHandler } from 'svelte/elements';
 <audio
   hidden
   autoplay
+  referrerpolicy="no-referrer"
   bind:paused
   preload="auto"
   {onloadstart}
