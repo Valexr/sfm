@@ -24,7 +24,7 @@ import type { EventHandler } from 'svelte/elements';
 
   const src = $derived(
     $station === 'soma'
-      ? `https://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`
+      ? `http://ice${streamID}.somafm.com/${$played.id}-${$played?.playlists[quality].title}`
       : $played?.playlists[quality].src
   );
 
