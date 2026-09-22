@@ -66,7 +66,7 @@ import type { EventHandler } from 'svelte/elements';
   {onloadstart}
   {onloadeddata}
   {oncanplay}
-
+  {onerror}
   {onpause}
   {onplay}
   {src}
