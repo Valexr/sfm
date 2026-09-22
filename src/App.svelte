@@ -60,6 +60,7 @@
   {#if $played}
     <Player bind:paused bind:loaded bind:quality {onpause} {onplay} />
   {/if}
+  <a href="https://soma.fm" target="_blank" rel="noopener noreferrer">Powered by SomaFM</a>
 </footer>
 
 <style>
@@ -91,5 +92,12 @@
     inset: 1rem;
     margin: auto;
     position: sticky;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 10px;
+      margin-top: 1rem;
+    }
   }
 </style>

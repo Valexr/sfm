@@ -9,11 +9,11 @@ const DEV = process.argv.includes('--dev');
 
 const serveOptions = {
   servedir: 'public',
-  cors: {
-    origin: 'https://somafm.com',
-  },
-  certfile: 'localhost.crt',
-  keyfile: 'localhost.key',
+  // cors: {
+  //   origin: 'https://somafm.com',
+  // },
+  // certfile: 'localhost.crt',
+  // keyfile: 'localhost.key',
 };
 
 const svelteOptions = {
